@@ -10,12 +10,20 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as GalerieRouteImport } from './routes/galerie'
 import { Route as LesClassesRouteImport } from './routes/les-classes'
 import { Route as NotreEcoleRouteImport } from './routes/notre-ecole'
+import { Route as ProjetEducatifRouteImport } from './routes/projet-educatif'
+import { Route as VieScolaireRouteImport } from './routes/vie-scolaire'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalerieRoute = GalerieRouteImport.update({
+  id: '/galerie',
+  path: '/galerie',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LesClassesRoute = LesClassesRouteImport.update({
@@ -28,35 +36,76 @@ const NotreEcoleRoute = NotreEcoleRouteImport.update({
   path: '/notre-ecole',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjetEducatifRoute = ProjetEducatifRouteImport.update({
+  id: '/projet-educatif',
+  path: '/projet-educatif',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VieScolaireRoute = VieScolaireRouteImport.update({
+  id: '/vie-scolaire',
+  path: '/vie-scolaire',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/galerie': typeof GalerieRoute
   '/les-classes': typeof LesClassesRoute
   '/notre-ecole': typeof NotreEcoleRoute
+  '/projet-educatif': typeof ProjetEducatifRoute
+  '/vie-scolaire': typeof VieScolaireRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/galerie': typeof GalerieRoute
   '/les-classes': typeof LesClassesRoute
   '/notre-ecole': typeof NotreEcoleRoute
+  '/projet-educatif': typeof ProjetEducatifRoute
+  '/vie-scolaire': typeof VieScolaireRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/galerie': typeof GalerieRoute
   '/les-classes': typeof LesClassesRoute
   '/notre-ecole': typeof NotreEcoleRoute
+  '/projet-educatif': typeof ProjetEducatifRoute
+  '/vie-scolaire': typeof VieScolaireRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/les-classes' | '/notre-ecole'
+  fullPaths:
+    | '/'
+    | '/galerie'
+    | '/les-classes'
+    | '/notre-ecole'
+    | '/projet-educatif'
+    | '/vie-scolaire'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/les-classes' | '/notre-ecole'
-  id: '__root__' | '/' | '/les-classes' | '/notre-ecole'
+  to:
+    | '/'
+    | '/galerie'
+    | '/les-classes'
+    | '/notre-ecole'
+    | '/projet-educatif'
+    | '/vie-scolaire'
+  id:
+    | '__root__'
+    | '/'
+    | '/galerie'
+    | '/les-classes'
+    | '/notre-ecole'
+    | '/projet-educatif'
+    | '/vie-scolaire'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  GalerieRoute: typeof GalerieRoute
   LesClassesRoute: typeof LesClassesRoute
   NotreEcoleRoute: typeof NotreEcoleRoute
+  ProjetEducatifRoute: typeof ProjetEducatifRoute
+  VieScolaireRoute: typeof VieScolaireRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -66,6 +115,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galerie': {
+      id: '/galerie'
+      path: '/galerie'
+      fullPath: '/galerie'
+      preLoaderRoute: typeof GalerieRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/les-classes': {
@@ -82,13 +138,30 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NotreEcoleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projet-educatif': {
+      id: '/projet-educatif'
+      path: '/projet-educatif'
+      fullPath: '/projet-educatif'
+      preLoaderRoute: typeof ProjetEducatifRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vie-scolaire': {
+      id: '/vie-scolaire'
+      path: '/vie-scolaire'
+      fullPath: '/vie-scolaire'
+      preLoaderRoute: typeof VieScolaireRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  GalerieRoute: GalerieRoute,
   LesClassesRoute: LesClassesRoute,
   NotreEcoleRoute: NotreEcoleRoute,
+  ProjetEducatifRoute: ProjetEducatifRoute,
+  VieScolaireRoute: VieScolaireRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
