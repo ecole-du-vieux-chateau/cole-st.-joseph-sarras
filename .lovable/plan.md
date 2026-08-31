@@ -23,9 +23,9 @@ Site vitrine moderne, chaleureux et rassurant pour une école catholique privée
 
 En-tête de navigation clair + pied de page avec coordonnées, sur toutes les pages. Pas de blog, pas d'actualités, pas d'espace parent.
 
-## Formulaires
+## Contact direct
 
-Les demandes de contact et d'inscription sont enregistrées dans Lovable Cloud (base de données intégrée) afin qu'aucune demande ne se perde, avec confirmation à l'écran. Validation stricte des champs côté client et côté serveur. L'école pourra consulter les demandes ; un envoi d'e-mail automatique pourra être ajouté ensuite si souhaité.
+Pas de formulaires : chaque page « Prendre contact » / « Demander un rendez-vous » renvoie vers le téléphone (lien cliquable) et l'e-mail (lien mailto). Aucune base de données nécessaire.
 
 ## Détails techniques
 
