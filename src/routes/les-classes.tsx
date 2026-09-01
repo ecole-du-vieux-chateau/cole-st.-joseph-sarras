@@ -78,6 +78,9 @@ function LesClassesPage() {
             />
             <div>
               <h2 className="text-3xl font-semibold leading-tight">{classe.title}</h2>
+              <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-primary">
+                {classe.teacher}
+              </p>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {classe.levels.map((level) => (
                   <li
