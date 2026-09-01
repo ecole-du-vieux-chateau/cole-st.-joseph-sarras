@@ -53,15 +53,22 @@ function VieScolairePage() {
             chaque jour de classe, le matin avant la classe et le soir après la journée scolaire.
           </p>
           <ul className="mt-6 space-y-3">
-            <li className="flex items-center justify-between rounded-2xl bg-secondary/60 px-5 py-3.5">
+            <li className="flex items-center justify-between gap-3 rounded-2xl bg-secondary/60 px-5 py-3.5">
               <span className="font-semibold text-secondary-foreground">Matin</span>
               <span className="font-display text-lg font-semibold text-foreground">7h30 – 8h20</span>
+              <span className="text-sm font-semibold text-muted-foreground">1,50 €</span>
             </li>
-            <li className="flex items-center justify-between rounded-2xl bg-secondary/60 px-5 py-3.5">
+            <li className="flex items-center justify-between gap-3 rounded-2xl bg-secondary/60 px-5 py-3.5">
               <span className="font-semibold text-secondary-foreground">Soir</span>
-              <span className="font-display text-lg font-semibold text-foreground">16h00 – 18h30</span>
+              <span className="font-display text-lg font-semibold text-foreground">16h30 – 18h30</span>
+              <span className="text-sm font-semibold text-muted-foreground">0,70 € / 30 min</span>
             </li>
           </ul>
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            Dès octobre, des temps d'aide personnalisée sont proposés par les enseignants aux
+            élèves qui en ont besoin, les lundis et jeudis après 16h30. L'étude est assurée par
+            le personnel de l'OGEC.
+          </p>
         </div>
         <img
           src={garderieImg}
@@ -93,6 +100,24 @@ function VieScolairePage() {
               Les repas sont fournis par un prestataire de restauration et servis chauds chaque
               midi. Le déjeuner est un vrai temps de vie : les enfants partagent un repas équilibré
               dans une ambiance détendue, encadrée par l'équipe.
+            </p>
+            <ul className="mt-6 space-y-3 text-sm">
+              <li className="flex items-center justify-between gap-3 rounded-2xl bg-background px-5 py-3.5">
+                <span className="font-semibold text-foreground">Repas</span>
+                <span className="font-display text-lg font-semibold text-foreground">5,10 € / repas</span>
+              </li>
+            </ul>
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              Les inscriptions et les règlements de cantine s'effectuent en ligne auprès de{" "}
+              <a
+                href="mailto:cantine.ecoleduvieuxchateau@gmail.com"
+                className="font-semibold text-primary underline-offset-4 hover:underline"
+              >
+                cantine.ecoleduvieuxchateau@gmail.com
+              </a>
+              . Pensez à désinscrire votre enfant en cas de sortie scolaire. Pour les projets
+              d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la
+              famille.
             </p>
           </div>
         </div>
@@ -135,6 +160,25 @@ function VieScolairePage() {
             loading="lazy"
             className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg"
           />
+        </div>
+      </section>
+
+      {/* Vie de famille */}
+      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+        <div className="rounded-3xl bg-secondary/50 p-8 sm:p-10">
+          <h2 className="text-2xl font-semibold leading-tight">Le lien avec les familles</h2>
+          <div className="mt-5 grid gap-6 text-sm leading-relaxed text-secondary-foreground sm:grid-cols-2">
+            <p>
+              En cas d'absence imprévue de votre enfant, merci d'en informer l'école par
+              téléphone, par e-mail ou via l'application Klassly. Pour les absences programmées,
+              un mot dans le cahier de liaison suffit.
+            </p>
+            <p>
+              L'APEL (association de parents d'élèves) anime la vie de l'école tout au long de
+              l'année : café de bienvenue le jour de la rentrée, manifestations et temps conviviaux
+              qui rassemblent les familles.
+            </p>
+          </div>
         </div>
       </section>
 

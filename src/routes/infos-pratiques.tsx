@@ -97,14 +97,23 @@ function InfosPratiquesPage() {
                   <span className="font-semibold text-foreground">7h30 – 8h20</span>
                 </li>
                 <li className="flex justify-between rounded-xl bg-muted/60 px-4 py-2.5">
-                  <span>Journée de classe</span>
-                  <span className="font-semibold text-foreground">8h30 – 16h00</span>
+                  <span>Matinée de classe</span>
+                  <span className="font-semibold text-foreground">8h30 – 11h45</span>
+                </li>
+                <li className="flex justify-between rounded-xl bg-muted/60 px-4 py-2.5">
+                  <span>Après-midi de classe</span>
+                  <span className="font-semibold text-foreground">13h30 – 16h30</span>
                 </li>
                 <li className="flex justify-between rounded-xl bg-muted/60 px-4 py-2.5">
                   <span>Garderie du soir</span>
-                  <span className="font-semibold text-foreground">16h00 – 18h30</span>
+                  <span className="font-semibold text-foreground">16h30 – 18h30</span>
                 </li>
               </ul>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                L'entrée des élèves se situe rue du Peycher. Le portail est ouvert de
+                8h20 à 8h30 et de 13h20 à 13h30. Pour le périscolaire, merci de sonner à
+                l'interphone.
+              </p>
             </div>
           </div>
 
