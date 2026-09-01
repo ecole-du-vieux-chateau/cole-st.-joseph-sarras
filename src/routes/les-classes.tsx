@@ -28,24 +28,27 @@ const CLASSES = [
   {
     image: maternelleImg,
     alt: "Enfants de maternelle en pleine activité de dessin",
-    title: "Classe Maternelle",
-    levels: ["Toute Petite Section", "Petite Section", "Moyenne Section", "Grande Section"],
+    title: "Classe TPS · PS · MS",
+    levels: ["Toute Petite Section", "Petite Section", "Moyenne Section"],
+    teacher: "Mme Avellaneda Amandine",
     description:
       "L'école des premiers apprentissages, où l'enfant apprend en jouant, en explorant et en manipulant. Langage, motricité, vie en groupe et autonomie sont développés dans un environnement doux et sécurisant, pensé pour les plus petits.",
   },
   {
     image: cycle2Img,
-    alt: "Élèves de CP et CE1 apprenant à lire et à écrire",
-    title: "Cycle 2",
-    levels: ["CP", "CE1"],
+    alt: "Élèves de grande section et CP apprenant à lire et à écrire",
+    title: "Classe MS · GS · CP",
+    levels: ["Moyenne Section", "Grande Section", "CP"],
+    teacher: "Mme Gustin Marion",
     description:
-      "Le cycle des apprentissages fondamentaux : lire, écrire, compter. Les élèves consolident les bases avec méthode et confiance, grâce à un enseignement structuré et à la possibilité de différencier les parcours au sein d'une même classe.",
+      "Le passage vers les apprentissages fondamentaux : lire, écrire, compter. Les élèves consolident les bases avec méthode et confiance, grâce à un enseignement structuré et à la possibilité de différencier les parcours au sein d'une même classe.",
   },
   {
     image: cycle3Img,
     alt: "Élèves de cycle 3 travaillant en groupe sur un projet",
-    title: "Cycle 3",
-    levels: ["CE2", "CM1", "CM2"],
+    title: "Classe CE1 · CE2 · CM1 · CM2",
+    levels: ["CE1", "CE2", "CM1", "CM2"],
+    teacher: "Mme Chaiandard Élodie",
     description:
       "Le cycle de consolidation qui prépare au collège. Les élèves approfondissent leurs connaissances, développent leur esprit critique et gagnent en autonomie à travers des projets, des travaux de groupe et des responsabilités.",
   },
