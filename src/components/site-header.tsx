@@ -35,7 +35,7 @@ export function SiteHeader() {
           ))}
           <a
             href={SCHOOL.phoneHref}
-            className="ml-2 inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+            className="ml-2 inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
           >
             <Phone className="size-4" aria-hidden />
             {SCHOOL.phone}
