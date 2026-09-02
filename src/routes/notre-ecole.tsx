@@ -52,6 +52,29 @@ const PILLARS = [
   },
 ];
 
+const TEAM = [
+  {
+    name: "Mme Amandine Avellaneda",
+    role: "Directrice — classe TPS · PS · MS",
+    text: "Elle dirige l'établissement et accueille les plus petits pour leurs premiers pas à l'école.",
+  },
+  {
+    name: "Mme Marion Gustin",
+    role: "Classe MS · GS · CP",
+    text: "Elle accompagne les enfants dans les apprentissages fondamentaux, de la maternelle aux premières lectures.",
+  },
+  {
+    name: "Mme Élodie Chaiandard",
+    role: "Classe CE1 · CE2 · CM1 · CM2",
+    text: "Elle guide les élèves du cycle 2 et du cycle 3 vers toujours plus d'autonomie et de maîtrise.",
+  },
+  {
+    name: "Mme Donzet",
+    role: "Surveillances et cantine",
+    text: "Elle veille sur les enfants pendant les temps de cantine et de garderie, avec douceur et attention.",
+  },
+];
+
 function NotreEcolePage() {
   return (
     <>
@@ -110,6 +133,32 @@ function NotreEcolePage() {
           loading="lazy"
           className="aspect-[21/9] w-full rounded-3xl object-cover shadow-lg"
         />
+      </section>
+
+      <section className="bg-muted/60">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-semibold leading-tight">L'équipe de l'école</h2>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Une équipe à taille humaine, enthousiaste et engagée, qui connaît chaque enfant
+              et travaille main dans la main avec les familles.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {TEAM.map((member) => (
+              <article key={member.name} className="rounded-3xl bg-card p-7 shadow-sm">
+                <h3 className="text-lg font-semibold">{member.name}</h3>
+                <p className="mt-1 text-sm font-semibold text-primary">{member.role}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{member.text}</p>
+              </article>
+            ))}
+          </div>
+          <p className="mt-8 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+            L'école s'appuie aussi sur le précieux engagement des parents bénévoles de l'OGEC
+            et de l'APEL, qui veillent au bon fonctionnement de l'établissement et animent la
+            vie de l'école tout au long de l'année.
+          </p>
+        </div>
       </section>
 
       <ContactCta
