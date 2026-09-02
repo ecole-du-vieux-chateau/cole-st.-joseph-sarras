@@ -52,7 +52,7 @@ function InscriptionsPage() {
     <>
       <PageHero
         title="Inscrire votre enfant"
-        subtitle="Un parcours simple et accompagné, de la première visite à la rentrée. Les inscriptions sont ouvertes de la Toute Petite Section au CM2, tout au long de l'année selon les places disponibles."
+        subtitle="Un parcours simple et accompagné, de la première visite à la rentrée. Les inscriptions sont ouvertes de la Toute Petite Section au CM2, tout au long de l'année selon les places disponibles. L'école accueille les enfants dès 2 ans et demi."
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -66,6 +66,41 @@ function InscriptionsPage() {
               <p className="mt-2 leading-relaxed text-muted-foreground">{step.text}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-sage-50">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <div className="rounded-3xl bg-card p-8 shadow-sm md:p-10">
+            <h2 className="text-2xl font-semibold md:text-3xl">
+              Une entrée à l'école en douceur, dès 2 ans et demi
+            </h2>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Chaque enfant est unique : nous accompagnons son arrivée à son rythme. Pour les
+              plus petits, l'adaptation se fait progressivement, avec la possibilité de
+              commencer par des demi-journées avant de passer à la journée complète. La
+              directrice et l'équipe restent en lien étroit avec les familles pour que votre
+              enfant prenne ses repères en confiance et dans le bien-être.
+            </p>
+            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 size-2 shrink-0 rounded-full bg-primary" />
+                <span className="text-muted-foreground">Accueil possible dès 2 ans et demi</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 size-2 shrink-0 rounded-full bg-primary" />
+                <span className="text-muted-foreground">Adaptation personnalisée et progressive</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 size-2 shrink-0 rounded-full bg-primary" />
+                <span className="text-muted-foreground">Possibilité de demi-journées au départ</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 size-2 shrink-0 rounded-full bg-primary" />
+                <span className="text-muted-foreground">Échange régulier avec les parents</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
