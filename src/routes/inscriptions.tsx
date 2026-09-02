@@ -52,7 +52,7 @@ function InscriptionsPage() {
     <>
       <PageHero
         title="Inscrire votre enfant"
-        subtitle="Un parcours simple et accompagné, de la première visite à la rentrée. Les inscriptions sont ouvertes de la Toute Petite Section au CM2, tout au long de l'année selon les places disponibles."
+        subtitle="Un parcours simple et accompagné, de la première visite à la rentrée. Les inscriptions sont ouvertes de la Toute Petite Section au CM2, tout au long de l'année selon les places disponibles. L'école accueille les enfants dès 2 ans et demi."
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
