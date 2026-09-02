@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Clock, Palette, Sparkles, TreePine, Trophy, UtensilsCrossed } from "lucide-react";
+import { Clock, HandCoins, Landmark, Palette, PartyPopper, Sparkles, TreePine, Trophy, Users, UtensilsCrossed, Wrench } from "lucide-react";
 import garderieImg from "@/assets/garderie.jpg";
 import cantineImg from "@/assets/cantine.jpg";
 import sortieImg from "@/assets/sortie-nature.jpg";
@@ -163,22 +163,127 @@ function VieScolairePage() {
         </div>
       </section>
 
-      {/* Vie de famille */}
+      {/* OGEC & APEL */}
+      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-semibold leading-tight">L'OGEC et l'APEL, deux associations au service de l'école</h2>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Derrière la vie quotidienne de l'école, deux équipes de parents bénévoles œuvrent
+            avec énergie : l'une veille sur les murs et le fonctionnement, l'autre y met de la
+            vie, du rire et des souvenirs.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+          <article className="rounded-3xl bg-card p-8 shadow-sm">
+            <span className="flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <Landmark className="size-6" aria-hidden />
+            </span>
+            <h3 className="mt-5 text-xl font-semibold">L'OGEC — la gestion de l'école</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              L'Organisme de Gestion de l'Enseignement Catholique est le garant du bon
+              fonctionnement matériel et financier de l'école : budget et factures,
+              entretien des locaux et de la cour, sécurité des enfants, et recrutement des
+              personnels de cantine, garderie, ASEM et ménage. Pendant que les enseignants
+              font apprendre les enfants, l'OGEC veille à ce que tout le monde évolue dans
+              de bonnes conditions.
+            </p>
+            <ul className="mt-5 space-y-2.5 text-sm text-muted-foreground">
+              <li className="flex items-start gap-2.5">
+                <HandCoins className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden />
+                Budget, factures et équilibre financier de l'établissement
+              </li>
+              <li className="flex items-start gap-2.5">
+                <Wrench className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden />
+                Entretien des locaux, cour de récréation et sécurité
+              </li>
+              <li className="flex items-start gap-2.5">
+                <Users className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden />
+                Gestion des personnels non enseignants (cantine, garderie, étude)
+              </li>
+            </ul>
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              Envie de donner un coup de main, même une heure par mois ? Écrivez à{" "}
+              <a href="mailto:adm.ogecduvieuxchateau07@gmail.com" className="font-semibold text-primary underline-offset-4 hover:underline">
+                adm.ogecduvieuxchateau07@gmail.com
+              </a>
+            </p>
+          </article>
+          <article className="rounded-3xl bg-card p-8 shadow-sm">
+            <span className="flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <PartyPopper className="size-6" aria-hidden />
+            </span>
+            <h3 className="mt-5 text-xl font-semibold">L'APEL — la vie de famille de l'école</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              L'Association des Parents d'Élèves de l'Enseignement Libre est le moteur de la
+              vie de famille au sein de l'école : kermesse, marché de Noël, loto, vide-grenier,
+              ventes de gâteaux… Tout l'argent récolté finance les activités scolaires, les
+              spectacles, les livres et le matériel de sport. L'APEL est aussi la voix et le
+              relais des parents auprès de l'équipe pédagogique.
+            </p>
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              Café de bienvenue le jour de la rentrée, manifestations et temps conviviaux :
+              toutes les bonnes volontés et les talents cachés sont les bienvenus. Contact :{" "}
+              <a href="mailto:apel.sarras@gmail.com" className="font-semibold text-primary underline-offset-4 hover:underline">
+                apel.sarras@gmail.com
+              </a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* Qui contacter + absences */}
       <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
         <div className="rounded-3xl bg-secondary/50 p-8 sm:p-10">
-          <h2 className="text-2xl font-semibold leading-tight">Le lien avec les familles</h2>
-          <div className="mt-5 grid gap-6 text-sm leading-relaxed text-secondary-foreground sm:grid-cols-2">
-            <p>
-              En cas d'absence imprévue de votre enfant, merci d'en informer l'école par
-              téléphone, par e-mail ou via l'application Klassly. Pour les absences programmées,
-              un mot dans le cahier de liaison suffit.
-            </p>
-            <p>
-              L'APEL (association de parents d'élèves) anime la vie de l'école tout au long de
-              l'année : café de bienvenue le jour de la rentrée, manifestations et temps conviviaux
-              qui rassemblent les familles.
-            </p>
+          <h2 className="text-2xl font-semibold leading-tight">Qui contacter ?</h2>
+          <div className="mt-6 grid gap-x-10 gap-y-5 text-sm leading-relaxed text-secondary-foreground sm:grid-cols-2 lg:grid-cols-3">
+            <div>
+              <p className="font-semibold text-foreground">Enseignement et absences</p>
+              <p className="mt-1">Projet pédagogique, suivi de votre enfant, absences.</p>
+              <a href="mailto:ecoleduvieuxchateau.sarras@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                ecoleduvieuxchateau.sarras@gmail.com
+              </a>
+            </div>
+            <div>
+              <p className="font-semibold text-foreground">Cantine</p>
+              <p className="mt-1">Inscriptions, menus et questions sur les repas.</p>
+              <a href="mailto:cantine.ecoleduvieuxchateau@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                cantine.ecoleduvieuxchateau@gmail.com
+              </a>
+            </div>
+            <div>
+              <p className="font-semibold text-foreground">Factures</p>
+              <p className="mt-1">Une question sur votre facture ?</p>
+              <a href="mailto:ogec.sarras.comptabilite@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                ogec.sarras.comptabilite@gmail.com
+              </a>
+            </div>
+            <div>
+              <p className="font-semibold text-foreground">Vie de l'école (OGEC)</p>
+              <p className="mt-1">Idées à partager, coup de main aux bénévoles.</p>
+              <a href="mailto:adm.ogecduvieuxchateau07@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                adm.ogecduvieuxchateau07@gmail.com
+              </a>
+            </div>
+            <div>
+              <p className="font-semibold text-foreground">Événements (APEL)</p>
+              <p className="mt-1">Kermesse, marché de Noël, loto… ou envie d'aider.</p>
+              <a href="mailto:apel.sarras@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                apel.sarras@gmail.com
+              </a>
+            </div>
+            <div>
+              <p className="font-semibold text-foreground">Absences</p>
+              <p className="mt-1">
+                En cas d'absence imprévue, informez l'école par téléphone, e-mail ou via
+                l'application Klassly. Pour les absences programmées, un mot dans le cahier
+                de liaison suffit.
+              </p>
+            </div>
           </div>
+          <p className="mt-6 text-sm leading-relaxed text-secondary-foreground">
+            Bon à savoir : la garderie fonctionne sans inscription — déposez votre enfant le
+            matin dès 7h30 et récupérez-le le soir jusqu'à 18h30.
+          </p>
         </div>
       </section>
 
