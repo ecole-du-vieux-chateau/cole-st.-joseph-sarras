@@ -70,6 +70,74 @@ function InscriptionsPage() {
       </section>
 
       <section className="bg-muted/60">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-semibold leading-tight">Tarifs et contribution</h2>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              L’école est conventionnée avec l’État et accessible à toutes les familles. Le
+              financement repose sur la contribution des familles et le soutien des associations.
+              Les tarifs ci-dessous sont ceux de l’année scolaire en cours.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <article className="rounded-3xl bg-card p-8 shadow-sm">
+              <h3 className="text-lg font-semibold">Scolarité</h3>
+              <p className="mt-4">
+                <span className="text-4xl font-bold text-primary">42 €</span>
+                <span className="text-muted-foreground"> / mois</span>
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Tarif réduit en Toute Petite Section : 21 € / mois.
+              </p>
+            </article>
+
+            <article className="rounded-3xl bg-card p-8 shadow-sm">
+              <h3 className="text-lg font-semibold">Dégressif famille</h3>
+              <ul className="mt-4 space-y-2 text-muted-foreground">
+                <li className="flex justify-between">
+                  <span>2 enfants</span>
+                  <span className="font-semibold text-foreground">80 €</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>3 enfants</span>
+                  <span className="font-semibold text-foreground">117 €</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>4 enfants</span>
+                  <span className="font-semibold text-foreground">152 €</span>
+                </li>
+              </ul>
+              <p className="mt-4 text-sm text-muted-foreground">Par mois, quel que soit le niveau.</p>
+            </article>
+
+            <article className="rounded-3xl bg-card p-8 shadow-sm">
+              <h3 className="text-lg font-semibold">Inclus dans la contribution</h3>
+              <ul className="mt-4 space-y-2 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">•</span>
+                  <span>Fournitures scolaires</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">•</span>
+                  <span>Assurance Mutuelle Saint-Christophe</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">•</span>
+                  <span>Paiement possible en 1 ou 10 fois</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <p className="mt-8 text-sm text-muted-foreground">
+            Une aide personnalisée peut être accordée sur demande et entretien avec la direction.
+            N’hésitez pas à nous contacter pour échanger en toute confidentialité.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-background">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
           <div>
             <h2 className="text-3xl font-semibold leading-tight">Premier pas : prendre contact</h2>
