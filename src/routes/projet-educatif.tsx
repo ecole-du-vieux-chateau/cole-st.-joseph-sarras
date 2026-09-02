@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Compass, Cross, HandHeart, HeartHandshake, ShieldCheck, Sprout, Users } from "lucide-react";
+import { BookOpen, Compass, Cross, HandHeart, HeartHandshake, ShieldCheck, Sprout, Users } from "lucide-react";
 import { ContactCta, PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/projet-educatif")({
@@ -74,6 +74,30 @@ function ProjetEducatifPage() {
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{axe.text}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-muted/60">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[auto_1fr]">
+          <span className="flex size-16 items-center justify-center rounded-3xl bg-primary text-primary-foreground">
+            <BookOpen className="size-8" aria-hidden />
+          </span>
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+              Projet d'école 2026-2027
+            </p>
+            <h2 className="mt-2 font-display text-3xl font-semibold leading-tight sm:text-4xl">
+              « Promenons-nous dans les contes »
+            </h2>
+            <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+              Cette année, notre fil conducteur nous emmène dans l'univers merveilleux des
+              contes : des histoires pour rêver, imaginer, s'exprimer et enrichir son langage,
+              mais aussi pour apprendre à mieux se connaître et à mieux vivre ensemble. De
+              nombreux projets autour du langage, de la créativité et du vivre ensemble
+              rythmeront l'année, portés par toute l'équipe éducative, les associations de
+              parents et les familles.
+            </p>
+          </div>
         </div>
       </section>
 
