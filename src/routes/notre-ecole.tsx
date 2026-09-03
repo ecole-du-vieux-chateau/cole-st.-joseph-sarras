@@ -135,6 +135,33 @@ function NotreEcolePage() {
         />
       </section>
 
+      <section className="bg-secondary/40">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-semibold leading-tight">L'histoire de l'école</h2>
+            <p className="mt-5 leading-relaxed text-muted-foreground">
+              Les bâtiments de notre école font partie de l'enceinte du château de Sarras,
+              construit au Moyen Âge par les Pagan de Mahun, seigneurs de Vocance, Satillieu,
+              Ozon, Saint-Julien-Molin-Molette, Argental et La Faye. Détruit pendant les
+              guerres de Religion, il fut en partie reconstruit vers 1580 par Christophe de
+              Chalencon, vicomte de Château-Clos.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Vers 1860, les sœurs de Saint-Joseph reçoivent dans les bâtiments actuels les
+              enfants en dessous de l'âge scolaire, pour aider la population du village. Elles
+              mettent également en place un enseignement pour les filles, qui n'étaient pas
+              accueillies à l'école congréganiste de garçons fondée en 1875.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Au début du XXᵉ siècle, l'école est officiellement fondée. Depuis, notre
+              établissement est sous la tutelle de la congrégation des Sœurs de Saint-Joseph.
+              Lié à l'État par contrat d'association depuis 1995, il garantit les horaires et
+              les programmes nationaux. À ce jour, le personnel est entièrement laïc.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-muted/60">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <div className="max-w-2xl">
