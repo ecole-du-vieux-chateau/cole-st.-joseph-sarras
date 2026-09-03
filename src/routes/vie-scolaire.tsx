@@ -54,15 +54,15 @@ function VieScolairePage() {
             chaque jour de classe, le matin avant la classe et le soir après la journée scolaire.
           </p>
           <ul className="mt-6 space-y-3">
-            <li className="flex items-center justify-between gap-3 rounded-2xl bg-secondary/60 px-5 py-3.5">
+            <li className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 rounded-2xl bg-secondary/60 px-5 py-3.5">
               <span className="font-semibold text-secondary-foreground">Matin</span>
-              <span className="font-display text-lg font-semibold text-foreground">7h30 – 8h20</span>
-              <span className="text-sm font-semibold text-muted-foreground">1,50 €</span>
+              <span className="font-display text-center text-lg font-semibold text-foreground">7h30 – 8h20</span>
+              <span className="text-right text-sm font-semibold text-muted-foreground">1,50 €</span>
             </li>
-            <li className="flex items-center justify-between gap-3 rounded-2xl bg-secondary/60 px-5 py-3.5">
+            <li className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 rounded-2xl bg-secondary/60 px-5 py-3.5">
               <span className="font-semibold text-secondary-foreground">Soir</span>
-              <span className="font-display text-lg font-semibold text-foreground">16h30 – 18h30</span>
-              <span className="text-sm font-semibold text-muted-foreground">0,70 € / 30 min</span>
+              <span className="font-display text-center text-lg font-semibold text-foreground">16h30 – 18h30</span>
+              <span className="text-right text-sm font-semibold text-muted-foreground">0,70 € / 30 min</span>
             </li>
           </ul>
           <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
