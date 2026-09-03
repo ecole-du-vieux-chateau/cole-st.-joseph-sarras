@@ -69,7 +69,7 @@ function InscriptionsPage() {
         </div>
       </section>
 
-      <section className="bg-sage-50">
+      <section className="bg-secondary/40">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <div className="rounded-3xl bg-card p-8 shadow-sm md:p-10">
             <h2 className="text-2xl font-semibold md:text-3xl">
