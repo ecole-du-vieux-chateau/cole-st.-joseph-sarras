@@ -56,22 +56,22 @@ const TEAM = [
   {
     name: "Mme Amandine Avellaneda",
     role: "Directrice — classe TPS · PS · MS",
-    text: "Elle dirige l'établissement et accueille les plus petits pour leurs premiers pas à l'école.",
+    text: "« J'ai la joie de diriger notre école et d'accueillir les plus petits pour leurs premiers pas à l'école. Ma priorité : que chaque enfant se sente en confiance, écouté et heureux de venir apprendre, dès ses 2 ans et demi. »",
   },
   {
     name: "Mme Marion Gustin",
     role: "Classe MS · GS · CP",
-    text: "Elle accompagne les enfants dans les apprentissages fondamentaux, de la maternelle aux premières lectures.",
+    text: "« Dans ma classe, on passe des jeux de la maternelle aux premières lectures. J'aime accompagner chaque enfant à son rythme, l'encourager à oser et célébrer chacune de ses réussites, même les plus petites. »",
   },
   {
     name: "Mme Élodie Chaiandard",
     role: "Classe CE1 · CE2 · CM1 · CM2",
-    text: "Elle guide les élèves du cycle 2 et du cycle 3 vers toujours plus d'autonomie et de maîtrise.",
+    text: "« Avec les grands, j'ouvre les portes de l'autonomie : apprendre à apprendre, coopérer, argumenter. Mon objectif est qu'ils quittent l'école curieux, confiants et prêts pour le collège. »",
   },
   {
     name: "Mme Donzet",
     role: "Surveillances et cantine",
-    text: "Elle veille sur les enfants pendant les temps de cantine et de garderie, avec douceur et attention.",
+    text: "« Je veille sur les enfants pendant la cantine, les récréations et la garderie. Ces moments de vie comptent autant que la classe : j'y apporte douceur, attention et bonne humeur. »",
   },
 ];
 
