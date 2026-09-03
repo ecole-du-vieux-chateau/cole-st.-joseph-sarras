@@ -21,4 +21,5 @@ export const NAV_LINKS = [
   { to: "/projet-educatif", label: "Projet éducatif" },
   { to: "/galerie", label: "Galerie" },
   { to: "/infos-pratiques", label: "Informations pratiques" },
+  { to: "/inscriptions", label: "Inscriptions" },
 ] as const;

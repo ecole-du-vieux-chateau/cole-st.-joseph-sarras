@@ -56,22 +56,22 @@ const TEAM = [
   {
     name: "Mme Amandine Avellaneda",
     role: "Directrice — classe TPS · PS · MS",
-    text: "Elle dirige l'établissement et accueille les plus petits pour leurs premiers pas à l'école.",
+    text: "« J'ai la joie de diriger notre école et d'accueillir les plus petits pour leurs premiers pas à l'école. Ma priorité : que chaque enfant se sente en confiance, écouté et heureux de venir apprendre, dès ses 2 ans et demi. »",
   },
   {
     name: "Mme Marion Gustin",
     role: "Classe MS · GS · CP",
-    text: "Elle accompagne les enfants dans les apprentissages fondamentaux, de la maternelle aux premières lectures.",
+    text: "« Dans ma classe, on passe des jeux de la maternelle aux premières lectures. J'aime accompagner chaque enfant à son rythme, l'encourager à oser et célébrer chacune de ses réussites, même les plus petites. »",
   },
   {
     name: "Mme Élodie Chaiandard",
     role: "Classe CE1 · CE2 · CM1 · CM2",
-    text: "Elle guide les élèves du cycle 2 et du cycle 3 vers toujours plus d'autonomie et de maîtrise.",
+    text: "« Avec les grands, j'ouvre les portes de l'autonomie : apprendre à apprendre, coopérer, argumenter. Mon objectif est qu'ils quittent l'école curieux, confiants et prêts pour le collège. »",
   },
   {
     name: "Mme Donzet",
     role: "Surveillances et cantine",
-    text: "Elle veille sur les enfants pendant les temps de cantine et de garderie, avec douceur et attention.",
+    text: "« Je veille sur les enfants pendant la cantine, les récréations et la garderie. Ces moments de vie comptent autant que la classe : j'y apporte douceur, attention et bonne humeur. »",
   },
 ];
 
@@ -133,6 +133,33 @@ function NotreEcolePage() {
           loading="lazy"
           className="aspect-[21/9] w-full rounded-3xl object-cover shadow-lg"
         />
+      </section>
+
+      <section className="bg-secondary/40">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-semibold leading-tight">L'histoire de l'école</h2>
+            <p className="mt-5 leading-relaxed text-muted-foreground">
+              Les bâtiments de notre école font partie de l'enceinte du château de Sarras,
+              construit au Moyen Âge par les Pagan de Mahun, seigneurs de Vocance, Satillieu,
+              Ozon, Saint-Julien-Molin-Molette, Argental et La Faye. Détruit pendant les
+              guerres de Religion, il fut en partie reconstruit vers 1580 par Christophe de
+              Chalencon, vicomte de Château-Clos.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Vers 1860, les sœurs de Saint-Joseph reçoivent dans les bâtiments actuels les
+              enfants en dessous de l'âge scolaire, pour aider la population du village. Elles
+              mettent également en place un enseignement pour les filles, qui n'étaient pas
+              accueillies à l'école congréganiste de garçons fondée en 1875.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Au début du XXᵉ siècle, l'école est officiellement fondée. Depuis, notre
+              établissement est sous la tutelle de la congrégation des Sœurs de Saint-Joseph.
+              Lié à l'État par contrat d'association depuis 1995, il garantit les horaires et
+              les programmes nationaux. À ce jour, le personnel est entièrement laïc.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section className="bg-muted/60">

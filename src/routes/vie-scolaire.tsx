@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Clock, HandCoins, Landmark, Palette, PartyPopper, Sparkles, TreePine, Trophy, Users, UtensilsCrossed, Wrench } from "lucide-react";
+import { Clock, ExternalLink, HandCoins, Landmark, Palette, PartyPopper, Sparkles, TreePine, Trophy, Users, UtensilsCrossed, Wrench } from "lucide-react";
 import garderieImg from "@/assets/garderie.jpg";
 import cantineImg from "@/assets/cantine.jpg";
+import qrCantineImg from "@/assets/qr-cantine.png";
 import sortieImg from "@/assets/sortie-nature.jpg";
 import sportImg from "@/assets/sport.jpg";
 import { ContactCta, PageHero } from "@/components/page-hero";
@@ -119,6 +120,36 @@ function VieScolairePage() {
               d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la
               famille.
             </p>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <div className="flex items-center gap-4 rounded-2xl bg-background p-4">
+                <img
+                  src={qrCantineImg}
+                  alt="QR code vers le formulaire d'inscription et d'annulation de cantine"
+                  width={96}
+                  height={96}
+                  loading="lazy"
+                  className="size-24 shrink-0 rounded-xl"
+                />
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  <span className="font-semibold text-foreground">Repas ponctuel ?</span>
+                  <br />
+                  Flashez ce QR code pour inscrire ou désinscrire votre enfant à la cantine.
+                </p>
+              </div>
+              <a
+                href="https://www.guillaud-traiteur.com/7-actualites.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between gap-4 rounded-2xl bg-background p-4 transition-colors hover:bg-accent"
+              >
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  <span className="font-semibold text-foreground">Les menus en cours</span>
+                  <br />
+                  Consultez les menus de notre traiteur Guillaud.
+                </p>
+                <ExternalLink className="size-5 shrink-0 text-primary" aria-hidden />
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -113,6 +113,28 @@ function GaleriePage() {
         </div>
       </section>
 
+      <section className="bg-secondary/40">
+        <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
+          <div className="text-center">
+            <h2 className="text-3xl font-semibold leading-tight">Visitez l'école en vidéo</h2>
+            <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
+              Une visite virtuelle de l'école, de la cour aux classes, pour découvrir les lieux
+              comme si vous y étiez.
+            </p>
+          </div>
+          <div className="mt-8 overflow-hidden rounded-3xl shadow-lg">
+            <iframe
+              src="https://www.youtube.com/embed/TgzETXkyqvg"
+              title="Visite virtuelle de l'École du Vieux Château"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="aspect-video w-full"
+            />
+          </div>
+        </div>
+      </section>
+
       {selected ? (
         <div
           className="fixed inset-0 z-[60] flex items-center justify-center bg-foreground/80 p-4 backdrop-blur-sm"
