@@ -140,7 +140,7 @@ function VieScolairePage() {
                 href="https://www.guillaud-traiteur.com/7-actualites.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-1 items-center justify-between gap-4 rounded-2xl bg-background p-4 transition-colors hover:bg-accent"
+                className="flex items-center justify-between gap-4 rounded-2xl bg-background p-4 transition-colors hover:bg-accent"
               >
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   <span className="font-semibold text-foreground">Les menus en cours</span>
