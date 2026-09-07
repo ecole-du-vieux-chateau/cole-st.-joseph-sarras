@@ -13,6 +13,16 @@ import sortieChateauImg from "@/assets/sortie-chateau.jpg";
 import atelierImg from "@/assets/atelier-art.jpg";
 import sportImg from "@/assets/sport.jpg";
 import feteImg from "@/assets/fete.jpg";
+import classeElem1Asset from "@/assets/classe-elementaire-1.jpg.asset.json";
+import classeElem2Asset from "@/assets/classe-elementaire-2.jpg.asset.json";
+import classeElem3Asset from "@/assets/classe-elementaire-3.jpg.asset.json";
+import classeMater1Asset from "@/assets/classe-maternelle-1.jpg.asset.json";
+import classeMater2Asset from "@/assets/classe-maternelle-2.jpg.asset.json";
+import salleInfoAsset from "@/assets/salle-informatique.jpg.asset.json";
+import salleInfoEnfantsAsset from "@/assets/salle-informatique-enfants.jpg.asset.json";
+import cantineEcoleAsset from "@/assets/cantine-ecole.jpg.asset.json";
+import salleRepasAsset from "@/assets/salle-repas.jpg.asset.json";
+import salleReposMaterAsset from "@/assets/salle-repos-maternelle.jpg.asset.json";
 import { PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/galerie")({
