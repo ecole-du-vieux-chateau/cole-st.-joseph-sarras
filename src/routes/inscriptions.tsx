@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CalendarCheck, FileText, Mail, Phone, School } from "lucide-react";
-import maternelleImg from "@/assets/classe-maternelle.jpg";
+import maternelleAsset from "@/assets/classe-maternelle-2.jpg.asset.json";
+
+const maternelleImg = maternelleAsset.url;
 import { PageHero } from "@/components/page-hero";
 import { SCHOOL } from "@/lib/site";
 

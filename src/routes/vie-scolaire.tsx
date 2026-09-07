@@ -9,7 +9,6 @@ const cantineImg = cantineAsset.url;
 const sportImg = sportAsset.url;
 import qrCantineImg from "@/assets/qr-cantine.png";
 import sortieImg from "@/assets/sortie-nature.jpg";
-import sportImg from "@/assets/sport.jpg";
 import { ContactCta, PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/vie-scolaire")({
