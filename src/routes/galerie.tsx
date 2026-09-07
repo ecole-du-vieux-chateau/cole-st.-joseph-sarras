@@ -1,23 +1,22 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { X } from "lucide-react";
 import { useMemo, useState } from "react";
-import heroImg from "@/assets/hero.jpg";
-import ecoleImg from "@/assets/ecole.jpg";
-import maternelleImg from "@/assets/classe-maternelle.jpg";
-import cycle2Img from "@/assets/classe-cycle2.jpg";
-import cycle3Img from "@/assets/classe-cycle3.jpg";
-import cantineImg from "@/assets/cantine.jpg";
-import garderieImg from "@/assets/garderie.jpg";
+import facadeAsset from "@/assets/facade-ecole.jpg.asset.json";
+import courAsset from "@/assets/cour-recreation.jpg.asset.json";
+import hallAsset from "@/assets/hall-entree.jpg.asset.json";
+import salleActivitesAsset from "@/assets/salle-activites.jpg.asset.json";
+import tableauClasseAsset from "@/assets/tableau-classe.jpg.asset.json";
 import sortieNatureImg from "@/assets/sortie-nature.jpg";
 import sortieChateauImg from "@/assets/sortie-chateau.jpg";
 import atelierImg from "@/assets/atelier-art.jpg";
-import sportImg from "@/assets/sport.jpg";
 import feteImg from "@/assets/fete.jpg";
 import classeElem1Asset from "@/assets/classe-elementaire-1.jpg.asset.json";
 import classeElem2Asset from "@/assets/classe-elementaire-2.jpg.asset.json";
 import classeElem3Asset from "@/assets/classe-elementaire-3.jpg.asset.json";
 import classeMater1Asset from "@/assets/classe-maternelle-1.jpg.asset.json";
 import classeMater2Asset from "@/assets/classe-maternelle-2.jpg.asset.json";
+import classeMater3Asset from "@/assets/classe-maternelle-3.jpg.asset.json";
+import classeMater4Asset from "@/assets/classe-maternelle-4.jpg.asset.json";
 import salleInfoAsset from "@/assets/salle-informatique.jpg.asset.json";
 import salleInfoEnfantsAsset from "@/assets/salle-informatique-enfants.jpg.asset.json";
 import cantineEcoleAsset from "@/assets/cantine-ecole.jpg.asset.json";
@@ -49,25 +48,24 @@ const CATEGORIES = ["Tout", "Vie de l'école", "Classes", "Activités", "Sorties
 type Category = (typeof CATEGORIES)[number];
 
 const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[] = [
-  { src: heroImg, alt: "Les élèves jouant dans la cour ensoleillée", category: "Vie de l'école" },
-  { src: ecoleImg, alt: "La façade et la cour de l'école", category: "Vie de l'école" },
-  { src: garderieImg, alt: "Temps calme à la garderie du soir", category: "Vie de l'école" },
-  { src: cantineImg, alt: "Le déjeuner partagé à la cantine", category: "Vie de l'école" },
+  { src: facadeAsset.url, alt: "La façade de l'école du Vieux Château", category: "Vie de l'école" },
+  { src: courAsset.url, alt: "La cour de récréation et son préau", category: "Vie de l'école" },
+  { src: hallAsset.url, alt: "Le hall d'entrée décoré par les élèves", category: "Vie de l'école" },
+  { src: salleActivitesAsset.url, alt: "Le coin lecture et jeux calmes", category: "Vie de l'école" },
   { src: cantineEcoleAsset.url, alt: "La salle de cantine décorée", category: "Vie de l'école" },
   { src: salleRepasAsset.url, alt: "L'espace repas et coin cuisine", category: "Vie de l'école" },
   { src: salleInfoAsset.url, alt: "La salle informatique de l'école", category: "Vie de l'école" },
   { src: salleInfoEnfantsAsset.url, alt: "Les élèves à la salle informatique", category: "Vie de l'école" },
   { src: salleReposMaterAsset.url, alt: "L'espace repos et vestiaires en maternelle", category: "Vie de l'école" },
-  { src: maternelleImg, alt: "Activités de dessin en maternelle", category: "Classes" },
-  { src: cycle2Img, alt: "Apprentissage de la lecture en cycle 2", category: "Classes" },
-  { src: cycle3Img, alt: "Travail de groupe en cycle 3", category: "Classes" },
   { src: classeMater1Asset.url, alt: "Classe maternelle avec coins jeux et apprentissages", category: "Classes" },
   { src: classeMater2Asset.url, alt: "Coin activités et affichages en maternelle", category: "Classes" },
+  { src: classeMater3Asset.url, alt: "La salle de motricité et de regroupement en maternelle", category: "Classes" },
+  { src: classeMater4Asset.url, alt: "La grande salle de classe de maternelle", category: "Classes" },
+  { src: tableauClasseAsset.url, alt: "Le tableau des règles de vie de la classe", category: "Classes" },
   { src: classeElem1Asset.url, alt: "Salle de classe élémentaire avec bureaux et tableau", category: "Classes" },
   { src: classeElem2Asset.url, alt: "Classe élémentaire lumineuse et organisée", category: "Classes" },
   { src: classeElem3Asset.url, alt: "Espace de travail des cycles 2 et 3", category: "Classes" },
   { src: atelierImg, alt: "Atelier de peinture collective", category: "Activités" },
-  { src: sportImg, alt: "Séance de sport au gymnase", category: "Activités" },
   { src: sortieNatureImg, alt: "Sortie nature au bord de la rivière", category: "Sorties scolaires" },
   { src: sortieChateauImg, alt: "Visite éducative d'un château", category: "Sorties scolaires" },
   { src: feteImg, alt: "Spectacle de fin d'année dans la cour", category: "Fêtes et événements" },
