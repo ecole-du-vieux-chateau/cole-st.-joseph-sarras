@@ -1,7 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HandHeart, HeartHandshake, ShieldCheck, Trophy, ArrowRight, Users, Landmark, BookOpen, Home } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
-import ecoleImg from "@/assets/ecole.jpg";
+import heroAsset from "@/assets/facade-ecole.jpg.asset.json";
+import ecoleAsset from "@/assets/cour-recreation.jpg.asset.json";
+
+const heroImg = heroAsset.url;
+const ecoleImg = ecoleAsset.url;
 import { ContactCta } from "@/components/page-hero";
 import { SCHOOL } from "@/lib/site";
 

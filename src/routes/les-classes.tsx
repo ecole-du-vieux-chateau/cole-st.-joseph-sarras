@@ -1,7 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
-import maternelleImg from "@/assets/classe-maternelle.jpg";
-import cycle2Img from "@/assets/classe-cycle2.jpg";
-import cycle3Img from "@/assets/classe-cycle3.jpg";
+import maternelleAsset from "@/assets/classe-maternelle-3.jpg.asset.json";
+import cycle2Asset from "@/assets/classe-maternelle-4.jpg.asset.json";
+import cycle3Asset from "@/assets/classe-elementaire-1.jpg.asset.json";
+
+const maternelleImg = maternelleAsset.url;
+const cycle2Img = cycle2Asset.url;
+const cycle3Img = cycle3Asset.url;
 import { ContactCta, PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/les-classes")({
