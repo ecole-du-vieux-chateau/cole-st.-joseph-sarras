@@ -27,7 +27,7 @@ export function SiteHeader() {
               key={link.to}
               to={link.to}
               activeOptions={{ exact: link.to === "/" }}
-              className="rounded-full px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+              className="inline-flex items-center justify-center rounded-full px-3 py-2 text-center text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
               activeProps={{ className: "bg-secondary text-secondary-foreground hover:bg-secondary" }}
             >
               {link.label}

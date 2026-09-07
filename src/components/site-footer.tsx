@@ -29,11 +29,6 @@ export function SiteFooter() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link to="/inscriptions" className="text-foreground/80 transition-colors hover:text-foreground">
-                Inscriptions
-              </Link>
-            </li>
           </ul>
         </nav>
 
