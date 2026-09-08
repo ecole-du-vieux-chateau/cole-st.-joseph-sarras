@@ -108,7 +108,7 @@ function NotreEcolePage() {
             width={1920}
             height={1080}
             loading="lazy"
-            className="aspect-[16/10] w-full rounded-3xl object-cover shadow-lg"
+            className="school-photo aspect-[4/3] w-full"
           />
           <div>
             <h2 className="text-3xl font-semibold leading-tight">Le quotidien d'une école de village</h2>
@@ -134,7 +134,7 @@ function NotreEcolePage() {
           width={1408}
           height={1024}
           loading="lazy"
-          className="aspect-[21/9] w-full rounded-3xl object-cover shadow-lg"
+          className="school-photo aspect-[16/7] w-full"
         />
       </section>
 

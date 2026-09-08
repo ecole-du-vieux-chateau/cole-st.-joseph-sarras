@@ -68,6 +68,7 @@
   --sage-foreground: oklch(0.28 0.05 160);
   --sand: oklch(0.94 0.03 85);
   --sand-foreground: oklch(0.4 0.05 70);
+  --photo-shadow: 0 18px 45px -24px color-mix(in oklab, var(--foreground) 38%, transparent);
 }
 
 .dark {
@@ -94,6 +95,29 @@
   --sage-foreground: oklch(0.95 0.02 150);
   --sand: oklch(0.34 0.03 80);
   --sand-foreground: oklch(0.94 0.03 85);
+  --photo-shadow: 0 18px 45px -24px color-mix(in oklab, var(--background) 50%, transparent);
+}
+
+@layer components {
+  .school-photo {
+    border: 1px solid color-mix(in oklab, var(--border) 78%, var(--background));
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--photo-shadow);
+    object-fit: cover;
+    background-color: var(--muted);
+  }
+
+  .school-photo-frame {
+    border: 1px solid color-mix(in oklab, var(--border) 78%, var(--background));
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--photo-shadow);
+    background-color: var(--muted);
+  }
+
+  .school-photo,
+  .school-photo-frame img {
+    filter: saturate(0.94) contrast(1.02);
+  }
 }
 
 @layer base {

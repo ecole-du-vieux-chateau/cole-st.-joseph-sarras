@@ -81,7 +81,7 @@ function VieScolairePage() {
           width={1280}
           height={960}
           loading="lazy"
-          className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg"
+          className="school-photo aspect-[4/3] w-full"
         />
       </section>
 
@@ -94,7 +94,7 @@ function VieScolairePage() {
             width={1280}
             height={960}
             loading="lazy"
-            className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg"
+            className="school-photo aspect-[4/3] w-full"
           />
           <div>
             <span className="flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
@@ -185,7 +185,7 @@ function VieScolairePage() {
             width={1280}
             height={960}
             loading="lazy"
-            className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg"
+            className="school-photo aspect-[4/3] w-full"
           />
           <img
             src={sportImg}
@@ -193,7 +193,7 @@ function VieScolairePage() {
             width={1280}
             height={960}
             loading="lazy"
-            className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg"
+            className="school-photo aspect-[4/3] w-full"
           />
         </div>
       </section>

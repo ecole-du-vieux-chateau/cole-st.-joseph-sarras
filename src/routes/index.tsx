@@ -76,7 +76,7 @@ function Index() {
           alt="Les enfants réunis autour d'un parachute coloré dans la cour de l'école"
           width={1024}
           height={768}
-          className="h-[70vh] min-h-[520px] w-full object-cover object-center"
+          className="h-[70vh] min-h-[520px] w-full bg-muted object-cover object-center saturate-[.94] contrast-[1.02]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/55 to-foreground/10" />
         <div className="absolute inset-0 flex items-center">
@@ -137,7 +137,7 @@ function Index() {
             width={768}
             height={920}
             loading="lazy"
-            className="aspect-[4/3] w-full rounded-3xl object-cover object-center shadow-lg"
+            className="school-photo aspect-[4/3] w-full object-center"
           />
         </div>
       </section>
