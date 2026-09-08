@@ -206,7 +206,7 @@ function InscriptionsPage() {
             width={1280}
             height={960}
             loading="lazy"
-            className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg"
+            className="school-photo aspect-[4/3] w-full"
           />
         </div>
       </section>

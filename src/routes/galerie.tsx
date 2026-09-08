@@ -117,7 +117,7 @@ function GaleriePage() {
               key={photo.alt}
               type="button"
               onClick={() => setSelected(photo)}
-              className="group relative overflow-hidden rounded-3xl shadow-sm focus:outline-none focus:ring-2 focus:ring-ring"
+              className="school-photo-frame group relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
             >
               <img
                 src={photo.src}
@@ -125,7 +125,7 @@ function GaleriePage() {
                 width={1280}
                 height={960}
                 loading="lazy"
-                className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
               />
               <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground/70 to-transparent px-4 pb-3 pt-10 text-left text-sm font-medium text-background opacity-0 transition-opacity group-hover:opacity-100">
                 {photo.alt}
@@ -144,7 +144,7 @@ function GaleriePage() {
               comme si vous y étiez.
             </p>
           </div>
-          <div className="mt-8 overflow-hidden rounded-3xl shadow-lg">
+          <div className="school-photo-frame mt-8 overflow-hidden">
             <iframe
               src="https://www.youtube.com/embed/TgzETXkyqvg"
               title="Visite virtuelle de l'École du Vieux Château"
