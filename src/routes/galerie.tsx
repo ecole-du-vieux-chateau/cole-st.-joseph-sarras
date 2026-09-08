@@ -22,6 +22,8 @@ import salleInfoEnfantsAsset from "@/assets/salle-informatique-enfants.jpg.asset
 import cantineEcoleAsset from "@/assets/cantine-ecole.jpg.asset.json";
 import salleRepasAsset from "@/assets/salle-repas.jpg.asset.json";
 import salleReposMaterAsset from "@/assets/salle-repos-maternelle.jpg.asset.json";
+import activiteParachuteAsset from "@/assets/activite-parachute-cour.jpg.asset.json";
+import facadeVieuxChateauAsset from "@/assets/facade-vieux-chateau.webp.asset.json";
 import { PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/galerie")({
@@ -48,6 +50,8 @@ const CATEGORIES = ["Tout", "Vie de l'école", "Classes", "Activités", "Sorties
 type Category = (typeof CATEGORIES)[number];
 
 const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[] = [
+  { src: facadeVieuxChateauAsset.url, alt: "La façade en pierre de l'École du Vieux Château", category: "Vie de l'école" },
+  { src: activiteParachuteAsset.url, alt: "Les enfants réunis autour d'un parachute coloré dans la cour", category: "Activités" },
   { src: facadeAsset.url, alt: "La façade de l'école du Vieux Château", category: "Vie de l'école" },
   { src: courAsset.url, alt: "La cour de récréation et son préau", category: "Vie de l'école" },
   { src: hallAsset.url, alt: "Le hall d'entrée décoré par les élèves", category: "Vie de l'école" },

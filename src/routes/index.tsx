@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HandHeart, HeartHandshake, ShieldCheck, Trophy, ArrowRight, Users, Landmark, BookOpen, Home } from "lucide-react";
-import heroAsset from "@/assets/facade-ecole.jpg.asset.json";
-import ecoleAsset from "@/assets/cour-recreation.jpg.asset.json";
+import heroAsset from "@/assets/activite-parachute-cour.jpg.asset.json";
+import ecoleAsset from "@/assets/facade-vieux-chateau.webp.asset.json";
 
 const heroImg = heroAsset.url;
 const ecoleImg = ecoleAsset.url;
@@ -73,21 +73,24 @@ function Index() {
       <section className="relative">
         <img
           src={heroImg}
-          alt="Enfants jouant dans la cour de l'école du Vieux Château à Sarras"
-          width={1920}
-          height={1080}
-          className="h-[70vh] min-h-[480px] w-full object-cover"
+          alt="Les enfants réunis autour d'un parachute coloré dans la cour de l'école"
+          width={1024}
+          height={768}
+          className="h-[70vh] min-h-[520px] w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/25 to-transparent" />
-        <div className="absolute inset-0 flex items-end">
-          <div className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6">
-            <p className="mb-3 inline-block rounded-full bg-background/85 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-foreground backdrop-blur">
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/55 to-foreground/10" />
+        <div className="absolute inset-0 flex items-center">
+          <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
+            <p className="mb-4 inline-block rounded-full bg-background/90 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-foreground shadow-sm backdrop-blur">
               École catholique · Sarras, Ardèche
             </p>
-            <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-background drop-shadow-sm sm:text-5xl lg:text-6xl">
-              {SCHOOL.slogan}
+            <h1 className="max-w-2xl text-4xl font-semibold leading-tight text-background drop-shadow-lg sm:text-5xl lg:text-6xl">
+              École du Vieux Château
             </h1>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <p className="mt-4 max-w-xl text-lg font-medium leading-relaxed text-background drop-shadow-md sm:text-xl">
+              {SCHOOL.slogan}
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
                 href={SCHOOL.phoneHref}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-background px-7 py-3.5 text-base font-semibold text-foreground transition-transform hover:scale-[1.02]"
@@ -130,11 +133,11 @@ function Index() {
           </div>
           <img
             src={ecoleImg}
-            alt="La cour et l'entrée de l'école du Vieux Château"
-            width={1408}
-            height={1024}
+            alt="La façade en pierre et l'entrée de l'école du Vieux Château"
+            width={768}
+            height={920}
             loading="lazy"
-            className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg"
+            className="aspect-[4/3] w-full rounded-3xl object-cover object-center shadow-lg"
           />
         </div>
       </section>
