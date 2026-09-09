@@ -129,6 +129,48 @@ function InfosPratiquesPage() {
             />
           </div>
         </div>
+
+        {/* Documents utiles */}
+        <div className="mt-10 rounded-3xl bg-card p-7 shadow-sm">
+          <h2 className="flex items-center gap-3 text-xl font-semibold">
+            <FileText className="size-5 text-primary" aria-hidden />
+            Documents utiles
+          </h2>
+          <p className="mt-3 leading-relaxed text-muted-foreground">
+            Retrouvez ici les documents de référence de l'école. Les liens seront
+            prochainement mis à jour avec les fichiers officiels.
+          </p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2">
+            <a
+              href="https://drive.google.com/file/d/1FAKE_GAZETTE_ID/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-4 rounded-2xl bg-secondary/60 p-5 transition-colors hover:bg-secondary"
+            >
+              <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <FileText className="size-6" aria-hidden />
+              </div>
+              <div className="min-w-0">
+                <p className="font-semibold text-foreground">Télécharger la Gazette</p>
+                <p className="text-sm text-muted-foreground">Journal de l'école</p>
+              </div>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1FAKE_REGLEMENT_ID/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-4 rounded-2xl bg-secondary/60 p-5 transition-colors hover:bg-secondary"
+            >
+              <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <FileText className="size-6" aria-hidden />
+              </div>
+              <div className="min-w-0">
+                <p className="font-semibold text-foreground">Télécharger le règlement intérieur</p>
+                <p className="text-sm text-muted-foreground">Règles de vie à l'école</p>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
     </>
   );
