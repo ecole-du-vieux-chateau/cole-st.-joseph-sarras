@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import maternelleAsset from "@/assets/classe-maternelle-3.jpg.asset.json";
-import cycle2Asset from "@/assets/classe-maternelle-4.jpg.asset.json";
+import cycle2Asset from "@/assets/classe-elementaire-2.jpg.asset.json";
 import cycle3Asset from "@/assets/classe-elementaire-1.jpg.asset.json";
 
 const maternelleImg = maternelleAsset.url;
@@ -40,7 +40,7 @@ const CLASSES = [
   },
   {
     image: cycle2Img,
-    alt: "Élèves de grande section et CP apprenant à lire et à écrire",
+    alt: "Classe élémentaire lumineuse et organisée",
     title: "Classe MS · GS · CP",
     levels: ["Moyenne Section", "Grande Section", "CP"],
     teacher: "Mme Gustin Marion",
