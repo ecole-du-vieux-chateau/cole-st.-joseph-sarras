@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Clock, Mail, MapPin, Phone, Smartphone } from "lucide-react";
+import { Clock, FileText, Mail, MapPin, Phone, Smartphone } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
 import { SCHOOL } from "@/lib/site";
 
