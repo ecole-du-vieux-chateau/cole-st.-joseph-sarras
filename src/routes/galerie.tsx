@@ -134,30 +134,8 @@ function GaleriePage() {
         subtitle="Cour de récréation, classes, ateliers, sorties et fêtes : un aperçu du quotidien de nos élèves."
       />
 
-      <section className="bg-secondary/40">
-        <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-          <div className="text-center">
-            <h2 className="text-3xl font-semibold leading-tight">Visitez l'école en vidéo</h2>
-            <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
-              Une visite virtuelle de l'école, de la cour aux classes, pour découvrir les lieux
-              comme si vous y étiez.
-            </p>
-          </div>
-          <div className="school-photo-frame mt-8 overflow-hidden">
-            <iframe
-              src="https://www.youtube.com/embed/TgzETXkyqvg"
-              title="Visite virtuelle de l'École du Vieux Château"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="aspect-video w-full"
-            />
-          </div>
-        </div>
-      </section>
-
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-        <div className="flex flex-wrap gap-2" role="tablist" aria-label="Filtrer les photos">
+        <div className="flex flex-wrap gap-2" role="tablist" aria-label="Filtrer les photos et vidéos">
           {CATEGORIES.map((cat) => (
             <button
               key={cat}
@@ -177,26 +155,42 @@ function GaleriePage() {
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {photos.map((photo) => (
-            <button
-              key={photo.alt}
-              type="button"
-              onClick={() => setSelected(photo)}
-              className="school-photo-frame group relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
-            >
-              <img
-                src={photo.src}
-                alt={photo.alt}
-                width={1280}
-                height={960}
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
-              />
-              <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground/70 to-transparent px-4 pb-3 pt-10 text-left text-sm font-medium text-background opacity-0 transition-opacity group-hover:opacity-100">
-                {photo.alt}
-              </span>
-            </button>
-          ))}
+          {photos.map((photo) =>
+            photo.category === "Vidéo" ? (
+              <div
+                key={photo.alt}
+                className="school-photo-frame overflow-hidden focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 focus-within:ring-offset-background"
+              >
+                <iframe
+                  src="https://www.youtube.com/embed/TgzETXkyqvg"
+                  title={photo.alt}
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="aspect-[4/3] w-full"
+                />
+              </div>
+            ) : (
+              <button
+                key={photo.alt}
+                type="button"
+                onClick={() => setSelected(photo)}
+                className="school-photo-frame group relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+              >
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  width={1280}
+                  height={960}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]"
+                />
+                <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground/70 to-transparent px-4 pb-3 pt-10 text-left text-sm font-medium text-background opacity-0 transition-opacity group-hover:opacity-100">
+                  {photo.alt}
+                </span>
+              </button>
+            )
+          )}
         </div>
       </section>
 
