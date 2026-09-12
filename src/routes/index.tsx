@@ -77,7 +77,7 @@ function Index() {
           alt="La façade de l'École du Vieux Château sous un ciel bleu"
           width={1024}
           height={768}
-          className="h-screen min-h-[600px] w-full bg-muted object-cover object-[center_35%] saturate-[.94] contrast-[1.02]"
+          className="h-[75vh] min-h-[560px] w-full bg-muted object-cover object-[center_35%] saturate-[.94] contrast-[1.02]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/55 to-foreground/10" />
         <div className="absolute inset-0 flex items-center">
