@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { BookOpen, Compass, Cross, HandHeart, HeartHandshake, ShieldCheck, Sprout, Users } from "lucide-react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { BookOpen, Church, Compass, Cross, HandHeart, HeartHandshake, Languages, ShieldCheck, Sprout, Users } from "lucide-react";
 import { ContactCta, PageHero } from "@/components/page-hero";
 import projetAsset from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
 
