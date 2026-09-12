@@ -184,14 +184,24 @@ function Index() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-20 sm:px-6">
-        <img
-          src={fresqueImg}
-          alt="Les enfants rassemblés autour de grands dessins à la craie dans la cour"
-          width={1600}
-          height={900}
-          loading="lazy"
-          className="school-photo aspect-[16/7] w-full"
-        />
+        <div className="grid gap-5 md:grid-cols-2">
+          <img
+            src={fresqueImg}
+            alt="Les enfants rassemblés autour de grands dessins à la craie dans la cour"
+            width={1024}
+            height={768}
+            loading="lazy"
+            className="school-photo aspect-[4/3] w-full"
+          />
+          <img
+            src={parcoursImg}
+            alt="Parcours de motricité en plein air avec des cerceaux colorés"
+            width={1024}
+            height={768}
+            loading="lazy"
+            className="school-photo aspect-[4/3] w-full"
+          />
+        </div>
       </section>
 
       <ContactCta
