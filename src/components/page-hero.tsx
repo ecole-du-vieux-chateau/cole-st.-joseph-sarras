@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { SCHOOL } from "@/lib/site";
 
 export function PageHero({ title, subtitle, children }: { title: string; subtitle?: string; children?: ReactNode }) {
   return (
@@ -30,7 +31,7 @@ export function ContactCta({ title, text }: { title: string; text: string }) {
             Appeler l'école · 06 30 15 93 34
           </a>
           <a
-            href="mailto:ecoleduvieuxchateau.sarras@gmail.com"
+            href={SCHOOL.emailHref}
             className="inline-flex items-center justify-center rounded-full border border-primary-foreground/40 px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/10"
           >
             Écrire un e-mail
