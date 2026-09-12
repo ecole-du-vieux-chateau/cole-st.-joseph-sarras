@@ -1,9 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Church, Gift, HandHeart, HeartHandshake, Sparkles } from "lucide-react";
 import { ContactCta, PageHero } from "@/components/page-hero";
-import pastoraleAsset from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
-
-const pastoraleImg = pastoraleAsset.url;
 
 export const Route = createFileRoute("/projet-pastoral")({
   head: () => ({
@@ -84,53 +81,69 @@ function ProjetPastoralPage() {
         subtitle="Notre établissement est sous la tutelle de la congrégation des sœurs de Saint-Joseph. L'animation pastorale s'adresse à tous, quelles que soient les convictions des familles."
       />
 
-      <section className="mx-auto max-w-4xl px-4 pt-16 sm:px-6">
-        <div className="rounded-3xl bg-card p-8 shadow-sm">
-          <span className="flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-            <Church className="size-6" aria-hidden />
+      <section className="bg-muted/60">
+        <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[auto_1fr]">
+          <span className="flex size-16 items-center justify-center rounded-3xl bg-primary text-primary-foreground">
+            <Church className="size-8" aria-hidden />
           </span>
-          <h2 className="mt-5 font-display text-2xl font-semibold leading-snug sm:text-3xl">
-            Au quotidien dans notre école
-          </h2>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Développer un climat fraternel, bienveillant et épanouissant, fondé sur le respect
-            mutuel de chacun et avec le soutien des parents : chaque enfant est un être unique,
-            porteur d'une histoire, capable d'aimer et d'être aimé. Ce projet se vit à travers des
-            actions ponctuelles et des activités régulières, réparties en quatre grands axes.
-          </p>
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+              Au quotidien dans notre école
+            </p>
+            <h2 className="mt-2 font-display text-3xl font-semibold leading-tight sm:text-4xl">
+              Un climat fraternel et bienveillant
+            </h2>
+            <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+              Développer un climat fraternel, bienveillant et épanouissant, fondé sur le respect
+              mutuel de chacun et avec le soutien des parents : chaque enfant est un être unique,
+              porteur d'une histoire, capable d'aimer et d'être aimé. Ce projet se vit à travers
+              des actions ponctuelles et des activités régulières, réparties en quatre grands axes.
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="grid gap-6 sm:grid-cols-2">
-          {AXES.map((axe) => (
-            <article key={axe.title} className="rounded-3xl bg-card p-7 shadow-sm">
-              <span className="flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                <axe.icon className="size-6" aria-hidden />
-              </span>
-              <h2 className="mt-5 font-display text-xl font-semibold">{axe.title}</h2>
-              <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
-                {axe.items.map((item) => (
-                  <li key={item} className="flex gap-2">
-                    <span aria-hidden className="mt-1 size-1.5 shrink-0 rounded-full bg-primary" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl font-semibold leading-tight sm:text-4xl">
+            Quatre axes pour vivre ensemble
+          </h2>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Chaque action pastorale s'inscrit dans l'un de ces quatre temps forts, portés par
+            toute la communauté éducative.
+          </p>
+        </div>
+        <div className="mt-10 space-y-6">
+          {AXES.map((axe, index) => (
+            <article
+              key={axe.title}
+              className="grid gap-6 rounded-3xl bg-card p-7 shadow-sm sm:p-8 lg:grid-cols-[auto_1fr]"
+            >
+              <div className="flex items-start gap-4">
+                <span
+                  aria-hidden
+                  className="font-display text-4xl font-semibold leading-none text-primary/25"
+                >
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                  <axe.icon className="size-6" aria-hidden />
+                </span>
+              </div>
+              <div>
+                <h3 className="font-display text-xl font-semibold">{axe.title}</h3>
+                <ul className="mt-4 grid gap-2 text-sm leading-relaxed text-muted-foreground sm:grid-cols-2">
+                  {axe.items.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span aria-hidden className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </article>
           ))}
         </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
-        <img
-          src={pastoraleImg}
-          alt="Temps d'activité partagé entre enfants et enseignante à l'école"
-          width={1600}
-          height={900}
-          loading="lazy"
-          className="school-photo aspect-[16/7] w-full"
-        />
       </section>
 
       <ContactCta
