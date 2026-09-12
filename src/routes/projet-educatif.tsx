@@ -132,10 +132,10 @@ function ProjetEducatifPage() {
             <BookOpen className="size-8" aria-hidden />
           </span>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+            <p className="text-center text-sm font-semibold uppercase tracking-widest text-primary">
               Projet d'école 2026-2027
             </p>
-            <h2 className="mt-2 font-display text-3xl font-semibold leading-tight sm:text-4xl">
+            <h2 className="mt-2 text-center font-display text-3xl font-semibold leading-tight sm:text-4xl">
               « Promenons-nous dans les contes »
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-center leading-relaxed text-muted-foreground">
