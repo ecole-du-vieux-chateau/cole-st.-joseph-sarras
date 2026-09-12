@@ -77,7 +77,7 @@ function Index() {
           alt="La cour de récréation de l'école animée par les enfants"
           width={1024}
           height={768}
-          className="h-[70vh] min-h-[520px] w-full bg-muted object-cover object-center saturate-[.94] contrast-[1.02]"
+          className="h-[70vh] min-h-[520px] w-full bg-muted object-cover object-[center_78%] saturate-[.94] contrast-[1.02]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/55 to-foreground/10" />
         <div className="absolute inset-0 flex items-center">
