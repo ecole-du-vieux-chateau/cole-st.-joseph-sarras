@@ -89,11 +89,7 @@ function Index() {
               alt="École privée du Vieux Château"
               className="mb-4 h-16 w-auto rounded-xl bg-background p-1 shadow-sm sm:h-20"
             />
-            <p className="mb-4 inline-block rounded-full bg-background/90 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-foreground shadow-sm backdrop-blur">
-              École catholique · Sarras, Ardèche
-            </p>
             <h1 className="max-w-2xl text-4xl font-semibold leading-tight text-background drop-shadow-lg sm:text-5xl lg:text-6xl">
-
               École du Vieux Château
             </h1>
             <p className="mt-4 max-w-xl text-lg font-medium leading-relaxed text-background drop-shadow-md sm:text-xl">
