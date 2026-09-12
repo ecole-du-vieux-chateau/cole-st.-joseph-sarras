@@ -203,22 +203,80 @@ function ProjetEducatifPage() {
             </ul>
           </article>
         </div>
-        <div className="mt-6 flex flex-col items-start gap-4 rounded-3xl bg-card p-7 shadow-sm sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-start gap-4">
-            <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-              <Church className="size-6" aria-hidden />
-            </span>
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              Ce projet s'accompagne d'un projet d'animation pastorale, dans l'esprit des sœurs de
-              Saint-Joseph : servir, partager, témoigner, célébrer.
+        <div className="mt-6 flex items-start gap-4 rounded-3xl bg-card p-7 shadow-sm">
+          <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+            <Church className="size-6" aria-hidden />
+          </span>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            Ce projet s'accompagne d'un projet d'animation pastorale, dans l'esprit des sœurs de
+            Saint-Joseph, présenté ci-dessous : servir, partager, témoigner, célébrer.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-muted/60">
+        <div className="mx-auto flex max-w-4xl flex-col items-center px-4 py-16 text-center sm:px-6">
+          <span className="flex size-16 items-center justify-center rounded-3xl bg-primary text-primary-foreground">
+            <Church className="size-8" aria-hidden />
+          </span>
+          <div className="mt-6">
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+              Le projet pastoral
+            </p>
+            <h2 className="mt-2 font-display text-3xl font-semibold leading-tight sm:text-4xl">
+              Un climat fraternel et bienveillant
+            </h2>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Notre établissement est sous la tutelle de la congrégation des sœurs de
+              Saint-Joseph. L'animation pastorale s'adresse à tous, quelles que soient les
+              convictions des familles : chaque enfant est un être unique, porteur d'une
+              histoire, capable d'aimer et d'être aimé. Ce projet se vit à travers des actions
+              ponctuelles et des activités régulières, réparties en quatre grands axes.
             </p>
           </div>
-          <Link
-            to="/projet-pastoral"
-            className="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            Découvrir le projet pastoral
-          </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl font-semibold leading-tight sm:text-4xl">
+            Quatre axes pour vivre ensemble
+          </h2>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Chaque action pastorale s'inscrit dans l'un de ces quatre temps forts, portés par
+            toute la communauté éducative.
+          </p>
+        </div>
+        <div className="mt-10 space-y-6">
+          {PASTORAL_AXES.map((axe, index) => (
+            <article
+              key={axe.title}
+              className="grid gap-6 rounded-3xl bg-card p-7 shadow-sm sm:p-8 lg:grid-cols-[auto_1fr]"
+            >
+              <div className="flex items-start gap-4">
+                <span
+                  aria-hidden
+                  className="font-display text-4xl font-semibold leading-none text-primary/25"
+                >
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                  <axe.icon className="size-6" aria-hidden />
+                </span>
+              </div>
+              <div>
+                <h3 className="font-display text-xl font-semibold">{axe.title}</h3>
+                <ul className="mt-4 grid gap-2 text-sm leading-relaxed text-muted-foreground sm:grid-cols-2">
+                  {axe.items.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span aria-hidden className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
