@@ -205,15 +205,6 @@ function ProjetEducatifPage() {
             </ul>
           </article>
         </div>
-        <div className="mt-6 flex items-start gap-4 rounded-3xl bg-card p-7 shadow-sm">
-          <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-            <Church className="size-6" aria-hidden />
-          </span>
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            Ce projet s'accompagne d'un projet d'animation pastorale, dans l'esprit des sœurs de
-            Saint-Joseph, présenté ci-dessous : servir, partager, témoigner, célébrer.
-          </p>
-        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
