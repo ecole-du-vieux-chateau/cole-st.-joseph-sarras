@@ -62,19 +62,22 @@ const TEAM = [
     text: (
       <div className="space-y-4 leading-relaxed text-muted-foreground">
         <p>J'accompagne avec enthousiasme les élèves de 2 à 4 ans, une période riche en découvertes, en expériences et… en petites surprises !</p>
-        <p>Dans ma classe, tout est prétexte à apprendre. Je privilégie le jeu, la manipulation et l'expérimentation pour permettre à chaque enfant de découvrir progressivement la richesse de la langue française, ses mots, ses nuances et le plaisir de les utiliser.</p>
-        <p>En mathématiques aussi, on apprend en faisant ! Jeux, manipulations et ateliers d'autonomie permettent aux élèves d'explorer les quantités, les formes, l'espace et le temps, tout en développant leur réflexion et leur confiance en eux.</p>
-        <p>Les élèves sont prévenus : j'aime les pièges ! Dans certains exercices, de petites difficultés se cachent volontairement… L'objectif ? Faire réfléchir, chercher, essayer, se tromper parfois et surtout comprendre. Car apprendre, c'est aussi apprendre à raisonner !</p>
-        <p>Dans ma classe, nous accordons également une place essentielle au langage et au vivre-ensemble : mettre des mots sur ce que l'on ressent, apprendre à écouter l'autre, coopérer et découvrir que chacun, avec ses différences, est une véritable richesse pour le groupe.</p>
-        <p>Et pour mieux connaître la maîtresse… Mon petit point faible : le chocolat noir ! Heureusement, il n'y a pas encore d'atelier « partage de chocolat » au programme… enfin, pas officiellement !</p>
+        <p>Dans ma classe, tout est prétexte à apprendre. Je privilégie le jeu, la manipulation et l'expérimentation pour découvrir la langue française, explorer les mathématiques et développer la confiance en soi. Les élèves sont prévenus : j'aime les pièges ! De petites difficultés se cachent volontairement dans certains exercices, pour apprendre à chercher, se tromper parfois et surtout comprendre.</p>
+        <p>Nous accordons aussi une place essentielle au vivre-ensemble : mettre des mots sur ce que l'on ressent, écouter l'autre et coopérer. Et mon petit point faible ? Le chocolat noir !</p>
       </div>
     ),
+  },
+  {
+    name: "Mme Marion Gustin",
+    role: "Classe MS · GS · CP",
+    text: "« Dans ma classe, on passe des jeux de la maternelle aux premières lectures. J'aime accompagner chaque enfant à son rythme, l'encourager à oser et célébrer chacune de ses réussites, même les plus petites. »",
   },
   {
     name: "Mme Élodie Chaiandard",
     role: "Classe CE1 · CE2 · CM1",
     text: (
       <div className="space-y-4 leading-relaxed text-muted-foreground">
+        <p>Cette année, je mets l'accent sur des méthodes claires et progressives, qui aident chaque élève à gagner en autonomie et en confiance, tout en cultivant le plaisir d'apprendre et la curiosité.</p>
         <p>Quelques exemples de notre organisation en classe :</p>
         <ul className="list-disc space-y-1 pl-5">
           <li>Graphisme / écriture / copie : cahiers MDI, notamment pour la tenue du crayon, l'écriture et la copie.</li>
@@ -83,6 +86,11 @@ const TEAM = [
         </ul>
       </div>
     ),
+  },
+  {
+    name: "Mme Donzet",
+    role: "Surveillances et cantine",
+    text: "« Je veille sur les enfants pendant la cantine, les récréations et la garderie. Ces moments de vie comptent autant que la classe : j'y apporte douceur, attention et bonne humeur. »",
   },
 ];
 
