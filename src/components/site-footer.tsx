@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, Smartphone } from "lucide-react";
-import logoAsset from "@/assets/logo-ecole-du-vieux-chateau.jpg.asset.json";
+import logoAsset from "@/assets/logo-ecole-du-vieux-chateau-transparent.png";
 import { NAV_LINKS, SCHOOL } from "@/lib/site";
 
 
@@ -10,9 +10,9 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
           <img
-            src={logoAsset.url}
+            src={logoAsset}
             alt="École privée du Vieux Château"
-            className="h-11 w-auto rounded-lg"
+            className="h-11 w-auto"
           />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
             École catholique privée sous contrat avec l'État, de la Toute Petite Section au CM2,

@@ -2,11 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { HandHeart, HeartHandshake, ShieldCheck, Trophy, ArrowRight, Users, Landmark, BookOpen, Home } from "lucide-react";
 import heroAsset from "@/assets/activite-parachute-cour.jpg.asset.json";
 import ecoleAsset from "@/assets/facade-vieux-chateau.webp.asset.json";
-import logoAsset from "@/assets/logo-ecole-du-vieux-chateau.jpg.asset.json";
 
 const heroImg = heroAsset.url;
 const ecoleImg = ecoleAsset.url;
-const logoImg = logoAsset.url;
 import { ContactCta } from "@/components/page-hero";
 import { SCHOOL } from "@/lib/site";
 
@@ -84,11 +82,9 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/55 to-foreground/10" />
         <div className="absolute inset-0 flex items-center">
           <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
-            <img
-              src={logoImg}
-              alt="École privée du Vieux Château"
-              className="mb-4 h-16 w-auto rounded-xl bg-background p-1 shadow-sm sm:h-20"
-            />
+            <p className="mb-4 inline-block rounded-full bg-background/90 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-foreground shadow-sm backdrop-blur">
+              École catholique · Sarras, Ardèche
+            </p>
             <h1 className="max-w-2xl text-4xl font-semibold leading-tight text-background drop-shadow-lg sm:text-5xl lg:text-6xl">
               École du Vieux Château
             </h1>
