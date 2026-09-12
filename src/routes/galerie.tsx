@@ -94,6 +94,7 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout" | "
   { src: photoInformatique.url, alt: "Les élèves utilisent les ordinateurs de la classe", category: "Classes" },
   { src: photoTableauClasse.url, alt: "Les élèves travaillent face au tableau de la classe", category: "Classes" },
   { src: photoClasseElementaireCours.url, alt: "Cours en salle d'élémentaire, l'enseignante écrit au tableau", category: "Classes" },
+  { src: photoTravailClasseEnfants.url, alt: "Des élèves travaillent à leur bureau dans une classe lumineuse", category: "Classes" },
   { src: facadeAsset.url, alt: "La façade de l'école du Vieux Château", category: "Espaces de l'école" },
   { src: courAsset.url, alt: "La cour de récréation et son préau", category: "Espaces de l'école" },
   { src: hallAsset.url, alt: "Le hall d'entrée décoré par les élèves", category: "Espaces de l'école" },
