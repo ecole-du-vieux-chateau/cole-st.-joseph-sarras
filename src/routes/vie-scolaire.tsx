@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, ExternalLink, HandCoins, Landmark, Palette, PartyPopper, Sparkles, TreePine, Trophy, Users, UtensilsCrossed, Wrench } from "lucide-react";
-import garderieAsset from "@/assets/photo-entree-cour-flou.jpg.asset.json";
+import garderieAsset from "@/assets/salle-repos-maternelle.jpg.asset.json";
 import cantineAsset from "@/assets/cantine-ecole.jpg.asset.json";
 import sportAsset from "@/assets/cour-recreation.jpg.asset.json";
 
@@ -8,7 +8,7 @@ const garderieImg = garderieAsset.url;
 const cantineImg = cantineAsset.url;
 const sportImg = sportAsset.url;
 import qrCantineImg from "@/assets/qr-cantine.png";
-import sortieAsset from "@/assets/photo-jeux-engrenages-flou.jpg.asset.json";
+import sortieAsset from "@/assets/photo-rassemblement-cour-flou.jpg.asset.json";
 const sortieImg = sortieAsset.url;
 import { ContactCta, PageHero } from "@/components/page-hero";
 
@@ -78,7 +78,7 @@ function VieScolairePage() {
         </div>
         <img
           src={garderieImg}
-          alt="Enfants jouant ensemble dans la cour de l'école"
+          alt="Enfants jouant calmement à la garderie en fin de journée"
           width={1280}
           height={960}
           loading="lazy"
@@ -182,7 +182,7 @@ function VieScolairePage() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           <img
             src={sortieImg}
-            alt="Jeux de construction partagés sous le préau"
+            alt="Les élèves rassemblés dans la cour pour un temps collectif"
             width={1280}
             height={960}
             loading="lazy"
