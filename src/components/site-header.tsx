@@ -13,9 +13,9 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
           <img
-            src={logoAsset.url}
+            src={logoAsset}
             alt="École privée du Vieux Château"
-            className="h-12 w-auto rounded-lg"
+            className="h-14 w-auto"
           />
         </Link>
 
