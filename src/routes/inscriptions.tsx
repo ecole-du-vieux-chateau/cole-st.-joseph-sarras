@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CalendarCheck, FileText, Mail, Phone, School } from "lucide-react";
-import maternelleAsset from "@/assets/activite-parachute-cour.jpg.asset.json";
+import groupeAsset from "@/assets/photo-travail-groupe-flou.jpg.asset.json";
 
-const maternelleImg = maternelleAsset.url;
+const groupeImg = groupeAsset.url;
 import { PageHero } from "@/components/page-hero";
 import { SCHOOL } from "@/lib/site";
 
@@ -201,8 +201,8 @@ function InscriptionsPage() {
             </div>
           </div>
           <img
-            src={maternelleImg}
-            alt="Les enfants réunis autour d'un parachute coloré dans la cour de l'école"
+            src={groupeImg}
+            alt="Travail en petit groupe autour d'une table"
             width={1280}
             height={960}
             loading="lazy"
