@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { BookOpen, Church, Compass, Cross, Gift, HandHeart, HeartHandshake, Languages, ShieldCheck, Sparkles, Sprout, Users } from "lucide-react";
 import { ContactCta, PageHero } from "@/components/page-hero";
 import projetAsset from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
@@ -55,6 +55,50 @@ const AXES = [
     icon: Cross,
     title: "Les valeurs chrétiennes",
     text: "Dans l'esprit de l'Évangile, l'école vit l'accueil de tous et la solidarité : temps de partage, gestes d'attention aux autres et ouverture sur le monde.",
+  },
+];
+
+const PASTORAL_AXES = [
+  {
+    icon: HandHeart,
+    title: "Servir",
+    items: [
+      "Accueil des élèves à besoins particuliers et des familles en situation de précarité",
+      "Accompagnement dans les démarches d'aide scolaire et proposition d'aide aux devoirs",
+      "Solidarité au sein de l'équipe et temps d'échange de pratiques",
+      "Tutorat pour accueillir chaque nouveau membre de l'équipe",
+      "Développer la bienveillance : conseils d'élèves, ateliers de pédagogie coopérative",
+    ],
+  },
+  {
+    icon: HeartHandshake,
+    title: "Partager",
+    items: [
+      "Vivre les valeurs de Saint Joseph : entraide, partage, ouverture aux autres, respect, empathie",
+      "Temps communs sur le vivre ensemble et la fraternité",
+      "Actions de solidarité : collectes pour des associations (ELA, journée mondiale de la trisomie 21)",
+      "Actions de carême : partager un bol de riz pour soutenir une association",
+    ],
+  },
+  {
+    icon: Sparkles,
+    title: "Témoigner",
+    items: [
+      "Découverte des religions dans le cadre de la culture religieuse",
+      "Découverte de notre fondatrice et de Saint Joseph",
+      "Temps de culture chrétienne aux grandes fêtes liturgiques : Toussaint, Avent, Noël, Carême, Pâques, Pentecôte",
+      "Apports sur l'art, la musique et la religion",
+    ],
+  },
+  {
+    icon: Gift,
+    title: "Célébrer",
+    items: [
+      "Temps de célébration tout au long de l'année, dont la fête de Noël",
+      "Fête de Saint Joseph le 19 mars",
+      "Chorale interclasse pour apprendre les chants des célébrations",
+      "Pots de rentrée et de fin d'année partagés, fête de l'école",
+    ],
   },
 ];
 
