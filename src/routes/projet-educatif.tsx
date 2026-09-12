@@ -214,6 +214,17 @@ function ProjetEducatifPage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
+        <img
+          src={projetImg}
+          alt="Atelier créatif en maternelle avec l'enseignante"
+          width={1600}
+          height={900}
+          loading="lazy"
+          className="school-photo aspect-[16/7] w-full"
+        />
+      </section>
+
       <section className="bg-muted/60">
         <div className="mx-auto flex max-w-4xl flex-col items-center px-4 py-16 text-center sm:px-6">
           <span className="flex size-16 items-center justify-center rounded-3xl bg-primary text-primary-foreground">
@@ -280,17 +291,6 @@ function ProjetEducatifPage() {
         </div>
       </section>
 
-
-      <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
-        <img
-          src={projetImg}
-          alt="Atelier créatif en maternelle avec l'enseignante"
-          width={1600}
-          height={900}
-          loading="lazy"
-          className="school-photo aspect-[16/7] w-full"
-        />
-      </section>
 
       <ContactCta
         title="Ce projet vous parle ?"
