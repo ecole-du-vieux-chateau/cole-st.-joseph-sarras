@@ -58,33 +58,13 @@ export function SiteFooter() {
               </a>
             </li>
             <li className="border-t border-border/60 pt-3">
-              <span className="mb-2 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">Courriels</span>
-              <ul className="space-y-2">
-                {[
-                  { label: "Général", mail: "contact@ecoleprivedesarras.fr" },
-                  { label: "Cantine", mail: "cantine@ecoleprivedesarras.fr" },
-                  { label: "Maternelle", mail: "maternelle@ecoleprivedesarras.fr" },
-                  { label: "Cycle 2", mail: "cycle2@ecoleprivedesarras.fr" },
-                  { label: "Cycle 3", mail: "cycle3@ecoleprivedesarras.fr" },
-                  { label: "OGEC admin.", mail: "ogec.adm@ecoleprivedesarras.fr" },
-                  { label: "OGEC compta.", mail: "ogec.compta@ecoleprivedesarras.fr" },
-                  { label: "OGEC secrétariat", mail: "ogec.secretariat@ecoleprivedesarras.fr" },
-                  { label: "APEL", mail: "apel@ecoleprivedesarras.fr" },
-                  { label: "APEL compta.", mail: "apel.compta@ecoleprivedesarras.fr" },
-                ].map(({ label, mail }) => (
-                  <li key={mail}>
-                    <a
-                      href={`mailto:${mail}`}
-                      className="flex items-center gap-2 break-all transition-colors hover:text-foreground"
-                      title={label}
-                    >
-                      <Mail className="size-3.5 shrink-0 text-primary" aria-hidden />
-                      <span className="sr-only">{label} :</span>
-                      {mail}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              <a
+                href={SCHOOL.emailHref}
+                className="flex items-center gap-2 break-all transition-colors hover:text-foreground"
+              >
+                <Mail className="size-4 shrink-0 text-primary" aria-hidden />
+                {SCHOOL.email}
+              </a>
             </li>
           </ul>
         </div>
