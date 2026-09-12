@@ -201,8 +201,8 @@ function InscriptionsPage() {
             </div>
           </div>
           <img
-            src={maternelleImg}
-            alt="Les enfants réunis autour d'un parachute coloré dans la cour de l'école"
+            src={groupeImg}
+            alt="Travail en petit groupe autour d'une table"
             width={1280}
             height={960}
             loading="lazy"
