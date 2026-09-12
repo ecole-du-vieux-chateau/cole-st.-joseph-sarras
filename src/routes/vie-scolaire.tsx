@@ -78,7 +78,7 @@ function VieScolairePage() {
         </div>
         <img
           src={garderieImg}
-          alt="Enfants jouant calmement à la garderie en fin de journée"
+          alt="Enfants jouant ensemble dans la cour de l'école"
           width={1280}
           height={960}
           loading="lazy"
