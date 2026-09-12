@@ -66,7 +66,7 @@ export const Route = createFileRoute("/galerie")({
   component: GaleriePage,
 });
 
-const CATEGORIES = ["Tout", "Vie de l'école", "Classes", "Activités", "Sorties scolaires", "Fêtes et événements"] as const;
+const CATEGORIES = ["Tout", "Vie de l'école", "Classes", "Activités"] as const;
 
 type Category = (typeof CATEGORIES)[number];
 

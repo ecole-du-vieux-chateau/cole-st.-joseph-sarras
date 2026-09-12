@@ -46,9 +46,9 @@ export function SiteFooter() {
               </span>
             </li>
             <li>
-              <a href={SCHOOL.phoneHref} className="flex items-center gap-2.5 transition-colors hover:text-foreground">
+              <a href={SCHOOL.mobileHref} className="flex items-center gap-2.5 transition-colors hover:text-foreground">
                 <Phone className="size-4 shrink-0 text-primary" aria-hidden />
-                {SCHOOL.phone}
+                {SCHOOL.mobile}
               </a>
             </li>
             <li>

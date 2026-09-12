@@ -185,11 +185,11 @@ function InscriptionsPage() {
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href={SCHOOL.phoneHref}
+                href={SCHOOL.mobileHref}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground transition-opacity hover:opacity-90"
               >
                 <Phone className="size-4" aria-hidden />
-                {SCHOOL.phone}
+                {SCHOOL.mobile}
               </a>
               <a
                 href={SCHOOL.emailHref}

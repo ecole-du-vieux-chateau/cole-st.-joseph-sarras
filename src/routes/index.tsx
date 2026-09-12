@@ -93,7 +93,7 @@ function Index() {
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
-                href={SCHOOL.phoneHref}
+                href={SCHOOL.mobileHref}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-background px-7 py-3.5 text-base font-semibold text-foreground transition-transform hover:scale-[1.02]"
               >
                 Demander un rendez-vous
