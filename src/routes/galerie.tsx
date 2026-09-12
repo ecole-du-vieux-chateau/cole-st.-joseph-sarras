@@ -44,6 +44,20 @@ import photoTravailCollectif from "@/assets/photo-travail-collectif-flou.jpg.ass
 import photoActiviteMaternelleTable from "@/assets/photo-activite-maternelle-table-flou.jpg.asset.json";
 import photoActiviteManuelle from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
 import photoCollageMaternelle from "@/assets/photo-collage-maternelle-flou.jpg.asset.json";
+import sortieRandonneeRiviere from "@/assets/sortie-randonnee-riviere.jpg.asset.json";
+import sortieRandonneeChemin from "@/assets/sortie-randonnee-chemin.jpg.asset.json";
+import photoSortieDessinNature from "@/assets/photo-sortie-dessin-nature-flou.jpg.asset.json";
+import photoSortieParcoursNature from "@/assets/photo-sortie-parcours-nature-flou.jpg.asset.json";
+import photoSortieJeuxNature from "@/assets/photo-sortie-jeux-nature-flou.jpg.asset.json";
+import photoSortieDecouverteNature from "@/assets/photo-sortie-decouverte-nature-flou.jpg.asset.json";
+import photoActiviteFresqueCour from "@/assets/photo-activite-fresque-cour-flou.jpg.asset.json";
+import photoSortieRepas from "@/assets/photo-sortie-repas-flou.jpg.asset.json";
+import photoActiviteCercle from "@/assets/photo-activite-cercle-flou.jpg.asset.json";
+import photoSortieSecuriteRoutiere from "@/assets/photo-sortie-securite-routiere-flou.jpg.asset.json";
+import photoSortieEglise from "@/assets/photo-sortie-eglise-flou.jpg.asset.json";
+import photoSortieCommemoration from "@/assets/photo-sortie-commemoration-flou.jpg.asset.json";
+import photoSortiePiscineToboggan from "@/assets/photo-sortie-piscine-toboggan-flou.jpg.asset.json";
+import photoSortiePiscineGroupe from "@/assets/photo-sortie-piscine-groupe-flou.jpg.asset.json";
 
 import { PageHero } from "@/components/page-hero";
 
@@ -66,7 +80,7 @@ export const Route = createFileRoute("/galerie")({
   component: GaleriePage,
 });
 
-const CATEGORIES = ["Tout", "Espaces de l'école", "Classes", "Activités", "Vidéo"] as const;
+const CATEGORIES = ["Tout", "Espaces de l'école", "Classes", "Activités", "Sorties scolaires", "Vidéo"] as const;
 
 type Category = (typeof CATEGORIES)[number];
 
@@ -115,7 +129,20 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout" | "
   { src: photoActiviteMaternelleTable.url, alt: "Activité de collage en maternelle avec l'enseignante", category: "Activités" },
   { src: photoActiviteManuelle.url, alt: "Atelier manuel autour des tables de maternelle", category: "Classes" },
   { src: photoCollageMaternelle.url, alt: "Les enfants collent des bandes de papier de couleur", category: "Activités" },
-  
+  { src: photoActiviteFresqueCour.url, alt: "Enfants rassemblés autour de grands dessins à la craie dans la cour", category: "Activités" },
+  { src: photoActiviteCercle.url, alt: "Enfants assis en cercle et jouant à se cacher les yeux", category: "Activités" },
+  { src: sortieRandonneeRiviere.url, alt: "Groupe d'enfants en randonnée sur un sentier en pleine nature", category: "Sorties scolaires" },
+  { src: sortieRandonneeChemin.url, alt: "Enfants avec leurs sacs à dos sur un chemin forestier", category: "Sorties scolaires" },
+  { src: photoSortieDessinNature.url, alt: "Enfants dessinant dans l'herbe pendant une sortie en plein air", category: "Sorties scolaires" },
+  { src: photoSortieParcoursNature.url, alt: "Enfants suivant un parcours avec des cerceaux dans un champ", category: "Sorties scolaires" },
+  { src: photoSortieJeuxNature.url, alt: "Parcours de motricité en plein air avec des cerceaux colorés", category: "Sorties scolaires" },
+  { src: photoSortieDecouverteNature.url, alt: "Découverte de la nature autour de branchages dans une prairie", category: "Sorties scolaires" },
+  { src: photoSortieRepas.url, alt: "Repas partagé par les enfants dans une salle décorée", category: "Sorties scolaires" },
+  { src: photoSortieSecuriteRoutiere.url, alt: "Parcours de sécurité routière à vélo dans un gymnase", category: "Sorties scolaires" },
+  { src: photoSortieEglise.url, alt: "Enfants et adultes réunis dans une église lors d'une célébration", category: "Sorties scolaires" },
+  { src: photoSortieCommemoration.url, alt: "Participation des enfants à une commémoration au monument aux morts", category: "Sorties scolaires" },
+  { src: photoSortiePiscineToboggan.url, alt: "Descente du toboggan aquatique pendant une sortie à la piscine", category: "Sorties scolaires" },
+  { src: photoSortiePiscineGroupe.url, alt: "Enfants écoutant un maître-nageur au bord de la piscine", category: "Sorties scolaires" },
 ];
 
 function GaleriePage() {
