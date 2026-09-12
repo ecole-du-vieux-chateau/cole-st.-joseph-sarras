@@ -133,8 +133,8 @@ function Index() {
             </Link>
           </div>
           <img
-            src={heroImg}
-            alt="La façade ensoleillée de l'École du Vieux Château"
+            src={classeImg}
+            alt="Des élèves travaillant à leur bureau dans une classe colorée"
             width={1024}
             height={768}
             loading="lazy"
