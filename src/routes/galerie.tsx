@@ -23,7 +23,7 @@ import facadeVieuxChateauAsset from "@/assets/facade-vieux-chateau.webp.asset.js
 import photoAteliersMaternelle from "@/assets/photo-ateliers-maternelle-flou.jpg.asset.json";
 import photoRegroupement from "@/assets/photo-temps-de-regroupement-flou.jpg.asset.json";
 import photoPeintureClasse from "@/assets/photo-peinture-classe-flou.jpg.asset.json";
-
+import photoTravailClasseEnfants from "@/assets/photo-travail-classe-enfants.jpg.asset.json";
 
 import photoLectureCour from "@/assets/photo-lecture-cour-flou.jpg.asset.json";
 import photoConstructionCour from "@/assets/photo-construction-cour-flou.jpg.asset.json";
@@ -94,6 +94,7 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout" | "
   { src: photoInformatique.url, alt: "Les élèves utilisent les ordinateurs de la classe", category: "Classes" },
   { src: photoTableauClasse.url, alt: "Les élèves travaillent face au tableau de la classe", category: "Classes" },
   { src: photoClasseElementaireCours.url, alt: "Cours en salle d'élémentaire, l'enseignante écrit au tableau", category: "Classes" },
+  { src: photoTravailClasseEnfants.url, alt: "Des élèves travaillent à leur bureau dans une classe lumineuse", category: "Classes" },
   { src: facadeAsset.url, alt: "La façade de l'école du Vieux Château", category: "Espaces de l'école" },
   { src: courAsset.url, alt: "La cour de récréation et son préau", category: "Espaces de l'école" },
   { src: hallAsset.url, alt: "Le hall d'entrée décoré par les élèves", category: "Espaces de l'école" },
