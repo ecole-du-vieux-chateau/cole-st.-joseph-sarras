@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, ExternalLink, HandCoins, Landmark, Palette, PartyPopper, Sparkles, TreePine, Trophy, Users, UtensilsCrossed, Wrench } from "lucide-react";
-import garderieAsset from "@/assets/salle-repos-maternelle.jpg.asset.json";
+import garderieAsset from "@/assets/photo-entree-cour-flou.jpg.asset.json";
 import cantineAsset from "@/assets/cantine-ecole.jpg.asset.json";
 import sportAsset from "@/assets/cour-recreation.jpg.asset.json";
 
@@ -78,7 +78,7 @@ function VieScolairePage() {
         </div>
         <img
           src={garderieImg}
-          alt="Enfants jouant calmement à la garderie en fin de journée"
+          alt="Enfants jouant ensemble dans la cour de l'école"
           width={1280}
           height={960}
           loading="lazy"
