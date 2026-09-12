@@ -66,11 +66,12 @@ export const Route = createFileRoute("/galerie")({
   component: GaleriePage,
 });
 
-const CATEGORIES = ["Tout", "Espaces de l'école", "Classes", "Activités"] as const;
+const CATEGORIES = ["Tout", "Espaces de l'école", "Classes", "Activités", "Vidéo"] as const;
 
 type Category = (typeof CATEGORIES)[number];
 
 const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[] = [
+  { src: "", alt: "Visite virtuelle de l'École du Vieux Château", category: "Vidéo" },
   { src: facadeVieuxChateauAsset.url, alt: "La façade en pierre de l'École du Vieux Château", category: "Espaces de l'école" },
   { src: activiteParachuteAsset.url, alt: "Les enfants réunis autour d'un parachute coloré dans la cour", category: "Activités" },
   { src: photoAteliersMaternelle.url, alt: "Ateliers de manipulation autour des tables en maternelle", category: "Activités" },
