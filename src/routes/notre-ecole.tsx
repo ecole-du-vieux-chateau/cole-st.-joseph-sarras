@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BookOpenCheck, GraduationCap, Heart, Landmark, Users } from "lucide-react";
 import ecoleAsset from "@/assets/facade-ecole.jpg.asset.json";
-import heroAsset from "@/assets/cour-recreation.jpg.asset.json";
+import heroAsset from "@/assets/activite-parachute-cour.jpg.asset.json";
 
 const ecoleImg = ecoleAsset.url;
 const heroImg = heroAsset.url;
@@ -120,7 +120,7 @@ function NotreEcolePage() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
           <img
             src={heroImg}
-            alt="Les élèves de l'école réunis dans la cour ensoleillée"
+            alt="Les enfants réunis autour d'un parachute coloré dans la cour de l'école"
             width={1920}
             height={1080}
             loading="lazy"
@@ -145,8 +145,8 @@ function NotreEcolePage() {
 
 
       <section className="bg-secondary/40">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <div className="max-w-3xl">
+        <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6">
+          <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-semibold leading-tight">L'histoire de l'école</h2>
             <p className="mt-5 leading-relaxed text-muted-foreground">
               Les bâtiments de notre école font partie de l'enceinte du château de Sarras,
