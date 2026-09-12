@@ -1,7 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { GraduationCap, Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
+import logoAsset from "@/assets/logo-ecole-du-vieux-chateau.jpg.asset.json";
 import { NAV_LINKS, SCHOOL } from "@/lib/site";
+
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
