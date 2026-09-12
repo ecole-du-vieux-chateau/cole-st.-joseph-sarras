@@ -127,10 +127,7 @@ function ProjetEducatifPage() {
       </section>
 
       <section className="bg-muted/60">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[auto_1fr]">
-          <span className="flex size-16 items-center justify-center rounded-3xl bg-primary text-primary-foreground">
-            <BookOpen className="size-8" aria-hidden />
-          </span>
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_auto]">
           <div>
             <p className="text-right text-sm font-semibold uppercase tracking-widest text-primary">
               Projet d'école 2026-2027
@@ -147,6 +144,9 @@ function ProjetEducatifPage() {
               parents et les familles.
             </p>
           </div>
+          <span className="flex size-16 items-center justify-center rounded-3xl bg-primary text-primary-foreground">
+            <BookOpen className="size-8" aria-hidden />
+          </span>
         </div>
       </section>
 
