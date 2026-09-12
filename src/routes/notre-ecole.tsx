@@ -2,11 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { BookOpenCheck, GraduationCap, Heart, Landmark, Users } from "lucide-react";
 import ecoleAsset from "@/assets/facade-ecole.jpg.asset.json";
 import heroAsset from "@/assets/cour-recreation.jpg.asset.json";
-import accueilAsset from "@/assets/photo-rassemblement-cour-flou.jpg.asset.json";
 
 const ecoleImg = ecoleAsset.url;
 const heroImg = heroAsset.url;
-const accueilImg = accueilAsset.url;
 import { ContactCta, PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/notre-ecole")({
@@ -87,17 +85,6 @@ function NotreEcolePage() {
         title="Une école catholique à taille humaine"
         subtitle="Ancrée dans la vie du village de Sarras, l'École du Vieux Château conjugue exigence éducative et climat familial, pour que chaque enfant apprenne en confiance."
       />
-
-      <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
-        <img
-          src={accueilImg}
-          alt="Temps de regroupement des enfants avec leur enseignante en maternelle"
-          width={1600}
-          height={900}
-          loading="lazy"
-          className="school-photo aspect-[16/7] w-full"
-        />
-      </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
