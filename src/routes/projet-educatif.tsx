@@ -105,7 +105,7 @@ function ProjetEducatifPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="max-w-3xl">
+        <div>
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">
             Le projet d'établissement 2026 – 2031
           </p>
