@@ -2,9 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { BookOpenCheck, GraduationCap, Heart, Landmark, Users } from "lucide-react";
 import ecoleAsset from "@/assets/facade-ecole.jpg.asset.json";
 import heroAsset from "@/assets/activite-parachute-cour.jpg.asset.json";
+import histoireAsset from "@/assets/ecole-histoire-archive.jpg.asset.json";
 
 const ecoleImg = ecoleAsset.url;
 const heroImg = heroAsset.url;
+const histoireImg = histoireAsset.url;
 import { ContactCta, PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/notre-ecole")({
@@ -148,7 +150,15 @@ function NotreEcolePage() {
         <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-semibold leading-tight">L'histoire de l'école</h2>
-            <p className="mt-5 leading-relaxed text-muted-foreground">
+            <img
+              src={histoireImg}
+              alt="Photographie d'archive du château de Sarras avec des enfants devant l'entrée"
+              width={1152}
+              height={768}
+              loading="lazy"
+              className="school-photo mx-auto mt-8 aspect-[3/2] w-full max-w-2xl"
+            />
+            <p className="mt-8 leading-relaxed text-muted-foreground">
               Les bâtiments de notre école font partie de l'enceinte du château de Sarras,
               construit au Moyen Âge par les Pagan de Mahun, seigneurs de Vocance, Satillieu,
               Ozon, Saint-Julien-Molin-Molette, Argental et La Faye. Détruit pendant les
