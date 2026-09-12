@@ -116,10 +116,10 @@ function VieScolairePage() {
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Les inscriptions et les règlements de cantine s'effectuent en ligne auprès de{" "}
               <a
-                href="mailto:cantine.ecoleduvieuxchateau@gmail.com"
+                href="mailto:cantine@ecoleprivedesarras.fr"
                 className="font-semibold text-primary underline-offset-4 hover:underline"
               >
-                cantine.ecoleduvieuxchateau@gmail.com
+                cantine@ecoleprivedesarras.fr
               </a>
               . Pensez à désinscrire votre enfant en cas de sortie scolaire. Pour les projets
               d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la
@@ -239,8 +239,8 @@ function VieScolairePage() {
             </ul>
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Envie de donner un coup de main, même une heure par mois ? Écrivez à{" "}
-              <a href="mailto:adm.ogecduvieuxchateau07@gmail.com" className="font-semibold text-primary underline-offset-4 hover:underline">
-                adm.ogecduvieuxchateau07@gmail.com
+              <a href="mailto:ogec.adm@ecoleprivedesarras.fr" className="font-semibold text-primary underline-offset-4 hover:underline">
+                ogec.adm@ecoleprivedesarras.fr
               </a>
             </p>
           </article>
@@ -259,8 +259,8 @@ function VieScolairePage() {
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Café de bienvenue le jour de la rentrée, manifestations et temps conviviaux :
               toutes les bonnes volontés et les talents cachés sont les bienvenus. Contact :{" "}
-              <a href="mailto:apel.sarras@gmail.com" className="font-semibold text-primary underline-offset-4 hover:underline">
-                apel.sarras@gmail.com
+              <a href="mailto:apel@ecoleprivedesarras.fr" className="font-semibold text-primary underline-offset-4 hover:underline">
+                apel@ecoleprivedesarras.fr
               </a>
             </p>
           </article>
@@ -275,36 +275,36 @@ function VieScolairePage() {
             <div>
               <p className="font-semibold text-foreground">Enseignement et absences</p>
               <p className="mt-1">Projet pédagogique, suivi de votre enfant, absences.</p>
-              <a href="mailto:ecoleduvieuxchateau.sarras@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
-                ecoleduvieuxchateau.sarras@gmail.com
+              <a href="mailto:contact@ecoleprivedesarras.fr" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                contact@ecoleprivedesarras.fr
               </a>
             </div>
             <div>
               <p className="font-semibold text-foreground">Cantine</p>
               <p className="mt-1">Inscriptions, menus et questions sur les repas.</p>
-              <a href="mailto:cantine.ecoleduvieuxchateau@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
-                cantine.ecoleduvieuxchateau@gmail.com
+              <a href="mailto:cantine@ecoleprivedesarras.fr" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                cantine@ecoleprivedesarras.fr
               </a>
             </div>
             <div>
               <p className="font-semibold text-foreground">Factures</p>
               <p className="mt-1">Une question sur votre facture ?</p>
-              <a href="mailto:ogec.sarras.comptabilite@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
-                ogec.sarras.comptabilite@gmail.com
+              <a href="mailto:ogec.compta@ecoleprivedesarras.fr" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                ogec.compta@ecoleprivedesarras.fr
               </a>
             </div>
             <div>
               <p className="font-semibold text-foreground">Vie de l'école (OGEC)</p>
               <p className="mt-1">Idées à partager, coup de main aux bénévoles.</p>
-              <a href="mailto:adm.ogecduvieuxchateau07@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
-                adm.ogecduvieuxchateau07@gmail.com
+              <a href="mailto:ogec.adm@ecoleprivedesarras.fr" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                ogec.adm@ecoleprivedesarras.fr
               </a>
             </div>
             <div>
               <p className="font-semibold text-foreground">Événements (APEL)</p>
               <p className="mt-1">Kermesse, marché de Noël, loto… ou envie d'aider.</p>
-              <a href="mailto:apel.sarras@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
-                apel.sarras@gmail.com
+              <a href="mailto:apel@ecoleprivedesarras.fr" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                apel@ecoleprivedesarras.fr
               </a>
             </div>
             <div>
