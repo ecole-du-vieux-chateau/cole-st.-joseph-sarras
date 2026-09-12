@@ -23,7 +23,7 @@ import facadeVieuxChateauAsset from "@/assets/facade-vieux-chateau.webp.asset.js
 import photoAteliersMaternelle from "@/assets/photo-ateliers-maternelle-flou.jpg.asset.json";
 import photoRegroupement from "@/assets/photo-temps-de-regroupement-flou.jpg.asset.json";
 import photoPeintureClasse from "@/assets/photo-peinture-classe-flou.jpg.asset.json";
-
+import photoTravailClasseEnfants from "@/assets/photo-travail-classe-enfants.jpg.asset.json";
 
 import photoLectureCour from "@/assets/photo-lecture-cour-flou.jpg.asset.json";
 import photoConstructionCour from "@/assets/photo-construction-cour-flou.jpg.asset.json";
@@ -43,7 +43,7 @@ import photoTableauClasse from "@/assets/photo-tableau-classe-flou.jpg.asset.jso
 import photoTravailCollectif from "@/assets/photo-travail-collectif-flou.jpg.asset.json";
 import photoActiviteMaternelleTable from "@/assets/photo-activite-maternelle-table-flou.jpg.asset.json";
 import photoActiviteManuelle from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
-import photoCollageMaternelle from "@/assets/photo-collage-maternelle-flou.jpg.asset.json";
+import photoCollageMaternelle from "@/assets/photo-collage-maternelle-flou.jpg.asset.json;
 
 import { PageHero } from "@/components/page-hero";
 

@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HandHeart, HeartHandshake, ShieldCheck, Trophy, ArrowRight, Users, Landmark, BookOpen, Home } from "lucide-react";
-import heroAsset from "@/assets/photo-recreation-generale-flou.jpg.asset.json";
+import heroAsset from "@/assets/photo-travail-classe-enfants.jpg.asset.json";
 import ecoleAsset from "@/assets/entree-ecole-couleurs.png.asset.json";
 
 const heroImg = heroAsset.url;
