@@ -23,7 +23,7 @@ import facadeVieuxChateauAsset from "@/assets/facade-vieux-chateau.webp.asset.js
 import photoAteliersMaternelle from "@/assets/photo-ateliers-maternelle-flou.jpg.asset.json";
 import photoRegroupement from "@/assets/photo-temps-de-regroupement-flou.jpg.asset.json";
 import photoPeintureClasse from "@/assets/photo-peinture-classe-flou.jpg.asset.json";
-import photoCourVelo from "@/assets/photo-cour-velo-flou.jpg.asset.json";
+
 
 import photoLectureCour from "@/assets/photo-lecture-cour-flou.jpg.asset.json";
 import photoConstructionCour from "@/assets/photo-construction-cour-flou.jpg.asset.json";
@@ -79,7 +79,7 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[
   
   { src: photoConstructionCour.url, alt: "Construction à plusieurs avec des pièces en mousse dans la cour", category: "Activités" },
   { src: photoLectureCour.url, alt: "Un élève lit un magazine assis sur la marche de la cour", category: "Vie de l'école" },
-  { src: photoCourVelo.url, alt: "Draisienne devant la fresque de la cour de récréation", category: "Vie de l'école" },
+  
   { src: photoBasketCour.url, alt: "Partie de basket dans la cour de récréation", category: "Vie de l'école" },
   { src: photoPorteursCour.url, alt: "Porteurs et draisiennes le long du préau de maternelle", category: "Vie de l'école" },
   
