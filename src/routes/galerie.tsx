@@ -130,7 +130,7 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout" | "
   { src: photoActiviteManuelle.url, alt: "Atelier manuel autour des tables de maternelle", category: "Classes" },
   { src: photoCollageMaternelle.url, alt: "Les enfants collent des bandes de papier de couleur", category: "Activités" },
   { src: photoActiviteFresqueCour.url, alt: "Enfants rassemblés autour de grands dessins à la craie dans la cour", category: "Activités" },
-  { src: photoActiviteCercle.url, alt: "Enfants assis en cercle et jouant à se cacher les yeux", category: "Activités" },
+  { src: photoActiviteCercle.url, alt: "Journée des chaussettes dépareillées : les enfants assis en cercle", category: "Activités" },
   { src: sortieRandonneeRiviere.url, alt: "Groupe d'enfants en randonnée sur un sentier en pleine nature", category: "Sorties scolaires" },
   { src: sortieRandonneeChemin.url, alt: "Enfants avec leurs sacs à dos sur un chemin forestier", category: "Sorties scolaires" },
   { src: photoSortieDessinNature.url, alt: "Enfants dessinant dans l'herbe pendant une sortie en plein air", category: "Sorties scolaires" },
