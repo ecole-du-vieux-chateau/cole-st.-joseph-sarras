@@ -84,11 +84,6 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/55 to-foreground/10" />
         <div className="absolute inset-0 flex items-center">
           <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
-            <img
-              src={logoImg}
-              alt="École privée du Vieux Château"
-              className="mb-4 h-16 w-auto rounded-xl bg-background p-1 shadow-sm sm:h-20"
-            />
             <h1 className="max-w-2xl text-4xl font-semibold leading-tight text-background drop-shadow-lg sm:text-5xl lg:text-6xl">
               École du Vieux Château
             </h1>

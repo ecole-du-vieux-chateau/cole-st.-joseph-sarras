@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
-import logoAsset from "@/assets/logo-ecole-du-vieux-chateau.jpg.asset.json";
+import logoAsset from "@/assets/logo-ecole-du-vieux-chateau-transparent.png";
 import { NAV_LINKS, SCHOOL } from "@/lib/site";
 
 
