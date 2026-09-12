@@ -2,9 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { BookOpenCheck, GraduationCap, Heart, Landmark, Users } from "lucide-react";
 import ecoleAsset from "@/assets/facade-ecole.jpg.asset.json";
 import heroAsset from "@/assets/cour-recreation.jpg.asset.json";
+import accueilAsset from "@/assets/photo-temps-de-regroupement-flou.jpg.asset.json";
 
 const ecoleImg = ecoleAsset.url;
 const heroImg = heroAsset.url;
+const accueilImg = accueilAsset.url;
 import { ContactCta, PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/notre-ecole")({
@@ -86,6 +88,17 @@ function NotreEcolePage() {
         subtitle="Ancrée dans la vie du village de Sarras, l'École du Vieux Château conjugue exigence éducative et climat familial, pour que chaque enfant apprenne en confiance."
       />
 
+      <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
+        <img
+          src={accueilImg}
+          alt="Temps de regroupement des enfants avec leur enseignante en maternelle"
+          width={1600}
+          height={900}
+          loading="lazy"
+          className="school-photo aspect-[16/7] w-full"
+        />
+      </section>
+
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {PILLARS.map((pillar) => (
@@ -127,16 +140,6 @@ function NotreEcolePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <img
-          src={ecoleImg}
-          alt="La façade en pierre de l'école et sa cour plantée d'arbres"
-          width={1408}
-          height={1024}
-          loading="lazy"
-          className="school-photo aspect-[16/7] w-full"
-        />
-      </section>
 
       <section className="bg-secondary/40">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -189,6 +192,17 @@ function NotreEcolePage() {
             vie de l'école tout au long de l'année.
           </p>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
+        <img
+          src={ecoleImg}
+          alt="La façade en pierre de l'école et sa cour plantée d'arbres"
+          width={1408}
+          height={1024}
+          loading="lazy"
+          className="school-photo aspect-[16/7] w-full"
+        />
       </section>
 
       <ContactCta

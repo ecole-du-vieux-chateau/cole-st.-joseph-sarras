@@ -24,10 +24,10 @@ export function ContactCta({ title, text }: { title: string; text: string }) {
         <p className="mx-auto mt-3 max-w-xl text-primary-foreground/85">{text}</p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
-            href="tel:+33475231587"
+            href="tel:+33630159334"
             className="inline-flex items-center justify-center rounded-full bg-background px-6 py-3 text-sm font-semibold text-foreground transition-transform hover:scale-[1.02]"
           >
-            Appeler l'école · 04 75 23 15 87
+            Appeler l'école · 06 30 15 93 34
           </a>
           <a
             href="mailto:ecoleduvieuxchateau.sarras@gmail.com"

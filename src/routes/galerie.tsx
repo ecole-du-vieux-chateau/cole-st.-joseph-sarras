@@ -6,10 +6,6 @@ import courAsset from "@/assets/cour-recreation.jpg.asset.json";
 import hallAsset from "@/assets/hall-entree.jpg.asset.json";
 import salleActivitesAsset from "@/assets/salle-activites.jpg.asset.json";
 import tableauClasseAsset from "@/assets/tableau-classe.jpg.asset.json";
-import sortieNatureImg from "@/assets/sortie-nature.jpg";
-import sortieChateauImg from "@/assets/sortie-chateau.jpg";
-import atelierImg from "@/assets/atelier-art.jpg";
-import feteImg from "@/assets/fete.jpg";
 import classeElem1Asset from "@/assets/classe-elementaire-1.jpg.asset.json";
 import classeElem2Asset from "@/assets/classe-elementaire-2.jpg.asset.json";
 import classeElem3Asset from "@/assets/classe-elementaire-3.jpg.asset.json";
@@ -45,6 +41,10 @@ import photoTravailGroupe from "@/assets/photo-travail-groupe-flou.jpg.asset.jso
 import photoAccompagnementTable from "@/assets/photo-accompagnement-table-flou.jpg.asset.json";
 import photoTableauClasse from "@/assets/photo-tableau-classe-flou.jpg.asset.json";
 import photoTravailCollectif from "@/assets/photo-travail-collectif-flou.jpg.asset.json";
+import photoActiviteMaternelleTable from "@/assets/photo-activite-maternelle-table-flou.jpg.asset.json";
+import photoActiviteManuelle from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
+import photoCollageMaternelle from "@/assets/photo-collage-maternelle-flou.jpg.asset.json";
+import photoElevesTables from "@/assets/photo-eleves-tables-flou.jpg.asset.json";
 import { PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/galerie")({
@@ -66,7 +66,7 @@ export const Route = createFileRoute("/galerie")({
   component: GaleriePage,
 });
 
-const CATEGORIES = ["Tout", "Vie de l'école", "Classes", "Activités", "Sorties scolaires", "Fêtes et événements"] as const;
+const CATEGORIES = ["Tout", "Vie de l'école", "Classes", "Activités"] as const;
 
 type Category = (typeof CATEGORIES)[number];
 
@@ -111,10 +111,10 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[
   { src: classeElem1Asset.url, alt: "Salle de classe élémentaire avec bureaux et tableau", category: "Classes" },
   { src: classeElem2Asset.url, alt: "Classe élémentaire lumineuse et organisée", category: "Classes" },
   { src: classeElem3Asset.url, alt: "Espace de travail des cycles 2 et 3", category: "Classes" },
-  { src: atelierImg, alt: "Atelier de peinture collective", category: "Activités" },
-  { src: sortieNatureImg, alt: "Sortie nature au bord de la rivière", category: "Sorties scolaires" },
-  { src: sortieChateauImg, alt: "Visite éducative d'un château", category: "Sorties scolaires" },
-  { src: feteImg, alt: "Spectacle de fin d'année dans la cour", category: "Fêtes et événements" },
+  { src: photoActiviteMaternelleTable.url, alt: "Activité de collage en maternelle avec l'enseignante", category: "Activités" },
+  { src: photoActiviteManuelle.url, alt: "Atelier manuel autour des tables de maternelle", category: "Activités" },
+  { src: photoCollageMaternelle.url, alt: "Les enfants collent des bandes de papier de couleur", category: "Activités" },
+  { src: photoElevesTables.url, alt: "Élèves concentrés sur leur travail individuel", category: "Classes" },
 ];
 
 function GaleriePage() {

@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BookOpen, Compass, Cross, HandHeart, HeartHandshake, ShieldCheck, Sprout, Users } from "lucide-react";
 import { ContactCta, PageHero } from "@/components/page-hero";
+import projetAsset from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
+
+const projetImg = projetAsset.url;
 
 export const Route = createFileRoute("/projet-educatif")({
   head: () => ({
@@ -113,6 +116,17 @@ function ProjetEducatifPage() {
             L'esprit de l'École du Vieux Château
           </p>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
+        <img
+          src={projetImg}
+          alt="Atelier créatif en maternelle avec l'enseignante"
+          width={1600}
+          height={900}
+          loading="lazy"
+          className="school-photo aspect-[16/7] w-full"
+        />
       </section>
 
       <ContactCta

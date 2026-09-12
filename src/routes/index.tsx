@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HandHeart, HeartHandshake, ShieldCheck, Trophy, ArrowRight, Users, Landmark, BookOpen, Home } from "lucide-react";
-import heroAsset from "@/assets/activite-parachute-cour.jpg.asset.json";
-import ecoleAsset from "@/assets/facade-vieux-chateau.webp.asset.json";
+import heroAsset from "@/assets/photo-recreation-generale-flou.jpg.asset.json";
+import ecoleAsset from "@/assets/entree-ecole-couleurs.png.asset.json";
 
 const heroImg = heroAsset.url;
 const ecoleImg = ecoleAsset.url;
@@ -74,10 +74,10 @@ function Index() {
       <section className="relative">
         <img
           src={heroImg}
-          alt="Les enfants réunis autour d'un parachute coloré dans la cour de l'école"
+          alt="La cour de récréation de l'école animée par les enfants"
           width={1024}
           height={768}
-          className="h-[70vh] min-h-[520px] w-full bg-muted object-cover object-center saturate-[.94] contrast-[1.02]"
+          className="h-[70vh] min-h-[520px] w-full bg-muted object-cover object-bottom saturate-[.94] contrast-[1.02]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/55 to-foreground/10" />
         <div className="absolute inset-0 flex items-center">
@@ -93,7 +93,7 @@ function Index() {
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
-                href={SCHOOL.phoneHref}
+                href={SCHOOL.mobileHref}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-background px-7 py-3.5 text-base font-semibold text-foreground transition-transform hover:scale-[1.02]"
               >
                 Demander un rendez-vous
@@ -134,7 +134,7 @@ function Index() {
           </div>
           <img
             src={ecoleImg}
-            alt="La façade en pierre et l'entrée de l'école du Vieux Château"
+            alt="L'entrée de l'École du Vieux Château et sa façade en pierre aux volets verts"
             width={768}
             height={920}
             loading="lazy"

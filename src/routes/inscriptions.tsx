@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CalendarCheck, FileText, Mail, Phone, School } from "lucide-react";
-import maternelleAsset from "@/assets/classe-maternelle-2.jpg.asset.json";
+import maternelleAsset from "@/assets/activite-parachute-cour.jpg.asset.json";
 
 const maternelleImg = maternelleAsset.url;
 import { PageHero } from "@/components/page-hero";
@@ -185,11 +185,11 @@ function InscriptionsPage() {
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href={SCHOOL.phoneHref}
+                href={SCHOOL.mobileHref}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground transition-opacity hover:opacity-90"
               >
                 <Phone className="size-4" aria-hidden />
-                {SCHOOL.phone}
+                {SCHOOL.mobile}
               </a>
               <a
                 href={SCHOOL.emailHref}
@@ -202,7 +202,7 @@ function InscriptionsPage() {
           </div>
           <img
             src={maternelleImg}
-            alt="Enfants de maternelle en activité dans leur classe"
+            alt="Les enfants réunis autour d'un parachute coloré dans la cour de l'école"
             width={1280}
             height={960}
             loading="lazy"

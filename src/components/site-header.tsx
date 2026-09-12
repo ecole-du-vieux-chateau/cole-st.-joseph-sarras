@@ -10,12 +10,12 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
+      <div className="mx-auto flex h-24 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
           <img
             src={logoAsset}
             alt="École privée du Vieux Château"
-            className="h-14 w-auto"
+            className="h-20 w-auto"
           />
         </Link>
 
@@ -33,11 +33,11 @@ export function SiteHeader() {
             </Link>
           ))}
           <a
-            href={SCHOOL.phoneHref}
+            href={SCHOOL.mobileHref}
             className="ml-2 inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
           >
             <Phone className="size-4" aria-hidden />
-            {SCHOOL.phone}
+            {SCHOOL.mobile}
           </a>
         </nav>
 
@@ -70,11 +70,11 @@ export function SiteHeader() {
             ))}
             <li>
               <a
-                href={SCHOOL.phoneHref}
+                href={SCHOOL.mobileHref}
                 className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-base font-semibold text-primary-foreground"
               >
                 <Phone className="size-4" aria-hidden />
-                {SCHOOL.phone}
+                {SCHOOL.mobile}
               </a>
             </li>
           </ul>
