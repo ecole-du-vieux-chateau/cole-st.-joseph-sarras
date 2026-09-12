@@ -43,7 +43,7 @@ import photoTableauClasse from "@/assets/photo-tableau-classe-flou.jpg.asset.jso
 import photoTravailCollectif from "@/assets/photo-travail-collectif-flou.jpg.asset.json";
 import photoActiviteMaternelleTable from "@/assets/photo-activite-maternelle-table-flou.jpg.asset.json";
 import photoActiviteManuelle from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
-import photoCollageMaternelle from "@/assets/photo-collage-maternelle-flou.jpg.asset.json;
+import photoCollageMaternelle from "@/assets/photo-collage-maternelle-flou.jpg.asset.json";
 
 import { PageHero } from "@/components/page-hero";
 
