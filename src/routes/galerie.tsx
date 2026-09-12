@@ -70,8 +70,7 @@ const CATEGORIES = ["Tout", "Espaces de l'école", "Classes", "Activités", "Vid
 
 type Category = (typeof CATEGORIES)[number];
 
-const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[] = [
-  { src: "", alt: "Visite virtuelle de l'École du Vieux Château", category: "Vidéo" },
+const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout" | "Vidéo"> }[] = [
   { src: facadeVieuxChateauAsset.url, alt: "La façade en pierre de l'École du Vieux Château", category: "Espaces de l'école" },
   { src: activiteParachuteAsset.url, alt: "Les enfants réunis autour d'un parachute coloré dans la cour", category: "Activités" },
   { src: photoAteliersMaternelle.url, alt: "Ateliers de manipulation autour des tables en maternelle", category: "Activités" },
@@ -123,7 +122,7 @@ function GaleriePage() {
   const [selected, setSelected] = useState<(typeof PHOTOS)[number] | null>(null);
 
   const photos = useMemo(
-    () => (category === "Tout" ? PHOTOS : PHOTOS.filter((p) => p.category === category)),
+    () => (category === "Tout" || category === "Vidéo" ? PHOTOS : PHOTOS.filter((p) => p.category === category)),
     [category],
   );
 
@@ -154,23 +153,29 @@ function GaleriePage() {
           ))}
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {photos.map((photo) =>
-            photo.category === "Vidéo" ? (
-              <div
-                key={photo.alt}
-                className="school-photo-frame overflow-hidden focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 focus-within:ring-offset-background"
-              >
-                <iframe
-                  src="https://www.youtube.com/embed/TgzETXkyqvg"
-                  title={photo.alt}
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="aspect-[4/3] w-full"
-                />
-              </div>
-            ) : (
+        {category === "Vidéo" ? (
+          <div className="mt-10">
+            <div className="text-center">
+              <h2 className="text-3xl font-semibold leading-tight">Visitez l'école en vidéo</h2>
+              <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
+                Une visite virtuelle de l'école, de la cour aux classes, pour découvrir les lieux
+                comme si vous y étiez.
+              </p>
+            </div>
+            <div className="school-photo-frame mx-auto mt-8 max-w-4xl overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/TgzETXkyqvg"
+                title="Visite virtuelle de l'École du Vieux Château"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="aspect-video w-full"
+              />
+            </div>
+          </div>
+        ) : (
+          <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {photos.map((photo) => (
               <button
                 key={photo.alt}
                 type="button"
@@ -189,9 +194,9 @@ function GaleriePage() {
                   {photo.alt}
                 </span>
               </button>
-            )
-          )}
-        </div>
+            ))}
+          </div>
+        )}
       </section>
 
       {selected ? (
