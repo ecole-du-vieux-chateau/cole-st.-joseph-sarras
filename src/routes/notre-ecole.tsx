@@ -75,8 +75,8 @@ const TEAM = [
     text: (
       <div className="space-y-4 leading-relaxed text-muted-foreground">
         <p>J'accompagne les enfants de Moyenne Section, Grande Section et CP dans leurs premiers apprentissages. Mon objectif : leur donner le goût d'apprendre, de lire, de chercher et de comprendre.</p>
-        <p>En français, les Alphas assurent une continuité avec la Petite et Moyenne Section, tandis que la Lecture Piano aide les CP à apprendre progressivement leurs « gammes » de lecture. En mathématiques, la manipulation et le jeu sont essentiels : les enfants construisent le nombre, cherchent, expérimentent et raisonnent, avec chaque matin un rituel autour du nombre de jours de classe. Et bien sûr, le 100ᵉ jour d'école sera l'occasion d'une belle fête !</p>
-        <p>L'anglais arrive au quotidien à travers chants et jeux, l'art développe créativité et sensibilité, et le mouvement prend toute sa place avec un cycle piscine et un cycle rugby dès la Grande Section. Pour apprendre à vivre ensemble, nous construisons un climat de classe serein et utilisons la méthode des messages clairs. Une année riche en découvertes, pour grandir et prendre confiance en soi… ensemble !</p>
+        <p>En français, les Alphas prolongent le travail de la Petite et Moyenne Section, et la Lecture Piano guide les CP dans leurs premières lectures. En mathématiques, on apprend en manipulant et en jouant, avec chaque matin notre rituel du nombre de jours de classe. Le 100ᵉ jour d'école sera d'ailleurs l'occasion d'une belle fête !</p>
+        <p>L'anglais, l'art et le sport prennent aussi une place importante : chants, créations, cycle piscine et rugby dès la Grande Section. Pour apprendre à vivre ensemble, nous construisons un climat serein et utilisons la méthode des messages clairs. Une année riche pour grandir et prendre confiance en soi… ensemble !</p>
       </div>
     ),
   },
