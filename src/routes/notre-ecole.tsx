@@ -90,9 +90,16 @@ const TEAM = [
     ),
   },
   {
-    name: "Mme Donzet",
-    role: "Surveillances et cantine",
-    text: "« Je veille sur les enfants pendant la cantine, les récréations et la garderie. Ces moments de vie comptent autant que la classe : j'y apporte douceur, attention et bonne humeur. »",
+    name: "Mme Marine",
+    role: "ASEM",
+    text: (
+      <div className="space-y-4 leading-relaxed text-muted-foreground">
+        <p>Je suis une véritable alliée du quotidien à l'école : souriante, dynamique et toujours prête à accompagner les enfants dans leurs petites et grandes aventures !</p>
+        <p>En classe, j'aide la maîtresse et accompagne les enfants dans leurs activités et leurs apprentissages. Quand un petit bobo ou un gros chagrin arrive, j'accours pour soigner, rassurer et réconforter avec douceur.</p>
+        <p>À la cantine, je veille sur les petits ventres pour faire de ce repas un moment convivial. Le temps de la sieste, j'accompagne les enfants vers le calme, et à la garderie, la journée se termine dans la bonne humeur : devoirs, jeux, histoires et rires.</p>
+        <p>Une présence joyeuse et bienveillante, qui met chaque jour un peu de soleil dans la vie de l'école !</p>
+      </div>
+    ),
   },
 ];
 
