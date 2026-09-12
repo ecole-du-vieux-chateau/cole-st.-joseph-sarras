@@ -1,7 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { GraduationCap, Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
+import logoAsset from "@/assets/logo-ecole-du-vieux-chateau.jpg.asset.json";
 import { NAV_LINKS, SCHOOL } from "@/lib/site";
+
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -9,17 +11,14 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-            <GraduationCap className="size-5" aria-hidden />
-          </span>
-          <span className="font-display text-lg font-semibold leading-tight text-foreground">
-            École du Vieux Château
-            <span className="block font-sans text-[11px] font-medium uppercase tracking-widest text-muted-foreground">
-              Sarras · Ardèche
-            </span>
-          </span>
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
+          <img
+            src={logoAsset.url}
+            alt="École privée du Vieux Château"
+            className="h-10 w-auto rounded-lg"
+          />
         </Link>
+
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigation principale">
           {NAV_LINKS.map((link) => (

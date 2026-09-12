@@ -1,23 +1,25 @@
 import { Link } from "@tanstack/react-router";
-import { GraduationCap, Mail, MapPin, Phone, Smartphone } from "lucide-react";
+import { Mail, MapPin, Phone, Smartphone } from "lucide-react";
+import logoAsset from "@/assets/logo-ecole-du-vieux-chateau.jpg.asset.json";
 import { NAV_LINKS, SCHOOL } from "@/lib/site";
+
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-border/60 bg-secondary/40">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-2.5">
-            <span className="flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-              <GraduationCap className="size-5" aria-hidden />
-            </span>
-            <span className="font-display text-lg font-semibold">École du Vieux Château</span>
-          </div>
+          <img
+            src={logoAsset.url}
+            alt="École privée du Vieux Château"
+            className="h-11 w-auto rounded-lg"
+          />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
             École catholique privée sous contrat avec l'État, de la Toute Petite Section au CM2,
             au cœur du village de Sarras en Ardèche.
           </p>
         </div>
+
 
         <nav aria-label="Liens du site">
           <h3 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">Le site</h3>
