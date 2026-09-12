@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HandHeart, HeartHandshake, ShieldCheck, Trophy, ArrowRight, Users, Landmark, BookOpen, Home } from "lucide-react";
-import heroAsset from "@/assets/photo-travail-classe-enfants.jpg.asset.json";
+import heroAsset from "@/assets/facade-ecole-entree.png.asset.json";
 import ecoleAsset from "@/assets/entree-ecole-couleurs.png.asset.json";
 
 const heroImg = heroAsset.url;
@@ -74,39 +74,37 @@ function Index() {
       <section className="relative">
         <img
           src={heroImg}
-          alt="Des élèves travaillent à leur bureau dans une classe lumineuse"
+          alt="La façade de l'École du Vieux Château sous un ciel bleu"
           width={1024}
           height={768}
           className="h-[70vh] min-h-[520px] w-full bg-muted object-cover object-center saturate-[.94] contrast-[1.02]"
         />
-        <div className="absolute inset-0 bg-gradient-to-l from-foreground/90 via-foreground/60 to-foreground/15" />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/55 to-foreground/10" />
         <div className="absolute inset-0 flex items-center">
-          <div className="mx-auto flex w-full max-w-6xl justify-end px-4 sm:px-6">
-            <div className="max-w-2xl text-right">
-              <p className="mb-4 inline-block rounded-full bg-background/90 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-foreground shadow-sm backdrop-blur">
-                École catholique · Sarras, Ardèche
-              </p>
-              <h1 className="text-4xl font-semibold leading-tight text-background drop-shadow-lg sm:text-5xl lg:text-6xl">
-                École du Vieux Château
-              </h1>
-              <p className="mt-4 max-w-xl text-lg font-medium leading-relaxed text-background drop-shadow-md sm:text-xl">
-                {SCHOOL.slogan}
-              </p>
-              <div className="mt-7 flex flex-col items-end gap-3 sm:flex-row sm:justify-end">
-                <a
-                  href={SCHOOL.mobileHref}
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-background px-7 py-3.5 text-base font-semibold text-foreground transition-transform hover:scale-[1.02]"
-                >
-                  Demander un rendez-vous
-                  <ArrowRight className="size-4" aria-hidden />
-                </a>
-                <Link
-                  to="/notre-ecole"
-                  className="inline-flex items-center justify-center rounded-full border border-background/60 px-7 py-3.5 text-base font-semibold text-background transition-colors hover:bg-background/10"
-                >
-                  Découvrir l'école
-                </Link>
-              </div>
+          <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
+            <p className="mb-4 inline-block rounded-full bg-background/90 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-foreground shadow-sm backdrop-blur">
+              École catholique · Sarras, Ardèche
+            </p>
+            <h1 className="max-w-2xl text-4xl font-semibold leading-tight text-background drop-shadow-lg sm:text-5xl lg:text-6xl">
+              École du Vieux Château
+            </h1>
+            <p className="mt-4 max-w-xl text-lg font-medium leading-relaxed text-background drop-shadow-md sm:text-xl">
+              {SCHOOL.slogan}
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <a
+                href={SCHOOL.mobileHref}
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-background px-7 py-3.5 text-base font-semibold text-foreground transition-transform hover:scale-[1.02]"
+              >
+                Demander un rendez-vous
+                <ArrowRight className="size-4" aria-hidden />
+              </a>
+              <Link
+                to="/notre-ecole"
+                className="inline-flex items-center justify-center rounded-full border border-background/60 px-7 py-3.5 text-base font-semibold text-background transition-colors hover:bg-background/10"
+              >
+                Découvrir l'école
+              </Link>
             </div>
           </div>
         </div>
