@@ -1,2 +1,2 @@
 - [x] Mettre en pleine largeur la section « Le projet d'établissement 2026 – 2031 »
-- [ ] Refaire la page projet pastoral dans le style du site, sans photo, en changeant l'agencement des encadrés
+- [x] Refaire la page projet pastoral dans le style du site, sans photo, en changeant l'agencement des encadrés
