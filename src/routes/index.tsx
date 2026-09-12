@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HandHeart, HeartHandshake, ShieldCheck, Trophy, ArrowRight, Users, Landmark, BookOpen, Home } from "lucide-react";
 import heroAsset from "@/assets/facade-ecole-entree.png.asset.json";
-import ecoleAsset from "@/assets/entree-ecole-couleurs.png.asset.json";
+import classeAsset from "@/assets/photo-travail-classe-enfants.jpg.asset.json";
 
 const heroImg = heroAsset.url;
-const ecoleImg = ecoleAsset.url;
+const classeImg = classeAsset.url;
 import { ContactCta } from "@/components/page-hero";
 import { SCHOOL } from "@/lib/site";
 
@@ -133,8 +133,8 @@ function Index() {
             </Link>
           </div>
           <img
-            src={heroImg}
-            alt="La façade ensoleillée de l'École du Vieux Château"
+            src={classeImg}
+            alt="Des élèves travaillant à leur bureau dans une classe colorée"
             width={1024}
             height={768}
             loading="lazy"
