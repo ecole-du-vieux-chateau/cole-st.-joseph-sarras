@@ -217,14 +217,24 @@ function ProjetEducatifPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
-        <img
-          src={projetImg}
-          alt="Atelier créatif en maternelle avec l'enseignante"
-          width={1600}
-          height={900}
-          loading="lazy"
-          className="school-photo aspect-[16/7] w-full"
-        />
+        <div className="grid gap-5 md:grid-cols-2">
+          <img
+            src={projetImg}
+            alt="Atelier créatif en maternelle avec l'enseignante"
+            width={1024}
+            height={768}
+            loading="lazy"
+            className="school-photo aspect-[4/3] w-full"
+          />
+          <img
+            src={egliseImg}
+            alt="Sortie à l'église avec les enfants de l'école"
+            width={1024}
+            height={768}
+            loading="lazy"
+            className="school-photo aspect-[4/3] w-full"
+          />
+        </div>
       </section>
 
       <section className="bg-muted/60">
@@ -291,17 +301,6 @@ function ProjetEducatifPage() {
             </article>
           ))}
         </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
-        <img
-          src={egliseImg}
-          alt="Sortie à l'église avec les enfants de l'école"
-          width={1600}
-          height={900}
-          loading="lazy"
-          className="school-photo aspect-[16/7] w-full"
-        />
       </section>
 
       <ContactCta
