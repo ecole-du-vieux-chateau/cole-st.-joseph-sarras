@@ -101,7 +101,7 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[
   { src: cantineEcoleAsset.url, alt: "La salle de cantine décorée", category: "Les espaces de l'école" },
   { src: salleRepasAsset.url, alt: "L'espace repas et coin cuisine", category: "Les espaces de l'école" },
   { src: salleInfoAsset.url, alt: "La salle informatique de l'école", category: "Les espaces de l'école" },
-  { src: salleInfoEnfantsAsset.url, alt: "Les élèves à la salle informatique", category: "Vie de l'école" },
+  { src: salleInfoEnfantsAsset.url, alt: "Les élèves à la salle informatique", category: "Classes" },
   { src: salleReposMaterAsset.url, alt: "L'espace repos et vestiaires en maternelle", category: "Les espaces de l'école" },
   { src: classeMater1Asset.url, alt: "Classe maternelle avec coins jeux et apprentissages", category: "Les espaces de l'école" },
   { src: classeMater2Asset.url, alt: "Coin activités et affichages en maternelle", category: "Les espaces de l'école" },
