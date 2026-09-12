@@ -147,18 +147,10 @@ function NotreEcolePage() {
 
 
       <section className="bg-secondary/40">
-        <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6">
-          <div className="mx-auto max-w-3xl">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
+          <div>
             <h2 className="text-3xl font-semibold leading-tight">L'histoire de l'école</h2>
-            <img
-              src={histoireImg}
-              alt="Photographie d'archive du château de Sarras avec des enfants devant l'entrée"
-              width={1152}
-              height={768}
-              loading="lazy"
-              className="school-photo mx-auto mt-8 aspect-[3/2] w-full max-w-2xl"
-            />
-            <p className="mt-8 leading-relaxed text-muted-foreground">
+            <p className="mt-5 leading-relaxed text-muted-foreground">
               Les bâtiments de notre école font partie de l'enceinte du château de Sarras,
               construit au Moyen Âge par les Pagan de Mahun, seigneurs de Vocance, Satillieu,
               Ozon, Saint-Julien-Molin-Molette, Argental et La Faye. Détruit pendant les
@@ -178,6 +170,14 @@ function NotreEcolePage() {
               les programmes nationaux. À ce jour, le personnel est entièrement laïc.
             </p>
           </div>
+          <img
+            src={histoireImg}
+            alt="Photographie d'archive du château de Sarras avec des enfants devant l'entrée"
+            width={1152}
+            height={768}
+            loading="lazy"
+            className="school-photo aspect-[3/2] w-full"
+          />
         </div>
       </section>
 
