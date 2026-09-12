@@ -82,18 +82,18 @@ function ProjetPastoralPage() {
       />
 
       <section className="bg-muted/60">
-        <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[auto_1fr]">
+        <div className="mx-auto flex max-w-4xl flex-col items-center px-4 py-16 text-center sm:px-6">
           <span className="flex size-16 items-center justify-center rounded-3xl bg-primary text-primary-foreground">
             <Church className="size-8" aria-hidden />
           </span>
-          <div>
+          <div className="mt-6">
             <p className="text-sm font-semibold uppercase tracking-widest text-primary">
               Au quotidien dans notre école
             </p>
             <h2 className="mt-2 font-display text-3xl font-semibold leading-tight sm:text-4xl">
               Un climat fraternel et bienveillant
             </h2>
-            <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            <p className="mt-4 leading-relaxed text-muted-foreground">
               Développer un climat fraternel, bienveillant et épanouissant, fondé sur le respect
               mutuel de chacun et avec le soutien des parents : chaque enfant est un être unique,
               porteur d'une histoire, capable d'aimer et d'être aimé. Ce projet se vit à travers
