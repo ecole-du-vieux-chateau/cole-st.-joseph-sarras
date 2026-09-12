@@ -66,7 +66,7 @@ export const Route = createFileRoute("/galerie")({
   component: GaleriePage,
 });
 
-const CATEGORIES = ["Tout", "Vie de l'école", "Les espaces de l'école", "Classes", "Activités"] as const;
+const CATEGORIES = ["Tout", "Les espaces de l'école", "Classes", "Activités"] as const;
 
 type Category = (typeof CATEGORIES)[number];
 
@@ -78,15 +78,15 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[
   { src: photoPeintureClasse.url, alt: "Atelier peinture sur chevalet dans la classe", category: "Activités" },
   
   { src: photoConstructionCour.url, alt: "Construction à plusieurs avec des pièces en mousse dans la cour", category: "Activités" },
-  { src: photoLectureCour.url, alt: "Un élève lit un magazine assis sur la marche de la cour", category: "Vie de l'école" },
+  { src: photoLectureCour.url, alt: "Un élève lit un magazine assis sur la marche de la cour", category: "Activités" },
   
-  { src: photoBasketCour.url, alt: "Partie de basket dans la cour de récréation", category: "Vie de l'école" },
-  { src: photoPorteursCour.url, alt: "Porteurs et draisiennes le long du préau de maternelle", category: "Vie de l'école" },
+  { src: photoBasketCour.url, alt: "Partie de basket dans la cour de récréation", category: "Activités" },
+  { src: photoPorteursCour.url, alt: "Porteurs et draisiennes le long du préau de maternelle", category: "Activités" },
   
-  { src: photoVeloPreau.url, alt: "Un enfant pédale sur un vélo devant la fresque du préau", category: "Vie de l'école" },
-  { src: photoCourseCour.url, alt: "Course en plein air dans la cour de récréation", category: "Vie de l'école" },
-  { src: photoRecreationGenerale.url, alt: "Vue d'ensemble de la cour de récréation animée", category: "Vie de l'école" },
-  { src: photoRassemblementCour.url, alt: "Rassemblement d'enfants dans la cour, photo prise en hauteur", category: "Vie de l'école" },
+  { src: photoVeloPreau.url, alt: "Un enfant pédale sur un vélo devant la fresque du préau", category: "Activités" },
+  { src: photoCourseCour.url, alt: "Course en plein air dans la cour de récréation", category: "Activités" },
+  { src: photoRecreationGenerale.url, alt: "Vue d'ensemble de la cour de récréation animée", category: "Activités" },
+  { src: photoRassemblementCour.url, alt: "Rassemblement d'enfants dans la cour, photo prise en hauteur", category: "Activités" },
   { src: photoAtelierCollage.url, alt: "Atelier de découpage-collage sur les tables de maternelle", category: "Classes" },
   { src: photoTravailGroupe.url, alt: "Travail en petit groupe autour d'une table avec l'enseignante", category: "Classes" },
   
