@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, ExternalLink, HandCoins, Landmark, Palette, PartyPopper, Sparkles, TreePine, Trophy, Users, UtensilsCrossed, Wrench } from "lucide-react";
-import garderieAsset from "@/assets/salle-repos-maternelle.jpg.asset.json";
+import garderieAsset from "@/assets/photo-entree-cour-flou.jpg.asset.json";
 import cantineAsset from "@/assets/cantine-ecole.jpg.asset.json";
 import sportAsset from "@/assets/cour-recreation.jpg.asset.json";
 
