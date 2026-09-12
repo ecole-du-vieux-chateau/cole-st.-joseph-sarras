@@ -281,17 +281,6 @@ function ProjetEducatifPage() {
       </section>
 
 
-      <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
-        <img
-          src={projetImg}
-          alt="Atelier créatif en maternelle avec l'enseignante"
-          width={1600}
-          height={900}
-          loading="lazy"
-          className="school-photo aspect-[16/7] w-full"
-        />
-      </section>
-
       <ContactCta
         title="Ce projet vous parle ?"
         text="Venez en discuter avec l'équipe : nous vous accueillerons avec plaisir pour une visite de l'école."
