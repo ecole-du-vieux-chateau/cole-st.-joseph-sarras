@@ -8,7 +8,8 @@ const garderieImg = garderieAsset.url;
 const cantineImg = cantineAsset.url;
 const sportImg = sportAsset.url;
 import qrCantineImg from "@/assets/qr-cantine.png";
-import sortieImg from "@/assets/sortie-nature.jpg";
+import sortieAsset from "@/assets/photo-jeux-engrenages-flou.jpg.asset.json";
+const sortieImg = sortieAsset.url;
 import { ContactCta, PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/vie-scolaire")({
@@ -181,7 +182,7 @@ function VieScolairePage() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           <img
             src={sortieImg}
-            alt="Sortie éducative au bord d'une rivière en Ardèche"
+            alt="Jeux de construction partagés sous le préau"
             width={1280}
             height={960}
             loading="lazy"
