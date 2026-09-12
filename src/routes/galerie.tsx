@@ -87,8 +87,8 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[
   { src: photoCourseCour.url, alt: "Course en plein air dans la cour de récréation", category: "Vie de l'école" },
   { src: photoRecreationGenerale.url, alt: "Vue d'ensemble de la cour de récréation animée", category: "Vie de l'école" },
   { src: photoRassemblementCour.url, alt: "Rassemblement d'enfants dans la cour, photo prise en hauteur", category: "Vie de l'école" },
-  { src: photoAtelierCollage.url, alt: "Atelier de découpage-collage sur les tables de maternelle", category: "Activités" },
-  { src: photoTravailGroupe.url, alt: "Travail en petit groupe autour d'une table avec l'enseignante", category: "Activités" },
+  { src: photoAtelierCollage.url, alt: "Atelier de découpage-collage sur les tables de maternelle", category: "Classes" },
+  { src: photoTravailGroupe.url, alt: "Travail en petit groupe autour d'une table avec l'enseignante", category: "Classes" },
   
   { src: photoTravailCollectif.url, alt: "Travail collectif avec l'enseignante en maternelle", category: "Activités" },
   { src: photoInformatique.url, alt: "Les élèves utilisent les ordinateurs de la classe", category: "Classes" },
@@ -112,7 +112,7 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[
   { src: classeElem2Asset.url, alt: "Classe élémentaire lumineuse et organisée", category: "Les espaces de l'école" },
   { src: classeElem3Asset.url, alt: "Espace de travail des cycles 2 et 3", category: "Les espaces de l'école" },
   { src: photoActiviteMaternelleTable.url, alt: "Activité de collage en maternelle avec l'enseignante", category: "Activités" },
-  { src: photoActiviteManuelle.url, alt: "Atelier manuel autour des tables de maternelle", category: "Activités" },
+  { src: photoActiviteManuelle.url, alt: "Atelier manuel autour des tables de maternelle", category: "Classes" },
   { src: photoCollageMaternelle.url, alt: "Les enfants collent des bandes de papier de couleur", category: "Activités" },
   
 ];
