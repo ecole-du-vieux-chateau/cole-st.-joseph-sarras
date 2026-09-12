@@ -8,13 +8,13 @@ const projetImg = projetAsset.url;
 export const Route = createFileRoute("/projet-educatif")({
   head: () => ({
     meta: [
-      { title: "Projet éducatif — École du Vieux Château, Sarras" },
+      { title: "Projet éducatif et pastoral — École du Vieux Château, Sarras" },
       {
         name: "description",
         content:
-          "Notre projet éducatif : accompagnement global de l'enfant, autonomie, responsabilité, coopération, respect et valeurs chrétiennes d'accueil et de solidarité.",
+          "Notre projet éducatif et pastoral : accompagnement global de l'enfant, autonomie, responsabilité, coopération, respect et valeurs chrétiennes d'accueil et de solidarité.",
       },
-      { property: "og:title", content: "Projet éducatif — École du Vieux Château, Sarras" },
+      { property: "og:title", content: "Projet éducatif et pastoral — École du Vieux Château, Sarras" },
       {
         property: "og:description",
         content:
@@ -106,7 +106,7 @@ function ProjetEducatifPage() {
   return (
     <>
       <PageHero
-        title="Notre projet éducatif"
+        title="Notre projet éducatif et pastoral"
         subtitle="Au-delà des apprentissages scolaires, notre mission est d'aider chaque enfant à grandir : autonome, responsable, coopératif et respectueux, dans l'esprit des valeurs chrétiennes d'accueil et de solidarité."
       />
 
