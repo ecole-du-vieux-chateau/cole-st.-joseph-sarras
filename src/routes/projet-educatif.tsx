@@ -138,7 +138,7 @@ function ProjetEducatifPage() {
             <h2 className="mt-2 font-display text-3xl font-semibold leading-tight sm:text-4xl">
               « Promenons-nous dans les contes »
             </h2>
-            <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+            <p className="mx-auto mt-4 max-w-3xl text-center leading-relaxed text-muted-foreground">
               Cette année, notre fil conducteur nous emmène dans l'univers merveilleux des
               contes : des histoires pour rêver, imaginer, s'exprimer et enrichir son langage,
               mais aussi pour apprendre à mieux se connaître et à mieux vivre ensemble. De
