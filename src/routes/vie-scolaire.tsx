@@ -6,7 +6,7 @@ import classeElementaireAsset from "@/assets/photo-classe-elementaire-cours-flou
 
 const garderieImg = garderieAsset.url;
 const cantineImg = cantineAsset.url;
-const sportImg = sportAsset.url;
+const classeElementaireImg = classeElementaireAsset.url;
 import qrCantineImg from "@/assets/qr-cantine.png";
 import sortieAsset from "@/assets/photo-rassemblement-cour-flou.jpg.asset.json";
 const sortieImg = sortieAsset.url;
@@ -78,7 +78,7 @@ function VieScolairePage() {
         </div>
         <img
           src={garderieImg}
-          alt="Enfants jouant calmement à la garderie en fin de journée"
+          alt="La cour de récréation et son préau"
           width={1280}
           height={960}
           loading="lazy"
@@ -189,8 +189,8 @@ function VieScolairePage() {
             className="school-photo aspect-[4/3] w-full"
           />
           <img
-            src={sportImg}
-            alt="Activité sportive des élèves dans le gymnase"
+            src={classeElementaireImg}
+            alt="Cours en salle élémentaire"
             width={1280}
             height={960}
             loading="lazy"
