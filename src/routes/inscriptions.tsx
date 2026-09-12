@@ -202,7 +202,7 @@ function InscriptionsPage() {
           </div>
           <img
             src={maternelleImg}
-            alt="Enfants de maternelle en activité dans leur classe"
+            alt="Les enfants réunis autour d'un parachute coloré dans la cour de l'école"
             width={1280}
             height={960}
             loading="lazy"
