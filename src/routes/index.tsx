@@ -3,10 +3,12 @@ import { HandHeart, HeartHandshake, ShieldCheck, Trophy, ArrowRight, Users, Land
 import heroAsset from "@/assets/facade-ecole-entree.png.asset.json";
 import classeAsset from "@/assets/photo-travail-classe-enfants.jpg.asset.json";
 import fresqueAsset from "@/assets/photo-activite-fresque-cour-flou.jpg.asset.json";
+import parcoursAsset from "@/assets/photo-sortie-parcours-nature-flou.jpg.asset.json";
 
 const heroImg = heroAsset.url;
 const classeImg = classeAsset.url;
 const fresqueImg = fresqueAsset.url;
+const parcoursImg = parcoursAsset.url;
 import { ContactCta } from "@/components/page-hero";
 import { SCHOOL } from "@/lib/site";
 
