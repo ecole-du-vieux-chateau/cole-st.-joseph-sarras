@@ -137,7 +137,7 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout" | "
   { src: photoSortieParcoursNature.url, alt: "Enfants suivant un parcours avec des cerceaux dans un champ", category: "Sorties scolaires" },
   { src: photoSortieJeuxNature.url, alt: "Parcours de motricité en plein air avec des cerceaux colorés", category: "Sorties scolaires" },
   { src: photoSortieDecouverteNature.url, alt: "Découverte de la nature autour de branchages dans une prairie", category: "Sorties scolaires" },
-  { src: photoSortieRepas.url, alt: "La cantine : un repas partagé dans une salle décorée", category: "Sorties scolaires" },
+  { src: photoSortieRepas.url, alt: "Sortie scolaire : un repas partagé par les enfants", category: "Sorties scolaires" },
   { src: photoSortieSecuriteRoutiere.url, alt: "Parcours de sécurité routière à vélo dans un gymnase", category: "Sorties scolaires" },
   { src: photoSortieEglise.url, alt: "Enfants et adultes réunis dans une église lors d'une célébration", category: "Sorties scolaires" },
   { src: photoSortieCommemoration.url, alt: "Participation des enfants à une commémoration au monument aux morts", category: "Sorties scolaires" },
