@@ -293,6 +293,16 @@ function ProjetEducatifPage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+        <img
+          src={egliseImg}
+          alt="Sortie à l'église avec les enfants de l'école"
+          width={1600}
+          height={900}
+          loading="lazy"
+          className="school-photo aspect-[16/7] w-full"
+        />
+      </section>
 
       <ContactCta
         title="Ce projet vous parle ?"
