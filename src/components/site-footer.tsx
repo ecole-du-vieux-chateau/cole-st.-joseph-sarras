@@ -8,11 +8,11 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-border/60 bg-secondary/40">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
-        <div>
+        <div className="flex flex-col items-center md:items-start">
           <img
             src={logoAsset}
             alt="École privée du Vieux Château"
-            className="h-11 w-auto"
+            className="h-24 w-auto md:h-28"
           />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
             École catholique privée sous contrat avec l'État, de la Toute Petite Section au CM2,
