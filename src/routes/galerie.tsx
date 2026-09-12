@@ -24,12 +24,12 @@ import photoAteliersMaternelle from "@/assets/photo-ateliers-maternelle-flou.jpg
 import photoRegroupement from "@/assets/photo-temps-de-regroupement-flou.jpg.asset.json";
 import photoPeintureClasse from "@/assets/photo-peinture-classe-flou.jpg.asset.json";
 import photoCourVelo from "@/assets/photo-cour-velo-flou.jpg.asset.json";
-import photoJeuxEngrenages from "@/assets/photo-jeux-engrenages-flou.jpg.asset.json";
+
 import photoLectureCour from "@/assets/photo-lecture-cour-flou.jpg.asset.json";
 import photoConstructionCour from "@/assets/photo-construction-cour-flou.jpg.asset.json";
 import photoBasketCour from "@/assets/photo-basket-cour-flou.jpg.asset.json";
 import photoPorteursCour from "@/assets/photo-porteurs-cour-flou.jpg.asset.json";
-import photoEntreeCour from "@/assets/photo-entree-cour-flou.jpg.asset.json";
+
 import photoVeloPreau from "@/assets/photo-velo-preau-flou.jpg.asset.json";
 import photoCourseCour from "@/assets/photo-course-cour-flou.jpg.asset.json";
 import photoRecreationGenerale from "@/assets/photo-recreation-generale-flou.jpg.asset.json";
@@ -38,13 +38,13 @@ import photoClasseElementaireCours from "@/assets/photo-classe-elementaire-cours
 import photoRassemblementCour from "@/assets/photo-rassemblement-cour-flou.jpg.asset.json";
 import photoInformatique from "@/assets/photo-informatique-flou.jpg.asset.json";
 import photoTravailGroupe from "@/assets/photo-travail-groupe-flou.jpg.asset.json";
-import photoAccompagnementTable from "@/assets/photo-accompagnement-table-flou.jpg.asset.json";
+
 import photoTableauClasse from "@/assets/photo-tableau-classe-flou.jpg.asset.json";
 import photoTravailCollectif from "@/assets/photo-travail-collectif-flou.jpg.asset.json";
 import photoActiviteMaternelleTable from "@/assets/photo-activite-maternelle-table-flou.jpg.asset.json";
 import photoActiviteManuelle from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
 import photoCollageMaternelle from "@/assets/photo-collage-maternelle-flou.jpg.asset.json";
-import photoElevesTables from "@/assets/photo-eleves-tables-flou.jpg.asset.json";
+
 import { PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/galerie")({
@@ -76,20 +76,20 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[
   { src: photoAteliersMaternelle.url, alt: "Ateliers de manipulation autour des tables en maternelle", category: "Activités" },
   { src: photoRegroupement.url, alt: "Temps de regroupement au sol avec l'enseignante en maternelle", category: "Activités" },
   { src: photoPeintureClasse.url, alt: "Atelier peinture sur chevalet dans la classe", category: "Activités" },
-  { src: photoJeuxEngrenages.url, alt: "Jeux de construction en mousse sous le préau", category: "Activités" },
+  
   { src: photoConstructionCour.url, alt: "Construction à plusieurs avec des pièces en mousse dans la cour", category: "Activités" },
   { src: photoLectureCour.url, alt: "Un élève lit un magazine assis sur la marche de la cour", category: "Vie de l'école" },
   { src: photoCourVelo.url, alt: "Draisienne devant la fresque de la cour de récréation", category: "Vie de l'école" },
   { src: photoBasketCour.url, alt: "Partie de basket dans la cour de récréation", category: "Vie de l'école" },
   { src: photoPorteursCour.url, alt: "Porteurs et draisiennes le long du préau de maternelle", category: "Vie de l'école" },
-  { src: photoEntreeCour.url, alt: "L'entrée de la classe de maternelle depuis la cour", category: "Vie de l'école" },
+  
   { src: photoVeloPreau.url, alt: "Un enfant pédale sur un vélo devant la fresque du préau", category: "Vie de l'école" },
   { src: photoCourseCour.url, alt: "Course en plein air dans la cour de récréation", category: "Vie de l'école" },
   { src: photoRecreationGenerale.url, alt: "Vue d'ensemble de la cour de récréation animée", category: "Vie de l'école" },
   { src: photoRassemblementCour.url, alt: "Rassemblement d'enfants dans la cour, photo prise en hauteur", category: "Vie de l'école" },
   { src: photoAtelierCollage.url, alt: "Atelier de découpage-collage sur les tables de maternelle", category: "Activités" },
   { src: photoTravailGroupe.url, alt: "Travail en petit groupe autour d'une table avec l'enseignante", category: "Activités" },
-  { src: photoAccompagnementTable.url, alt: "L'enseignante accompagne des élèves lors d'une activité", category: "Activités" },
+  
   { src: photoTravailCollectif.url, alt: "Travail collectif avec l'enseignante en maternelle", category: "Activités" },
   { src: photoInformatique.url, alt: "Les élèves utilisent les ordinateurs de la classe", category: "Classes" },
   { src: photoTableauClasse.url, alt: "Les élèves travaillent face au tableau de la classe", category: "Classes" },
@@ -114,7 +114,7 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout"> }[
   { src: photoActiviteMaternelleTable.url, alt: "Activité de collage en maternelle avec l'enseignante", category: "Activités" },
   { src: photoActiviteManuelle.url, alt: "Atelier manuel autour des tables de maternelle", category: "Activités" },
   { src: photoCollageMaternelle.url, alt: "Les enfants collent des bandes de papier de couleur", category: "Activités" },
-  { src: photoElevesTables.url, alt: "Élèves concentrés sur leur travail individuel", category: "Classes" },
+  
 ];
 
 function GaleriePage() {
