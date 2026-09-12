@@ -104,6 +104,80 @@ function ProjetEducatifPage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+            Le projet d'établissement 2026 – 2031
+          </p>
+          <h2 className="mt-2 font-display text-3xl font-semibold leading-tight sm:text-4xl">
+            Cinq ans pour faire grandir chaque élève
+          </h2>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Élaboré avec la communauté éducative et adopté par le conseil d'établissement, notre
+            projet d'établissement court sur cinq ans. Il s'appuie sur les résultats des
+            évaluations nationales et sur l'évaluation de l'établissement, et il précise les
+            activités scolaires et périscolaires ainsi que les moyens mis en œuvre pour assurer la
+            réussite de tous les élèves. Deux grandes priorités le structurent.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <article className="rounded-3xl bg-card p-7 shadow-sm">
+            <span className="flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <Users className="size-6" aria-hidden />
+            </span>
+            <h3 className="mt-5 font-display text-xl font-semibold">Développer le vivre ensemble</h3>
+            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+              {[
+                "Des règles de vie communes, connues et respectées par tous, pour un climat serein d'apprentissage",
+                "Apprendre à reconnaître et exprimer ses émotions",
+                "L'élève devient acteur de la vie collective : conseil des sages, élèves délégués, médiateur, la voix des classes",
+                "Développer les compétences sociales à travers le sport",
+              ].map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span aria-hidden className="mt-1 size-1.5 shrink-0 rounded-full bg-primary" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+          <article className="rounded-3xl bg-card p-7 shadow-sm">
+            <span className="flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <Languages className="size-6" aria-hidden />
+            </span>
+            <h3 className="mt-5 font-display text-xl font-semibold">Développer le langage</h3>
+            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+              {[
+                "Améliorer la lecture et les stratégies de lecture",
+                "Développer le vocabulaire et le travail sur les sons",
+                "Utiliser des outils communs de la maternelle au CM2",
+              ].map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span aria-hidden className="mt-1 size-1.5 shrink-0 rounded-full bg-primary" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        </div>
+        <div className="mt-6 flex flex-col items-start gap-4 rounded-3xl bg-card p-7 shadow-sm sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-start gap-4">
+            <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <Church className="size-6" aria-hidden />
+            </span>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Ce projet s'accompagne d'un projet d'animation pastorale, dans l'esprit des sœurs de
+              Saint-Joseph : servir, partager, témoigner, célébrer.
+            </p>
+          </div>
+          <Link
+            to="/projet-pastoral"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            Découvrir le projet pastoral
+          </Link>
+        </div>
+      </section>
+
       <section className="bg-secondary/45">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-16 text-center sm:px-6">
           <span className="flex size-14 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
