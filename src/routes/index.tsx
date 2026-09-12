@@ -181,6 +181,17 @@ function Index() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-4 pb-20 sm:px-6">
+        <img
+          src={fresqueImg}
+          alt="Les enfants rassemblés autour de grands dessins à la craie dans la cour"
+          width={1600}
+          height={900}
+          loading="lazy"
+          className="school-photo aspect-[16/7] w-full"
+        />
+      </section>
+
       <ContactCta
         title="Envie de nous rencontrer ?"
         text="La meilleure façon de découvrir l'école est de venir la visiter. Appelez-nous ou écrivez-nous pour convenir d'un rendez-vous."
