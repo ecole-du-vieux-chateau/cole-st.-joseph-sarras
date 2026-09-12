@@ -72,7 +72,13 @@ const TEAM = [
   {
     name: "Mme Marion Gustin",
     role: "Classe MS · GS · CP",
-    text: "« Dans ma classe, on passe des jeux de la maternelle aux premières lectures. J'aime accompagner chaque enfant à son rythme, l'encourager à oser et célébrer chacune de ses réussites, même les plus petites. »",
+    text: (
+      <div className="space-y-4 leading-relaxed text-muted-foreground">
+        <p>J'accompagne les enfants de Moyenne Section, Grande Section et CP dans leurs premiers apprentissages. Mon objectif : leur donner le goût d'apprendre, de lire, de chercher et de comprendre.</p>
+        <p>En français, les Alphas assurent une continuité avec la Petite et Moyenne Section, tandis que la Lecture Piano aide les CP à apprendre progressivement leurs « gammes » de lecture. En mathématiques, la manipulation et le jeu sont essentiels : les enfants construisent le nombre, cherchent, expérimentent et raisonnent, avec chaque matin un rituel autour du nombre de jours de classe. Et bien sûr, le 100ᵉ jour d'école sera l'occasion d'une belle fête !</p>
+        <p>L'anglais arrive au quotidien à travers chants et jeux, l'art développe créativité et sensibilité, et le mouvement prend toute sa place avec un cycle piscine et un cycle rugby dès la Grande Section. Pour apprendre à vivre ensemble, nous construisons un climat de classe serein et utilisons la méthode des messages clairs. Une année riche en découvertes, pour grandir et prendre confiance en soi… ensemble !</p>
+      </div>
+    ),
   },
   {
     name: "Mme Élodie Chaiandard",
