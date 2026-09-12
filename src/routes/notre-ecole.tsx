@@ -59,22 +59,30 @@ const TEAM = [
   {
     name: "Mme Amandine Avellaneda",
     role: "Directrice — classe TPS · PS · MS",
-    text: "« J'ai la joie de diriger notre école et d'accueillir les plus petits pour leurs premiers pas à l'école. Ma priorité : que chaque enfant se sente en confiance, écouté et heureux de venir apprendre, dès ses 2 ans et demi. »",
-  },
-  {
-    name: "Mme Marion Gustin",
-    role: "Classe MS · GS · CP",
-    text: "« Dans ma classe, on passe des jeux de la maternelle aux premières lectures. J'aime accompagner chaque enfant à son rythme, l'encourager à oser et célébrer chacune de ses réussites, même les plus petites. »",
+    text: (
+      <div className="space-y-4 leading-relaxed text-muted-foreground">
+        <p>J'accompagne avec enthousiasme les élèves de 2 à 4 ans, une période riche en découvertes, en expériences et… en petites surprises !</p>
+        <p>Dans ma classe, tout est prétexte à apprendre. Je privilégie le jeu, la manipulation et l'expérimentation pour permettre à chaque enfant de découvrir progressivement la richesse de la langue française, ses mots, ses nuances et le plaisir de les utiliser.</p>
+        <p>En mathématiques aussi, on apprend en faisant ! Jeux, manipulations et ateliers d'autonomie permettent aux élèves d'explorer les quantités, les formes, l'espace et le temps, tout en développant leur réflexion et leur confiance en eux.</p>
+        <p>Les élèves sont prévenus : j'aime les pièges ! Dans certains exercices, de petites difficultés se cachent volontairement… L'objectif ? Faire réfléchir, chercher, essayer, se tromper parfois et surtout comprendre. Car apprendre, c'est aussi apprendre à raisonner !</p>
+        <p>Dans ma classe, nous accordons également une place essentielle au langage et au vivre-ensemble : mettre des mots sur ce que l'on ressent, apprendre à écouter l'autre, coopérer et découvrir que chacun, avec ses différences, est une véritable richesse pour le groupe.</p>
+        <p>Et pour mieux connaître la maîtresse… Mon petit point faible : le chocolat noir ! Heureusement, il n'y a pas encore d'atelier « partage de chocolat » au programme… enfin, pas officiellement !</p>
+      </div>
+    ),
   },
   {
     name: "Mme Élodie Chaiandard",
-    role: "Classe CE1 · CE2 · CM1 · CM2",
-    text: "« Avec les grands, j'ouvre les portes de l'autonomie : apprendre à apprendre, coopérer, argumenter. Mon objectif est qu'ils quittent l'école curieux, confiants et prêts pour le collège. »",
-  },
-  {
-    name: "Mme Donzet",
-    role: "Surveillances et cantine",
-    text: "« Je veille sur les enfants pendant la cantine, les récréations et la garderie. Ces moments de vie comptent autant que la classe : j'y apporte douceur, attention et bonne humeur. »",
+    role: "Classe CE1 · CE2 · CM1",
+    text: (
+      <div className="space-y-4 leading-relaxed text-muted-foreground">
+        <p>Quelques exemples de notre organisation en classe :</p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>Graphisme / écriture / copie : cahiers MDI, notamment pour la tenue du crayon, l'écriture et la copie.</li>
+          <li>Orthographe : Dictée et Histoire des arts, avec une approche qui part d'œuvres artistiques pour introduire les notions, puis réinvestit ces œuvres dans les dictées.</li>
+          <li>Autres apprentissages : séances collectives avec vidéos ou leçons projetées, puis mise en pratique avec des exercices individuels.</li>
+        </ul>
+      </div>
+    ),
   },
 ];
 
@@ -164,12 +172,12 @@ function NotreEcolePage() {
               et travaille main dans la main avec les familles.
             </p>
           </div>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
             {TEAM.map((member) => (
               <article key={member.name} className="rounded-3xl bg-card p-7 shadow-sm">
                 <h3 className="text-lg font-semibold">{member.name}</h3>
                 <p className="mt-1 text-sm font-semibold text-primary">{member.role}</p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{member.text}</p>
+                <div className="mt-4 text-sm">{member.text}</div>
               </article>
             ))}
           </div>
