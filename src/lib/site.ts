@@ -19,7 +19,6 @@ export const NAV_LINKS = [
   { to: "/les-classes", label: "Les classes" },
   { to: "/vie-scolaire", label: "Vie scolaire" },
   { to: "/projet-educatif", label: "Projet éducatif" },
-  { to: "/projet-pastoral", label: "Projet pastoral" },
   { to: "/galerie", label: "Galerie" },
   { to: "/infos-pratiques", label: "Informations pratiques" },
   { to: "/inscriptions", label: "Inscriptions" },

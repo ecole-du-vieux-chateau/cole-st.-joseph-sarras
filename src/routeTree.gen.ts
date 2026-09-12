@@ -18,7 +18,6 @@ import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
 import { Route as NotreEcoleRouteImport } from './routes/notre-ecole'
 import { Route as PolitiqueDeConfidentialiteRouteImport } from './routes/politique-de-confidentialite'
 import { Route as ProjetEducatifRouteImport } from './routes/projet-educatif'
-import { Route as ProjetPastoralRouteImport } from './routes/projet-pastoral'
 import { Route as VieScolaireRouteImport } from './routes/vie-scolaire'
 
 const IndexRoute = IndexRouteImport.update({
@@ -67,11 +66,6 @@ const ProjetEducatifRoute = ProjetEducatifRouteImport.update({
   path: '/projet-educatif',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProjetPastoralRoute = ProjetPastoralRouteImport.update({
-  id: '/projet-pastoral',
-  path: '/projet-pastoral',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const VieScolaireRoute = VieScolaireRouteImport.update({
   id: '/vie-scolaire',
   path: '/vie-scolaire',
@@ -88,7 +82,6 @@ export interface FileRoutesByFullPath {
   '/notre-ecole': typeof NotreEcoleRoute
   '/politique-de-confidentialite': typeof PolitiqueDeConfidentialiteRoute
   '/projet-educatif': typeof ProjetEducatifRoute
-  '/projet-pastoral': typeof ProjetPastoralRoute
   '/vie-scolaire': typeof VieScolaireRoute
 }
 export interface FileRoutesByTo {
@@ -101,7 +94,6 @@ export interface FileRoutesByTo {
   '/notre-ecole': typeof NotreEcoleRoute
   '/politique-de-confidentialite': typeof PolitiqueDeConfidentialiteRoute
   '/projet-educatif': typeof ProjetEducatifRoute
-  '/projet-pastoral': typeof ProjetPastoralRoute
   '/vie-scolaire': typeof VieScolaireRoute
 }
 export interface FileRoutesById {
@@ -115,7 +107,6 @@ export interface FileRoutesById {
   '/notre-ecole': typeof NotreEcoleRoute
   '/politique-de-confidentialite': typeof PolitiqueDeConfidentialiteRoute
   '/projet-educatif': typeof ProjetEducatifRoute
-  '/projet-pastoral': typeof ProjetPastoralRoute
   '/vie-scolaire': typeof VieScolaireRoute
 }
 export interface FileRouteTypes {
@@ -130,7 +121,6 @@ export interface FileRouteTypes {
     | '/notre-ecole'
     | '/politique-de-confidentialite'
     | '/projet-educatif'
-    | '/projet-pastoral'
     | '/vie-scolaire'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -143,7 +133,6 @@ export interface FileRouteTypes {
     | '/notre-ecole'
     | '/politique-de-confidentialite'
     | '/projet-educatif'
-    | '/projet-pastoral'
     | '/vie-scolaire'
   id:
     | '__root__'
@@ -156,7 +145,6 @@ export interface FileRouteTypes {
     | '/notre-ecole'
     | '/politique-de-confidentialite'
     | '/projet-educatif'
-    | '/projet-pastoral'
     | '/vie-scolaire'
   fileRoutesById: FileRoutesById
 }
@@ -170,7 +158,6 @@ export interface RootRouteChildren {
   NotreEcoleRoute: typeof NotreEcoleRoute
   PolitiqueDeConfidentialiteRoute: typeof PolitiqueDeConfidentialiteRoute
   ProjetEducatifRoute: typeof ProjetEducatifRoute
-  ProjetPastoralRoute: typeof ProjetPastoralRoute
   VieScolaireRoute: typeof VieScolaireRoute
 }
 
@@ -239,13 +226,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjetEducatifRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/projet-pastoral': {
-      id: '/projet-pastoral'
-      path: '/projet-pastoral'
-      fullPath: '/projet-pastoral'
-      preLoaderRoute: typeof ProjetPastoralRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/vie-scolaire': {
       id: '/vie-scolaire'
       path: '/vie-scolaire'
@@ -266,7 +246,6 @@ const rootRouteChildren: RootRouteChildren = {
   NotreEcoleRoute: NotreEcoleRoute,
   PolitiqueDeConfidentialiteRoute: PolitiqueDeConfidentialiteRoute,
   ProjetEducatifRoute: ProjetEducatifRoute,
-  ProjetPastoralRoute: ProjetPastoralRoute,
   VieScolaireRoute: VieScolaireRoute,
 }
 export const routeTree = rootRouteImport

@@ -1,5 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { BookOpen, Church, Compass, Cross, HandHeart, HeartHandshake, Languages, ShieldCheck, Sprout, Users } from "lucide-react";
+import { createFileRoute } from "@tanstack/react-router";
+import { BookOpen, Church, Compass, Cross, Gift, HandHeart, HeartHandshake, Languages, ShieldCheck, Sparkles, Sprout, Users } from "lucide-react";
 import { ContactCta, PageHero } from "@/components/page-hero";
 import projetAsset from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
 
@@ -55,6 +55,50 @@ const AXES = [
     icon: Cross,
     title: "Les valeurs chrétiennes",
     text: "Dans l'esprit de l'Évangile, l'école vit l'accueil de tous et la solidarité : temps de partage, gestes d'attention aux autres et ouverture sur le monde.",
+  },
+];
+
+const PASTORAL_AXES = [
+  {
+    icon: HandHeart,
+    title: "Servir",
+    items: [
+      "Accueil des élèves à besoins particuliers et des familles en situation de précarité",
+      "Accompagnement dans les démarches d'aide scolaire et proposition d'aide aux devoirs",
+      "Solidarité au sein de l'équipe et temps d'échange de pratiques",
+      "Tutorat pour accueillir chaque nouveau membre de l'équipe",
+      "Développer la bienveillance : conseils d'élèves, ateliers de pédagogie coopérative",
+    ],
+  },
+  {
+    icon: HeartHandshake,
+    title: "Partager",
+    items: [
+      "Vivre les valeurs de Saint Joseph : entraide, partage, ouverture aux autres, respect, empathie",
+      "Temps communs sur le vivre ensemble et la fraternité",
+      "Actions de solidarité : collectes pour des associations (ELA, journée mondiale de la trisomie 21)",
+      "Actions de carême : partager un bol de riz pour soutenir une association",
+    ],
+  },
+  {
+    icon: Sparkles,
+    title: "Témoigner",
+    items: [
+      "Découverte des religions dans le cadre de la culture religieuse",
+      "Découverte de notre fondatrice et de Saint Joseph",
+      "Temps de culture chrétienne aux grandes fêtes liturgiques : Toussaint, Avent, Noël, Carême, Pâques, Pentecôte",
+      "Apports sur l'art, la musique et la religion",
+    ],
+  },
+  {
+    icon: Gift,
+    title: "Célébrer",
+    items: [
+      "Temps de célébration tout au long de l'année, dont la fête de Noël",
+      "Fête de Saint Joseph le 19 mars",
+      "Chorale interclasse pour apprendre les chants des célébrations",
+      "Pots de rentrée et de fin d'année partagés, fête de l'école",
+    ],
   },
 ];
 
@@ -159,22 +203,80 @@ function ProjetEducatifPage() {
             </ul>
           </article>
         </div>
-        <div className="mt-6 flex flex-col items-start gap-4 rounded-3xl bg-card p-7 shadow-sm sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-start gap-4">
-            <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-              <Church className="size-6" aria-hidden />
-            </span>
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              Ce projet s'accompagne d'un projet d'animation pastorale, dans l'esprit des sœurs de
-              Saint-Joseph : servir, partager, témoigner, célébrer.
+        <div className="mt-6 flex items-start gap-4 rounded-3xl bg-card p-7 shadow-sm">
+          <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+            <Church className="size-6" aria-hidden />
+          </span>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            Ce projet s'accompagne d'un projet d'animation pastorale, dans l'esprit des sœurs de
+            Saint-Joseph, présenté ci-dessous : servir, partager, témoigner, célébrer.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-muted/60">
+        <div className="mx-auto flex max-w-4xl flex-col items-center px-4 py-16 text-center sm:px-6">
+          <span className="flex size-16 items-center justify-center rounded-3xl bg-primary text-primary-foreground">
+            <Church className="size-8" aria-hidden />
+          </span>
+          <div className="mt-6">
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+              Le projet pastoral
+            </p>
+            <h2 className="mt-2 font-display text-3xl font-semibold leading-tight sm:text-4xl">
+              Un climat fraternel et bienveillant
+            </h2>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Notre établissement est sous la tutelle de la congrégation des sœurs de
+              Saint-Joseph. L'animation pastorale s'adresse à tous, quelles que soient les
+              convictions des familles : chaque enfant est un être unique, porteur d'une
+              histoire, capable d'aimer et d'être aimé. Ce projet se vit à travers des actions
+              ponctuelles et des activités régulières, réparties en quatre grands axes.
             </p>
           </div>
-          <Link
-            to="/projet-pastoral"
-            className="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            Découvrir le projet pastoral
-          </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl font-semibold leading-tight sm:text-4xl">
+            Quatre axes pour vivre ensemble
+          </h2>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Chaque action pastorale s'inscrit dans l'un de ces quatre temps forts, portés par
+            toute la communauté éducative.
+          </p>
+        </div>
+        <div className="mt-10 space-y-6">
+          {PASTORAL_AXES.map((axe, index) => (
+            <article
+              key={axe.title}
+              className="grid gap-6 rounded-3xl bg-card p-7 shadow-sm sm:p-8 lg:grid-cols-[auto_1fr]"
+            >
+              <div className="flex items-start gap-4">
+                <span
+                  aria-hidden
+                  className="font-display text-4xl font-semibold leading-none text-primary/25"
+                >
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                  <axe.icon className="size-6" aria-hidden />
+                </span>
+              </div>
+              <div>
+                <h3 className="font-display text-xl font-semibold">{axe.title}</h3>
+                <ul className="mt-4 grid gap-2 text-sm leading-relaxed text-muted-foreground sm:grid-cols-2">
+                  {axe.items.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span aria-hidden className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
