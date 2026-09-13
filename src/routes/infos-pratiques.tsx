@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Clock, FileText, Mail, MapPin, Phone, Smartphone } from "lucide-react";
+import { Calendar, Clock, FileText, Mail, MapPin, Phone, Smartphone } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
 import { SCHOOL } from "@/lib/site";
 
@@ -113,6 +113,26 @@ function InfosPratiquesPage() {
                 L'entrée des élèves se situe rue du Peycher. Le portail est ouvert de
                 8h20 à 8h30 et de 13h20 à 13h30. Pour le périscolaire, merci de sonner à
                 l'interphone.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-card p-7 shadow-sm">
+              <h2 className="flex items-center gap-3 text-xl font-semibold">
+                <Calendar className="size-5 text-primary" aria-hidden />
+                Portes ouvertes
+              </h2>
+              <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                <li className="flex justify-between rounded-xl bg-muted/60 px-4 py-2.5">
+                  <span>Samedi 7 novembre 2026</span>
+                </li>
+                <li className="flex justify-between rounded-xl bg-muted/60 px-4 py-2.5">
+                  <span>Samedi 20 mars 2027</span>
+                </li>
+              </ul>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                <span className="font-semibold text-foreground">Bon à savoir :</span> la garderie
+                fonctionne sans inscription — déposez votre enfant le matin dès 7h30 et
+                récupérez-le le soir jusqu'à 18h30.
               </p>
             </div>
           </div>
