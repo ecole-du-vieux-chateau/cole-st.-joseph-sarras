@@ -114,6 +114,11 @@ function InfosPratiquesPage() {
                 8h20 à 8h30 et de 13h20 à 13h30. Pour le périscolaire, merci de sonner à
                 l'interphone.
               </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                <span className="font-semibold text-foreground">Bon à savoir :</span> la garderie
+                fonctionne sans inscription — déposez votre enfant le matin dès 7h30 et
+                récupérez-le le soir jusqu'à 18h30.
+              </p>
             </div>
 
             <div className="rounded-3xl bg-card p-7 shadow-sm">
@@ -129,11 +134,6 @@ function InfosPratiquesPage() {
                   <span>Samedi 20 mars 2027</span>
                 </li>
               </ul>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                <span className="font-semibold text-foreground">Bon à savoir :</span> la garderie
-                fonctionne sans inscription — déposez votre enfant le matin dès 7h30 et
-                récupérez-le le soir jusqu'à 18h30.
-              </p>
             </div>
           </div>
 
