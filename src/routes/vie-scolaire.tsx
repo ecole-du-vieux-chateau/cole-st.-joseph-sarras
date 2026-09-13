@@ -33,8 +33,8 @@ export const Route = createFileRoute("/vie-scolaire")({
 });
 
 const PROJECTS = [
-  { icon: TreePine, title: "Sorties éducatives", text: "Découverte de la nature ardéchoise, visites patrimoniales et sorties culturelles au fil de l'année." },
-  { icon: Trophy, title: "Activités sportives", text: "Séances de sport régulières et rencontres inter-écoles pour bouger et grandir en équipe." },
+  { icon: TreePine, title: "Sorties éducatives", text: "Découverte de la nature ardéchoise, visites patrimoniales et sorties culturelles au fil de l'année. L'école se met aussi au vert une fois par mois." },
+  { icon: Trophy, title: "Activités sportives", text: "Séances de sport régulières et rencontres inter-écoles pour bouger et grandir en équipe. En maternelle, des cours de motricité ont lieu tous les jours." },
   { icon: Palette, title: "Projets artistiques", text: "Arts plastiques, musique et spectacles qui développent la créativité et la confiance en soi." },
   { icon: Sparkles, title: "Partage entre les classes", text: "Tutorat, fêtes d'école et temps forts qui rassemblent petits et grands tout au long de l'année." },
 ];
@@ -105,7 +105,8 @@ function VieScolairePage() {
             <p className="mt-4 leading-relaxed text-muted-foreground">
               Les repas sont fournis par un prestataire de restauration et servis chauds chaque
               midi. Le déjeuner est un vrai temps de vie : les enfants partagent un repas équilibré
-              dans une ambiance détendue, encadrée par l'équipe.
+              dans une ambiance détendue, encadrée par l'équipe. Trois menus sont proposés chaque
+              jour : classique, alternatif et sans porc.
             </p>
             <ul className="mt-6 space-y-3 text-sm">
               <li className="flex items-center justify-between gap-3 rounded-2xl bg-background px-5 py-3.5">
@@ -121,7 +122,7 @@ function VieScolairePage() {
               >
                 cantine@ecoleprivedesarras.fr
               </a>
-              . Pensez à désinscrire votre enfant en cas de sortie scolaire. Pour les projets
+              . Pensez à désinscrire votre enfant en cas d'absence. Pour les projets
               d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la
               famille.
             </p>
@@ -254,7 +255,8 @@ function VieScolairePage() {
               vie de famille au sein de l'école : kermesse, marché de Noël, loto, vide-grenier,
               ventes de gâteaux… Tout l'argent récolté finance les activités scolaires, les
               spectacles, les livres et le matériel de sport. L'APEL est aussi la voix et le
-              relais des parents auprès de l'équipe pédagogique.
+              relais des parents auprès de l'équipe pédagogique. Tous les 3 ans, elle contribue
+              financièrement au voyage scolaire des enfants, à partir du CP.
             </p>
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Café de bienvenue le jour de la rentrée, manifestations et temps conviviaux :

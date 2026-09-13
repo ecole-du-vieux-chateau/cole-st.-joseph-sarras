@@ -96,7 +96,7 @@ const TEAM = [
     ),
   },
   {
-    name: "Mme Marine",
+    name: "Mme Marine GILLOZ",
     role: "ASEM",
     text: (
       <div className="space-y-4 leading-relaxed text-muted-foreground">
@@ -151,8 +151,8 @@ function NotreEcolePage() {
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               Entourée de nature, l'école profite de son cadre ardéchois : la cour ombragée, les
-              sorties au fil des saisons et la vie du village nourrissent les apprentissages et le
-              sens de la communauté.
+              journées de l'école à l'extérieur au fil des saisons et la vie du village nourrissent
+              les apprentissages et le sens de la communauté.
             </p>
           </div>
         </div>
