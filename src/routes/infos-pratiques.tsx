@@ -31,7 +31,7 @@ function InfosPratiquesPage() {
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="grid gap-6 lg:grid-cols-2 lg:items-start">
+        <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
           {/* Coordonnées et horaires */}
           <div className="space-y-5">
             <div className="rounded-3xl bg-card p-7 shadow-sm">
