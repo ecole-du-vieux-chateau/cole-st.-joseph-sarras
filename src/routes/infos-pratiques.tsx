@@ -88,6 +88,31 @@ function InfosPratiquesPage() {
 
             <div className="rounded-3xl bg-card p-7 shadow-sm">
               <h2 className="flex items-center gap-3 text-xl font-semibold">
+                <svg
+                  className="size-5 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden
+                >
+                  <path d="M24 12.073C24 5.404 18.627 0 12 0S0 5.404 0 12.073C0 18.098 4.388 23.028 10.125 23.929V15.53H7.078v-3.457h3.047V9.653c0-3.017 1.792-4.683 4.534-4.683 1.314 0 2.688.236 2.688.236v2.964h-1.514c-1.49 0-1.955.93-1.955 1.882v2.258h3.328l-.532 3.457h-2.796v8.398C19.612 23.028 24 18.098 24 12.073z" />
+                </svg>
+                Suivez-nous
+              </h2>
+              <a
+                href="https://www.facebook.com/EcolechateauSarras/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 flex items-center gap-3 rounded-2xl bg-secondary/60 px-5 py-3.5 font-semibold text-secondary-foreground transition-colors hover:bg-secondary"
+              >
+                <svg className="size-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                  <path d="M24 12.073C24 5.404 18.627 0 12 0S0 5.404 0 12.073C0 18.098 4.388 23.028 10.125 23.929V15.53H7.078v-3.457h3.047V9.653c0-3.017 1.792-4.683 4.534-4.683 1.314 0 2.688.236 2.688.236v2.964h-1.514c-1.49 0-1.955.93-1.955 1.882v2.258h3.328l-.532 3.457h-2.796v8.398C19.612 23.028 24 18.098 24 12.073z" />
+                </svg>
+                École du Vieux Château sur Facebook
+              </a>
+            </div>
+
+            <div className="rounded-3xl bg-card p-7 shadow-sm">
+              <h2 className="flex items-center gap-3 text-xl font-semibold">
                 <Clock className="size-5 text-primary" aria-hidden />
                 Horaires
               </h2>
