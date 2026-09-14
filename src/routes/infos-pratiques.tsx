@@ -124,13 +124,13 @@ function InfosPratiquesPage() {
 
           {/* Plan d'accès, réseaux et portes ouvertes */}
           <div className="flex flex-col gap-5">
-            <div className="overflow-hidden rounded-3xl bg-card shadow-sm">
+            <div className="flex-1 overflow-hidden rounded-3xl bg-card shadow-sm">
               <iframe
                 title="Plan d'accès — École du Vieux Château, 5 Place du Peycher, 07370 Sarras"
                 src="https://www.google.com/maps?q=5+Place+du+Peycher,+07370+Sarras,+France&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="h-80 w-full border-0 lg:h-96"
+                className="h-full min-h-[20rem] w-full border-0"
                 allowFullScreen
               />
             </div>
