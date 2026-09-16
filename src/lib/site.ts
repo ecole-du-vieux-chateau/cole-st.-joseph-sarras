@@ -9,8 +9,8 @@ export const SCHOOL = {
   phoneHref: "tel:+33475231587",
   mobile: "06 30 15 93 34",
   mobileHref: "tel:+33630159334",
-  email: "contact@ecoleprivedesarras.fr",
-  emailHref: "mailto:contact@ecoleprivedesarras.fr",
+  email: "contact@ecoleduvieuxchateau.fr",
+  emailHref: "mailto:contact@ecoleduvieuxchateau.fr",
 };
 
 export const NAV_LINKS = [
