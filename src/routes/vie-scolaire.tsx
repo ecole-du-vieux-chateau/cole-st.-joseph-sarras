@@ -126,6 +126,8 @@ function VieScolairePage() {
               d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la
               famille.
             </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Modalités cantine : toute modification doit être faite par le QR code,{
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <div className="flex items-center gap-4 rounded-2xl bg-background p-4">
                 <img
