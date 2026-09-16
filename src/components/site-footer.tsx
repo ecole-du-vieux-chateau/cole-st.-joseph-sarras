@@ -7,14 +7,14 @@ import { NAV_LINKS, SCHOOL } from "@/lib/site";
 export function SiteFooter() {
   return (
     <footer className="border-t border-border/60 bg-secondary/40">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
-        <div className="flex flex-col items-center md:items-start">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-4 py-14 sm:px-6 md:grid-cols-3 md:gap-10">
+        <div className="col-span-2 flex flex-col items-center md:col-span-1 md:items-start">
           <img
             src={logoAsset}
             alt="École privée du Vieux Château"
             className="h-36 w-auto md:h-40"
           />
-          <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-4 max-w-xs text-center text-sm leading-relaxed text-muted-foreground md:text-left">
             École catholique privée sous contrat avec l'État, de la Toute Petite Section au CM2,
             au cœur du village de Sarras en Ardèche.
           </p>
