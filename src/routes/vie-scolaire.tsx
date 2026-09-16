@@ -114,7 +114,7 @@ function VieScolairePage() {
                 <span className="font-display text-lg font-semibold text-foreground">5,10 € / repas</span>
               </li>
             </ul>
-            <p className="mt-5 text-xs leading-relaxed text-muted-foreground">
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Les inscriptions et les règlements de cantine s'effectuent en ligne auprès de{" "}
               <a
                 href="mailto:cantine@ecoleprivedesarras.fr"
