@@ -114,7 +114,7 @@ function VieScolairePage() {
                 <span className="font-display text-lg font-semibold text-foreground">5,10 € / repas</span>
               </li>
             </ul>
-            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-5 text-xs leading-relaxed text-muted-foreground">
               Les inscriptions et les règlements de cantine s'effectuent en ligne auprès de{" "}
               <a
                 href="mailto:cantine@ecoleprivedesarras.fr"
@@ -122,12 +122,7 @@ function VieScolairePage() {
               >
                 cantine@ecoleprivedesarras.fr
               </a>
-              . Pensez à désinscrire votre enfant en cas d'absence. Pour les projets
-              d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la
-              famille.
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Modalités cantine : toute modification doit être faite par le QR code, de 15 jours avant pour ne pas avoir à payer de pénalités de 5 €.
+              . Pensez à désinscrire votre enfant en cas d'absence. Pour les projets d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la famille. Modalités cantine : toute modification doit être faite par le QR code, de 15 jours avant pour ne pas avoir à payer de pénalités de 5 €.
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <div className="flex items-center gap-4 rounded-2xl bg-background p-4">

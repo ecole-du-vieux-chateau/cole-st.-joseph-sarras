@@ -12,7 +12,7 @@ export function SiteFooter() {
           <img
             src={logoAsset}
             alt="École privée du Vieux Château"
-            className="h-24 w-auto md:h-28"
+            className="h-48 w-auto md:h-56"
           />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
             École catholique privée sous contrat avec l'État, de la Toute Petite Section au CM2,
