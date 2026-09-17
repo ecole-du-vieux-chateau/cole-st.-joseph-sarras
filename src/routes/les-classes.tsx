@@ -53,7 +53,7 @@ const CLASSES = [
     alt: "Élèves de cycle 3 travaillant en groupe sur un projet",
     title: "Classe CE1 · CE2 · CM1 · CM2",
     levels: ["CE1", "CE2", "CM1", "CM2"],
-    teacher: "Mme Chaiandard Élodie",
+    teacher: "Mme Chalandard Élodie",
     description:
       "Le cycle de consolidation qui prépare au collège. Les élèves approfondissent leurs connaissances, développent leur esprit critique et gagnent en autonomie à travers des projets, des travaux de groupe et des responsabilités.",
   },
