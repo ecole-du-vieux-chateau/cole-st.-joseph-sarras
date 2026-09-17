@@ -81,7 +81,7 @@ const TEAM = [
     ),
   },
   {
-    name: "Mme Élodie Chaiandard",
+    name: "Mme Élodie Chalandard",
     role: "Classe CE1 · CE2 · CM1",
     text: (
       <div className="space-y-4 leading-relaxed text-muted-foreground">
