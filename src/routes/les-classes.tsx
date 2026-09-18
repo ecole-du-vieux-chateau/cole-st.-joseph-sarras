@@ -102,20 +102,6 @@ function LesClassesPage() {
         ))}
       </section>
 
-      <section className="bg-secondary/45">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-16 text-center sm:px-6">
-          <span className="flex size-14 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
-            <HandHeart className="size-7" aria-hidden />
-          </span>
-          <blockquote className="max-w-3xl font-display text-2xl font-medium leading-relaxed text-foreground sm:text-3xl">
-            « Faire grandir chaque enfant, c'est d'abord le regarder avec bienveillance. »
-          </blockquote>
-          <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-            L'esprit de l'École du Vieux Château
-          </p>
-        </div>
-      </section>
-
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="text-center">
           <h2 className="text-3xl font-semibold leading-tight">Visitez l'école en vidéo</h2>
@@ -133,6 +119,20 @@ function LesClassesPage() {
             allowFullScreen
             className="aspect-video w-full"
           />
+        </div>
+      </section>
+
+      <section className="bg-secondary/45">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-16 text-center sm:px-6">
+          <span className="flex size-14 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
+            <HandHeart className="size-7" aria-hidden />
+          </span>
+          <blockquote className="max-w-3xl font-display text-2xl font-medium leading-relaxed text-foreground sm:text-3xl">
+            « Faire grandir chaque enfant, c'est d'abord le regarder avec bienveillance. »
+          </blockquote>
+          <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+            L'esprit de l'École du Vieux Château
+          </p>
         </div>
       </section>
 
