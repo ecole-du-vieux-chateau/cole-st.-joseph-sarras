@@ -177,12 +177,11 @@ function InfosPratiquesPage() {
             Documents utiles
           </h2>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Retrouvez ici les documents de référence de l'école. Les liens seront
-            prochainement mis à jour avec les fichiers officiels.
+            Retrouvez ici les documents de référence de l'école.
           </p>
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             <a
-              href="https://drive.google.com/file/d/1FAKE_GAZETTE_ID/view?usp=sharing"
+              href="https://drive.google.com/drive/u/0/folders/1XpxiGPPaMNyydyWoxhezcSfiguvZTbgJ"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 rounded-2xl bg-secondary/60 p-5 transition-colors hover:bg-secondary"
@@ -191,12 +190,12 @@ function InfosPratiquesPage() {
                 <FileText className="size-6" aria-hidden />
               </div>
               <div className="min-w-0">
-                <p className="font-semibold text-foreground">Télécharger la Gazette</p>
+                <p className="font-semibold text-foreground">Consulter les Gazettes de l'année scolaire</p>
                 <p className="text-sm text-muted-foreground">Journal de l'école</p>
               </div>
             </a>
             <a
-              href="https://drive.google.com/file/d/1FAKE_REGLEMENT_ID/view?usp=sharing"
+              href="https://drive.google.com/file/d/1f8TWOgF7sqPRwaX32ggyewFLyEjSi7f8/view?pli=1"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 rounded-2xl bg-secondary/60 p-5 transition-colors hover:bg-secondary"
