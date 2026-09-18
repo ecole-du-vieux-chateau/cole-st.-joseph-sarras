@@ -102,7 +102,7 @@ function LesClassesPage() {
         ))}
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <section className="mx-auto max-w-6xl px-4 pt-8 pb-16 sm:px-6">
         <div className="text-center">
           <h2 className="text-3xl font-semibold leading-tight">Visitez l'école en vidéo</h2>
           <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
