@@ -146,7 +146,7 @@ const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout" | "
 ];
 
 function GaleriePage() {
-  const [category, setCategory] = useState<Category>("Tout");
+  const [category, setCategory] = useState<Category>("Vidéo");
   const [selected, setSelected] = useState<(typeof PHOTOS)[number] | null>(null);
 
   const photos = useMemo(

@@ -116,11 +116,6 @@ function LesClassesPage() {
         </div>
       </section>
 
-      <ContactCta
-        title="Une question sur les classes ?"
-        text="Appelez-nous pour échanger sur la scolarité de votre enfant et organiser une visite de l'école."
-      />
-
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="text-center">
           <h2 className="text-3xl font-semibold leading-tight">Visitez l'école en vidéo</h2>
@@ -140,6 +135,11 @@ function LesClassesPage() {
           />
         </div>
       </section>
+
+      <ContactCta
+        title="Une question sur les classes ?"
+        text="Appelez-nous pour échanger sur la scolarité de votre enfant et organiser une visite de l'école."
+      />
     </>
   );
 }
