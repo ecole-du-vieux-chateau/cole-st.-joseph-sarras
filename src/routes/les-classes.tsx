@@ -120,6 +120,26 @@ function LesClassesPage() {
         title="Une question sur les classes ?"
         text="Appelez-nous pour échanger sur la scolarité de votre enfant et organiser une visite de l'école."
       />
+
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="text-center">
+          <h2 className="text-3xl font-semibold leading-tight">Visitez l'école en vidéo</h2>
+          <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
+            Une visite virtuelle de l'école, de la cour aux classes, pour découvrir les lieux
+            comme si vous y étiez.
+          </p>
+        </div>
+        <div className="school-photo-frame mx-auto mt-8 max-w-4xl overflow-hidden">
+          <iframe
+            src="https://www.youtube.com/embed/TgzETXkyqvg"
+            title="Visite virtuelle de l'École du Vieux Château"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="aspect-video w-full"
+          />
+        </div>
+      </section>
     </>
   );
 }
