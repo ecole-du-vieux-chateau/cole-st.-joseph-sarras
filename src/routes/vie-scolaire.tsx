@@ -116,32 +116,17 @@ function VieScolairePage() {
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Les inscriptions et les règlements de cantine s'effectuent en ligne auprès de{" "}
               <a
-                href="mailto:cantine@ecoleduvieuxchateau.fr"
+                href="mailto:cantine.ecoleduvieuxchateau@gmail.com"
                 className="font-semibold text-primary underline-offset-4 hover:underline"
               >
-                cantine@ecoleduvieuxchateau.fr
+                cantine.ecoleduvieuxchateau@gmail.com
               </a>
-              . Pensez à désinscrire votre enfant en cas d'absence. Pour les projets d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la famille. Modalités cantine : toute modification doit être faite par le QR code, de 15 jours avant pour ne pas avoir à payer de pénalités de 5 €.
+              . Pensez à désinscrire votre enfant en cas d'absence. Pour les projets d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la famille.
             </p>
           </div>
         </div>
         <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div className="flex items-center gap-4 rounded-2xl bg-background p-4">
-              <img
-                src={qrCantineImg}
-                alt="QR code vers le formulaire d'inscription et d'annulation de cantine"
-                width={96}
-                height={96}
-                loading="lazy"
-                className="size-24 shrink-0 rounded-xl"
-              />
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                <span className="font-semibold text-foreground">Repas ponctuel ?</span>
-                <br />
-                Flashez ce QR code pour inscrire ou désinscrire votre enfant à la cantine.
-              </p>
-            </div>
+          <div className="grid gap-4">
             <a
               href="https://www.guillaud-traiteur.com/7-actualites.html"
               target="_blank"
