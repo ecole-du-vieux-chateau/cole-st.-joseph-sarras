@@ -1,14 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HandHeart, HeartHandshake, ShieldCheck, Trophy, ArrowRight, Users, Landmark, BookOpen, Home } from "lucide-react";
-import heroAsset from "@/assets/facade-ecole-entree.png.asset.json";
-import classeAsset from "@/assets/photo-travail-classe-enfants.jpg.asset.json";
-import fresqueAsset from "@/assets/photo-activite-fresque-cour-flou.jpg.asset.json";
-import parcoursAsset from "@/assets/photo-sortie-parcours-nature-flou.jpg.asset.json";
+const heroAsset = "/images/facade-ecole-entree.png";
+const classeAsset = "/images/photo-travail-classe-enfants.jpg";
+const fresqueAsset = "/images/photo-activite-fresque-cour-flou.jpg";
+const parcoursAsset = "/images/photo-sortie-parcours-nature-flou.jpg";
 
-const heroImg = heroAsset.url;
-const classeImg = classeAsset.url;
-const fresqueImg = fresqueAsset.url;
-const parcoursImg = parcoursAsset.url;
+const heroImg = heroAsset;
+const classeImg = classeAsset;
+const fresqueImg = fresqueAsset;
+const parcoursImg = parcoursAsset;
 import { ContactCta } from "@/components/page-hero";
 import { SCHOOL } from "@/lib/site";
 

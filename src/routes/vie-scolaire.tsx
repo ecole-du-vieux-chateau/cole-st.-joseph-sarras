@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, ExternalLink, HandCoins, Landmark, Palette, PartyPopper, Sparkles, TreePine, Trophy, Users, UtensilsCrossed, Wrench } from "lucide-react";
-import garderieAsset from "@/assets/cour-recreation.jpg.asset.json";
-import cantineAsset from "@/assets/cantine-ecole.jpg.asset.json";
-import classeElementaireAsset from "@/assets/photo-classe-elementaire-cours-flou.jpg.asset.json";
+const garderieAsset = "/images/cour-recreation.jpg";
+const cantineAsset = "/images/cantine-ecole.jpg";
+const classeElementaireAsset = "/images/photo-classe-elementaire-cours-flou.jpg";
 
-const garderieImg = garderieAsset.url;
-const cantineImg = cantineAsset.url;
-const classeElementaireImg = classeElementaireAsset.url;
-import sortieAsset from "@/assets/photo-rassemblement-cour-flou.jpg.asset.json";
-const sortieImg = sortieAsset.url;
+const garderieImg = garderieAsset;
+const cantineImg = cantineAsset;
+const classeElementaireImg = classeElementaireAsset;
+const sortieAsset = "/images/photo-rassemblement-cour-flou.jpg";
+const sortieImg = sortieAsset;
 import { ContactCta, PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/vie-scolaire")({

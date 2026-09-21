@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CalendarCheck, FileText, Mail, Phone, School } from "lucide-react";
-import groupeAsset from "@/assets/photo-travail-groupe-flou.jpg.asset.json";
+const groupeAsset = "/images/photo-travail-groupe-flou.jpg";
 
-const groupeImg = groupeAsset.url;
+const groupeImg = groupeAsset;
 import { PageHero } from "@/components/page-hero";
 import { SCHOOL } from "@/lib/site";
 
