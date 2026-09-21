@@ -116,10 +116,10 @@ function VieScolairePage() {
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Les inscriptions et les règlements de cantine s'effectuent en ligne auprès de{" "}
               <a
-                href="mailto:cantine@ecoleduvieuxchateau.fr"
+                href="mailto:cantine.ecoleduvieuxchateau@gmail.com"
                 className="font-semibold text-primary underline-offset-4 hover:underline"
               >
-                cantine@ecoleduvieuxchateau.fr
+                cantine.ecoleduvieuxchateau@gmail.com
               </a>
               . Pensez à désinscrire votre enfant en cas d'absence. Pour les projets d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la famille.
             </p>
@@ -222,8 +222,8 @@ function VieScolairePage() {
             </ul>
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Envie de donner un coup de main, même une heure par mois ? Écrivez à{" "}
-              <a href="mailto:ogec.adm@ecoleduvieuxchateau.fr" className="font-semibold text-primary underline-offset-4 hover:underline">
-                ogec.adm@ecoleduvieuxchateau.fr
+              <a href="mailto:adm.ogecduvieuxchateau007@gmail.com" className="font-semibold text-primary underline-offset-4 hover:underline">
+                adm.ogecduvieuxchateau007@gmail.com
               </a>
             </p>
           </article>
@@ -243,8 +243,8 @@ function VieScolairePage() {
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Café de bienvenue le jour de la rentrée, manifestations et temps conviviaux :
               toutes les bonnes volontés et les talents cachés sont les bienvenus. Contact :{" "}
-              <a href="mailto:apel@ecoleduvieuxchateau.fr" className="font-semibold text-primary underline-offset-4 hover:underline">
-                apel@ecoleduvieuxchateau.fr
+              <a href="mailto:apel.sarras@gmail.com" className="font-semibold text-primary underline-offset-4 hover:underline">
+                apel.sarras@gmail.com
               </a>
             </p>
           </article>
@@ -259,36 +259,36 @@ function VieScolairePage() {
             <div>
               <p className="font-semibold text-foreground">Enseignement et absences</p>
               <p className="mt-1">Projet pédagogique, suivi de votre enfant, absences.</p>
-              <a href="mailto:contact@ecoleduvieuxchateau.fr" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
-                contact@ecoleduvieuxchateau.fr
+              <a href="mailto:ecoleduvieuxchateau.sarras@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                ecoleduvieuxchateau.sarras@gmail.com
               </a>
             </div>
             <div>
               <p className="font-semibold text-foreground">Cantine</p>
               <p className="mt-1">Inscriptions, menus et questions sur les repas.</p>
-              <a href="mailto:cantine@ecoleduvieuxchateau.fr" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
-                cantine@ecoleduvieuxchateau.fr
+              <a href="mailto:cantine.ecoleduvieuxchateau@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                cantine.ecoleduvieuxchateau@gmail.com
               </a>
             </div>
             <div>
               <p className="font-semibold text-foreground">Factures</p>
               <p className="mt-1">Une question sur votre facture ?</p>
-              <a href="mailto:ogec.compta@ecoleduvieuxchateau.fr" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
-                ogec.compta@ecoleduvieuxchateau.fr
+              <a href="mailto:ogec.sarras.comptabilite@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                ogec.sarras.comptabilite@gmail.com
               </a>
             </div>
             <div>
               <p className="font-semibold text-foreground">Vie de l'école (OGEC)</p>
               <p className="mt-1">Idées à partager, coup de main aux bénévoles.</p>
-              <a href="mailto:ogec.adm@ecoleduvieuxchateau.fr" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
-                ogec.adm@ecoleduvieuxchateau.fr
+              <a href="mailto:adm.ogecduvieuxchateau007@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                adm.ogecduvieuxchateau007@gmail.com
               </a>
             </div>
             <div>
               <p className="font-semibold text-foreground">Événements (APEL)</p>
               <p className="mt-1">Kermesse, marché de Noël, loto… ou envie d'aider.</p>
-              <a href="mailto:apel@ecoleduvieuxchateau.fr" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
-                apel@ecoleduvieuxchateau.fr
+              <a href="mailto:apel.sarras@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                apel.sarras@gmail.com
               </a>
             </div>
             <div>
