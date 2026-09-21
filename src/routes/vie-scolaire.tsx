@@ -7,7 +7,6 @@ import classeElementaireAsset from "@/assets/photo-classe-elementaire-cours-flou
 const garderieImg = garderieAsset.url;
 const cantineImg = cantineAsset.url;
 const classeElementaireImg = classeElementaireAsset.url;
-import qrCantineImg from "@/assets/qr-cantine.png";
 import sortieAsset from "@/assets/photo-rassemblement-cour-flou.jpg.asset.json";
 const sortieImg = sortieAsset.url;
 import { ContactCta, PageHero } from "@/components/page-hero";
