@@ -7,7 +7,6 @@ import classeElementaireAsset from "@/assets/photo-classe-elementaire-cours-flou
 const garderieImg = garderieAsset.url;
 const cantineImg = cantineAsset.url;
 const classeElementaireImg = classeElementaireAsset.url;
-import qrCantineImg from "@/assets/qr-cantine.png";
 import sortieAsset from "@/assets/photo-rassemblement-cour-flou.jpg.asset.json";
 const sortieImg = sortieAsset.url;
 import { ContactCta, PageHero } from "@/components/page-hero";
@@ -122,41 +121,24 @@ function VieScolairePage() {
               >
                 cantine@ecoleduvieuxchateau.fr
               </a>
-              . Pensez à désinscrire votre enfant en cas d'absence. Pour les projets d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la famille. Modalités cantine : toute modification doit être faite par le QR code, de 15 jours avant pour ne pas avoir à payer de pénalités de 5 €.
+              . Pensez à désinscrire votre enfant en cas d'absence. Pour les projets d'accueil individualisé (PAI), un avoir est appliqué sur les repas apportés par la famille.
             </p>
           </div>
         </div>
         <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div className="flex items-center gap-4 rounded-2xl bg-background p-4">
-              <img
-                src={qrCantineImg}
-                alt="QR code vers le formulaire d'inscription et d'annulation de cantine"
-                width={96}
-                height={96}
-                loading="lazy"
-                className="size-24 shrink-0 rounded-xl"
-              />
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                <span className="font-semibold text-foreground">Repas ponctuel ?</span>
-                <br />
-                Flashez ce QR code pour inscrire ou désinscrire votre enfant à la cantine.
-              </p>
-            </div>
-            <a
-              href="https://www.guillaud-traiteur.com/7-actualites.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between gap-4 rounded-2xl bg-background p-4 transition-colors hover:bg-accent"
-            >
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                <span className="font-semibold text-foreground">Les menus en cours</span>
-                <br />
-                Consultez les menus de notre traiteur Guillaud.
-              </p>
-              <ExternalLink className="size-5 shrink-0 text-primary" aria-hidden />
-            </a>
-          </div>
+          <a
+            href="https://www.guillaud-traiteur.com/7-actualites.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-between gap-4 rounded-2xl bg-background p-4 transition-colors hover:bg-accent"
+          >
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              <span className="font-semibold text-foreground">Les menus en cours</span>
+              <br />
+              Consultez les menus de notre traiteur Guillaud.
+            </p>
+            <ExternalLink className="size-5 shrink-0 text-primary" aria-hidden />
+          </a>
         </div>
       </section>
 
