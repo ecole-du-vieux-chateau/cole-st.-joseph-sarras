@@ -181,7 +181,7 @@ function InfosPratiquesPage() {
           </p>
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             <a
-              href="https://drive.google.com/drive/folders/1oAPuQO298M5YOQTSSFAmitUQpyZ2qXxl?usp=sharing"
+              href="https://drive.google.com/drive/u/0/folders/1oAPuQO298M5YOQTSSFAmitUQpyZ2qXxl"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 rounded-2xl bg-secondary/60 p-5 transition-colors hover:bg-secondary"
