@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BookOpenCheck, GraduationCap, Heart, Landmark, Users } from "lucide-react";
-import ecoleAsset from "@/assets/facade-ecole.jpg.asset.json";
-import heroAsset from "@/assets/activite-parachute-cour.jpg.asset.json";
-import histoireAsset from "@/assets/ecole-histoire-archive.jpg.asset.json";
+const ecoleAsset = "/images/facade-ecole.jpg";
+const heroAsset = "/images/activite-parachute-cour.jpg";
+const histoireAsset = "/images/ecole-histoire-archive.jpg";
 
-const ecoleImg = ecoleAsset.url;
-const heroImg = heroAsset.url;
-const histoireImg = histoireAsset.url;
+const ecoleImg = ecoleAsset;
+const heroImg = heroAsset;
+const histoireImg = histoireAsset;
 import { ContactCta, PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/notre-ecole")({

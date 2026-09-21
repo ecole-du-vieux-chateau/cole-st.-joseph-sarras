@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, ExternalLink, HandCoins, Landmark, Palette, PartyPopper, Sparkles, TreePine, Trophy, Users, UtensilsCrossed, Wrench } from "lucide-react";
-import garderieAsset from "@/assets/cour-recreation.jpg.asset.json";
-import cantineAsset from "@/assets/cantine-ecole.jpg.asset.json";
-import classeElementaireAsset from "@/assets/photo-classe-elementaire-cours-flou.jpg.asset.json";
+const garderieAsset = "/images/cour-recreation.jpg";
+const cantineAsset = "/images/cantine-ecole.jpg";
+const classeElementaireAsset = "/images/photo-classe-elementaire-cours-flou.jpg";
 
-const garderieImg = garderieAsset.url;
-const cantineImg = cantineAsset.url;
-const classeElementaireImg = classeElementaireAsset.url;
-import sortieAsset from "@/assets/photo-rassemblement-cour-flou.jpg.asset.json";
-const sortieImg = sortieAsset.url;
+const garderieImg = garderieAsset;
+const cantineImg = cantineAsset;
+const classeElementaireImg = classeElementaireAsset;
+const sortieAsset = "/images/photo-rassemblement-cour-flou.jpg";
+const sortieImg = sortieAsset;
 import { ContactCta, PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/vie-scolaire")({
@@ -126,19 +126,21 @@ function VieScolairePage() {
           </div>
         </div>
         <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
-          <a
-            href="https://www.guillaud-traiteur.com/7-actualites.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-between gap-4 rounded-2xl bg-background p-4 transition-colors hover:bg-accent"
-          >
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              <span className="font-semibold text-foreground">Les menus en cours</span>
-              <br />
-              Consultez les menus de notre traiteur Guillaud.
-            </p>
-            <ExternalLink className="size-5 shrink-0 text-primary" aria-hidden />
-          </a>
+          <div className="grid gap-4">
+            <a
+              href="https://www.guillaud-traiteur.com/7-actualites.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between gap-4 rounded-2xl bg-background p-4 transition-colors hover:bg-accent"
+            >
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                <span className="font-semibold text-foreground">Les menus en cours</span>
+                <br />
+                Consultez les menus de notre traiteur Guillaud.
+              </p>
+              <ExternalLink className="size-5 shrink-0 text-primary" aria-hidden />
+            </a>
+          </div>
         </div>
       </section>
 

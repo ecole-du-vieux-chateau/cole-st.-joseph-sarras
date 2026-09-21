@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { HandHeart } from "lucide-react";
-import maternelleAsset from "@/assets/classe-maternelle-3.jpg.asset.json";
-import cycle2Asset from "@/assets/classe-elementaire-2.jpg.asset.json";
-import cycle3Asset from "@/assets/classe-elementaire-1.jpg.asset.json";
+const maternelleAsset = "/images/classe-maternelle-3.jpg";
+const cycle2Asset = "/images/classe-elementaire-2.jpg";
+const cycle3Asset = "/images/classe-elementaire-1.jpg";
 
-const maternelleImg = maternelleAsset.url;
-const cycle2Img = cycle2Asset.url;
-const cycle3Img = cycle3Asset.url;
+const maternelleImg = maternelleAsset;
+const cycle2Img = cycle2Asset;
+const cycle3Img = cycle3Asset;
 import { ContactCta, PageHero } from "@/components/page-hero";
 
 export const Route = createFileRoute("/les-classes")({
