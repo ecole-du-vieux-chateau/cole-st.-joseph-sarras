@@ -1,63 +1,63 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { X } from "lucide-react";
 import { useMemo, useState } from "react";
-import facadeAsset from "@/assets/facade-ecole.jpg.asset.json";
-import courAsset from "@/assets/cour-recreation.jpg.asset.json";
-import hallAsset from "@/assets/hall-entree.jpg.asset.json";
-import salleActivitesAsset from "@/assets/salle-activites.jpg.asset.json";
-import tableauClasseAsset from "@/assets/tableau-classe.jpg.asset.json";
-import classeElem1Asset from "@/assets/classe-elementaire-1.jpg.asset.json";
-import classeElem2Asset from "@/assets/classe-elementaire-2.jpg.asset.json";
-import classeElem3Asset from "@/assets/classe-elementaire-3.jpg.asset.json";
-import classeMater1Asset from "@/assets/classe-maternelle-1.jpg.asset.json";
-import classeMater2Asset from "@/assets/classe-maternelle-2.jpg.asset.json";
-import classeMater3Asset from "@/assets/classe-maternelle-3.jpg.asset.json";
-import classeMater4Asset from "@/assets/classe-maternelle-4.jpg.asset.json";
-import salleInfoAsset from "@/assets/salle-informatique.jpg.asset.json";
-import salleInfoEnfantsAsset from "@/assets/salle-informatique-enfants.jpg.asset.json";
-import cantineEcoleAsset from "@/assets/cantine-ecole.jpg.asset.json";
-import salleRepasAsset from "@/assets/salle-repas.jpg.asset.json";
-import salleReposMaterAsset from "@/assets/salle-repos-maternelle.jpg.asset.json";
-import activiteParachuteAsset from "@/assets/activite-parachute-cour.jpg.asset.json";
-import facadeVieuxChateauAsset from "@/assets/facade-vieux-chateau.webp.asset.json";
-import photoAteliersMaternelle from "@/assets/photo-ateliers-maternelle-flou.jpg.asset.json";
-import photoRegroupement from "@/assets/photo-temps-de-regroupement-flou.jpg.asset.json";
-import photoPeintureClasse from "@/assets/photo-peinture-classe-flou.jpg.asset.json";
-import photoTravailClasseEnfants from "@/assets/photo-travail-classe-enfants.jpg.asset.json";
+const facadeAsset = "/images/facade-ecole.jpg";
+const courAsset = "/images/cour-recreation.jpg";
+const hallAsset = "/images/hall-entree.jpg";
+const salleActivitesAsset = "/images/salle-activites.jpg";
+const tableauClasseAsset = "/images/tableau-classe.jpg";
+const classeElem1Asset = "/images/classe-elementaire-1.jpg";
+const classeElem2Asset = "/images/classe-elementaire-2.jpg";
+const classeElem3Asset = "/images/classe-elementaire-3.jpg";
+const classeMater1Asset = "/images/classe-maternelle-1.jpg";
+const classeMater2Asset = "/images/classe-maternelle-2.jpg";
+const classeMater3Asset = "/images/classe-maternelle-3.jpg";
+const classeMater4Asset = "/images/classe-maternelle-4.jpg";
+const salleInfoAsset = "/images/salle-informatique.jpg";
+const salleInfoEnfantsAsset = "/images/salle-informatique-enfants.jpg";
+const cantineEcoleAsset = "/images/cantine-ecole.jpg";
+const salleRepasAsset = "/images/salle-repas.jpg";
+const salleReposMaterAsset = "/images/salle-repos-maternelle.jpg";
+const activiteParachuteAsset = "/images/activite-parachute-cour.jpg";
+const facadeVieuxChateauAsset = "/images/facade-vieux-chateau.webp";
+const photoAteliersMaternelle = "/images/photo-ateliers-maternelle-flou.jpg";
+const photoRegroupement = "/images/photo-temps-de-regroupement-flou.jpg";
+const photoPeintureClasse = "/images/photo-peinture-classe-flou.jpg";
+const photoTravailClasseEnfants = "/images/photo-travail-classe-enfants.jpg";
 
-import photoLectureCour from "@/assets/photo-lecture-cour-flou.jpg.asset.json";
-import photoConstructionCour from "@/assets/photo-construction-cour-flou.jpg.asset.json";
-import photoBasketCour from "@/assets/photo-basket-cour-flou.jpg.asset.json";
-import photoPorteursCour from "@/assets/photo-porteurs-cour-flou.jpg.asset.json";
+const photoLectureCour = "/images/photo-lecture-cour-flou.jpg";
+const photoConstructionCour = "/images/photo-construction-cour-flou.jpg";
+const photoBasketCour = "/images/photo-basket-cour-flou.jpg";
+const photoPorteursCour = "/images/photo-porteurs-cour-flou.jpg";
 
-import photoVeloPreau from "@/assets/photo-velo-preau-flou.jpg.asset.json";
-import photoCourseCour from "@/assets/photo-course-cour-flou.jpg.asset.json";
-import photoRecreationGenerale from "@/assets/photo-recreation-generale-flou.jpg.asset.json";
-import photoAtelierCollage from "@/assets/photo-atelier-collage-flou.jpg.asset.json";
-import photoClasseElementaireCours from "@/assets/photo-classe-elementaire-cours-flou.jpg.asset.json";
-import photoRassemblementCour from "@/assets/photo-rassemblement-cour-flou.jpg.asset.json";
-import photoInformatique from "@/assets/photo-informatique-flou.jpg.asset.json";
-import photoTravailGroupe from "@/assets/photo-travail-groupe-flou.jpg.asset.json";
+const photoVeloPreau = "/images/photo-velo-preau-flou.jpg";
+const photoCourseCour = "/images/photo-course-cour-flou.jpg";
+const photoRecreationGenerale = "/images/photo-recreation-generale-flou.jpg";
+const photoAtelierCollage = "/images/photo-atelier-collage-flou.jpg";
+const photoClasseElementaireCours = "/images/photo-classe-elementaire-cours-flou.jpg";
+const photoRassemblementCour = "/images/photo-rassemblement-cour-flou.jpg";
+const photoInformatique = "/images/photo-informatique-flou.jpg";
+const photoTravailGroupe = "/images/photo-travail-groupe-flou.jpg";
 
-import photoTableauClasse from "@/assets/photo-tableau-classe-flou.jpg.asset.json";
-import photoTravailCollectif from "@/assets/photo-travail-collectif-flou.jpg.asset.json";
-import photoActiviteMaternelleTable from "@/assets/photo-activite-maternelle-table-flou.jpg.asset.json";
-import photoActiviteManuelle from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
-import photoCollageMaternelle from "@/assets/photo-collage-maternelle-flou.jpg.asset.json";
-import sortieRandonneeRiviere from "@/assets/sortie-randonnee-riviere.jpg.asset.json";
-import sortieRandonneeChemin from "@/assets/sortie-randonnee-chemin.jpg.asset.json";
-import photoSortieDessinNature from "@/assets/photo-sortie-dessin-nature-flou.jpg.asset.json";
-import photoSortieParcoursNature from "@/assets/photo-sortie-parcours-nature-flou.jpg.asset.json";
-import photoSortieJeuxNature from "@/assets/photo-sortie-jeux-nature-flou.jpg.asset.json";
-import photoSortieDecouverteNature from "@/assets/photo-sortie-decouverte-nature-flou.jpg.asset.json";
-import photoActiviteFresqueCour from "@/assets/photo-activite-fresque-cour-flou.jpg.asset.json";
-import photoSortieRepas from "@/assets/photo-sortie-repas-flou.jpg.asset.json";
-import photoActiviteCercle from "@/assets/photo-activite-cercle-flou.jpg.asset.json";
-import photoSortieSecuriteRoutiere from "@/assets/photo-sortie-securite-routiere-flou.jpg.asset.json";
-import photoSortieEglise from "@/assets/photo-sortie-eglise-flou.jpg.asset.json";
-import photoSortieCommemoration from "@/assets/photo-sortie-commemoration-flou.jpg.asset.json";
-import photoSortiePiscineToboggan from "@/assets/photo-sortie-piscine-toboggan-flou.jpg.asset.json";
-import photoSortiePiscineGroupe from "@/assets/photo-sortie-piscine-groupe-flou.jpg.asset.json";
+const photoTableauClasse = "/images/photo-tableau-classe-flou.jpg";
+const photoTravailCollectif = "/images/photo-travail-collectif-flou.jpg";
+const photoActiviteMaternelleTable = "/images/photo-activite-maternelle-table-flou.jpg";
+const photoActiviteManuelle = "/images/photo-activite-manuelle-flou.jpg";
+const photoCollageMaternelle = "/images/photo-collage-maternelle-flou.jpg";
+const sortieRandonneeRiviere = "/images/sortie-randonnee-riviere.jpg";
+const sortieRandonneeChemin = "/images/sortie-randonnee-chemin.jpg";
+const photoSortieDessinNature = "/images/photo-sortie-dessin-nature-flou.jpg";
+const photoSortieParcoursNature = "/images/photo-sortie-parcours-nature-flou.jpg";
+const photoSortieJeuxNature = "/images/photo-sortie-jeux-nature-flou.jpg";
+const photoSortieDecouverteNature = "/images/photo-sortie-decouverte-nature-flou.jpg";
+const photoActiviteFresqueCour = "/images/photo-activite-fresque-cour-flou.jpg";
+const photoSortieRepas = "/images/photo-sortie-repas-flou.jpg";
+const photoActiviteCercle = "/images/photo-activite-cercle-flou.jpg";
+const photoSortieSecuriteRoutiere = "/images/photo-sortie-securite-routiere-flou.jpg";
+const photoSortieEglise = "/images/photo-sortie-eglise-flou.jpg";
+const photoSortieCommemoration = "/images/photo-sortie-commemoration-flou.jpg";
+const photoSortiePiscineToboggan = "/images/photo-sortie-piscine-toboggan-flou.jpg";
+const photoSortiePiscineGroupe = "/images/photo-sortie-piscine-groupe-flou.jpg";
 
 import { PageHero } from "@/components/page-hero";
 
@@ -85,64 +85,64 @@ const CATEGORIES = ["Vidéo", "Espaces de l'école", "Classes", "Activités", "S
 type Category = (typeof CATEGORIES)[number];
 
 const PHOTOS: { src: string; alt: string; category: Exclude<Category, "Tout" | "Vidéo"> }[] = [
-  { src: facadeVieuxChateauAsset.url, alt: "La façade en pierre de l'École du Vieux Château", category: "Espaces de l'école" },
-  { src: activiteParachuteAsset.url, alt: "Les enfants réunis autour d'un parachute coloré dans la cour", category: "Activités" },
-  { src: photoAteliersMaternelle.url, alt: "Ateliers de manipulation autour des tables en maternelle", category: "Activités" },
-  { src: photoRegroupement.url, alt: "Temps de regroupement au sol avec l'enseignante en maternelle", category: "Activités" },
-  { src: photoPeintureClasse.url, alt: "Atelier peinture sur chevalet dans la classe", category: "Activités" },
+  { src: facadeVieuxChateauAsset, alt: "La façade en pierre de l'École du Vieux Château", category: "Espaces de l'école" },
+  { src: activiteParachuteAsset, alt: "Les enfants réunis autour d'un parachute coloré dans la cour", category: "Activités" },
+  { src: photoAteliersMaternelle, alt: "Ateliers de manipulation autour des tables en maternelle", category: "Activités" },
+  { src: photoRegroupement, alt: "Temps de regroupement au sol avec l'enseignante en maternelle", category: "Activités" },
+  { src: photoPeintureClasse, alt: "Atelier peinture sur chevalet dans la classe", category: "Activités" },
   
-  { src: photoConstructionCour.url, alt: "Construction à plusieurs avec des pièces en mousse dans la cour", category: "Activités" },
-  { src: photoLectureCour.url, alt: "Un élève lit un magazine assis sur la marche de la cour", category: "Activités" },
+  { src: photoConstructionCour, alt: "Construction à plusieurs avec des pièces en mousse dans la cour", category: "Activités" },
+  { src: photoLectureCour, alt: "Un élève lit un magazine assis sur la marche de la cour", category: "Activités" },
   
-  { src: photoBasketCour.url, alt: "Partie de basket dans la cour de récréation", category: "Activités" },
-  { src: photoPorteursCour.url, alt: "Porteurs et draisiennes le long du préau de maternelle", category: "Activités" },
+  { src: photoBasketCour, alt: "Partie de basket dans la cour de récréation", category: "Activités" },
+  { src: photoPorteursCour, alt: "Porteurs et draisiennes le long du préau de maternelle", category: "Activités" },
   
-  { src: photoVeloPreau.url, alt: "Un enfant pédale sur un vélo devant la fresque du préau", category: "Activités" },
-  { src: photoCourseCour.url, alt: "Course en plein air dans la cour de récréation", category: "Activités" },
-  { src: photoRecreationGenerale.url, alt: "Vue d'ensemble de la cour de récréation animée", category: "Activités" },
-  { src: photoRassemblementCour.url, alt: "Rassemblement d'enfants dans la cour, photo prise en hauteur", category: "Activités" },
-  { src: photoAtelierCollage.url, alt: "Atelier de découpage-collage sur les tables de maternelle", category: "Classes" },
-  { src: photoTravailGroupe.url, alt: "Travail en petit groupe autour d'une table avec l'enseignante", category: "Classes" },
+  { src: photoVeloPreau, alt: "Un enfant pédale sur un vélo devant la fresque du préau", category: "Activités" },
+  { src: photoCourseCour, alt: "Course en plein air dans la cour de récréation", category: "Activités" },
+  { src: photoRecreationGenerale, alt: "Vue d'ensemble de la cour de récréation animée", category: "Activités" },
+  { src: photoRassemblementCour, alt: "Rassemblement d'enfants dans la cour, photo prise en hauteur", category: "Activités" },
+  { src: photoAtelierCollage, alt: "Atelier de découpage-collage sur les tables de maternelle", category: "Classes" },
+  { src: photoTravailGroupe, alt: "Travail en petit groupe autour d'une table avec l'enseignante", category: "Classes" },
   
-  { src: photoTravailCollectif.url, alt: "Travail collectif avec l'enseignante en maternelle", category: "Activités" },
-  { src: photoInformatique.url, alt: "Les élèves utilisent les ordinateurs de la classe", category: "Classes" },
-  { src: photoTableauClasse.url, alt: "Les élèves travaillent face au tableau de la classe", category: "Classes" },
-  { src: photoClasseElementaireCours.url, alt: "Cours en salle d'élémentaire, l'enseignante écrit au tableau", category: "Classes" },
-  { src: photoTravailClasseEnfants.url, alt: "Des élèves travaillent à leur bureau dans une classe lumineuse", category: "Classes" },
-  { src: facadeAsset.url, alt: "La façade de l'école du Vieux Château", category: "Espaces de l'école" },
-  { src: courAsset.url, alt: "La cour de récréation et son préau", category: "Espaces de l'école" },
-  { src: hallAsset.url, alt: "Le hall d'entrée décoré par les élèves", category: "Espaces de l'école" },
-  { src: salleActivitesAsset.url, alt: "Le coin lecture et jeux calmes", category: "Espaces de l'école" },
-  { src: cantineEcoleAsset.url, alt: "La salle de cantine décorée", category: "Espaces de l'école" },
-  { src: salleRepasAsset.url, alt: "L'espace repas et coin cuisine", category: "Espaces de l'école" },
-  { src: salleInfoAsset.url, alt: "La salle informatique de l'école", category: "Espaces de l'école" },
-  { src: salleInfoEnfantsAsset.url, alt: "Les élèves à la salle informatique", category: "Classes" },
-  { src: salleReposMaterAsset.url, alt: "L'espace repos et vestiaires en maternelle", category: "Espaces de l'école" },
-  { src: classeMater1Asset.url, alt: "Classe maternelle avec coins jeux et apprentissages", category: "Espaces de l'école" },
-  { src: classeMater2Asset.url, alt: "Coin activités et affichages en maternelle", category: "Espaces de l'école" },
-  { src: classeMater3Asset.url, alt: "La salle de motricité et de regroupement en maternelle", category: "Espaces de l'école" },
-  { src: classeMater4Asset.url, alt: "La grande salle de classe de maternelle", category: "Espaces de l'école" },
-  { src: tableauClasseAsset.url, alt: "Le tableau des règles de vie de la classe", category: "Espaces de l'école" },
-  { src: classeElem1Asset.url, alt: "Salle de classe élémentaire avec bureaux et tableau", category: "Espaces de l'école" },
-  { src: classeElem2Asset.url, alt: "Classe élémentaire lumineuse et organisée", category: "Espaces de l'école" },
-  { src: classeElem3Asset.url, alt: "Espace de travail des cycles 2 et 3", category: "Espaces de l'école" },
-  { src: photoActiviteMaternelleTable.url, alt: "Activité de collage en maternelle avec l'enseignante", category: "Activités" },
-  { src: photoActiviteManuelle.url, alt: "Atelier manuel autour des tables de maternelle", category: "Classes" },
-  { src: photoCollageMaternelle.url, alt: "Les enfants collent des bandes de papier de couleur", category: "Activités" },
-  { src: photoActiviteFresqueCour.url, alt: "Enfants rassemblés autour de grands dessins à la craie dans la cour", category: "Activités" },
-  { src: photoActiviteCercle.url, alt: "Journée des chaussettes dépareillées : les enfants assis en cercle", category: "Activités" },
-  { src: sortieRandonneeRiviere.url, alt: "Groupe d'enfants en randonnée sur un sentier en pleine nature", category: "Sorties scolaires" },
-  { src: sortieRandonneeChemin.url, alt: "Enfants avec leurs sacs à dos sur un chemin forestier", category: "Sorties scolaires" },
-  { src: photoSortieDessinNature.url, alt: "Enfants dessinant dans l'herbe pendant une sortie en plein air", category: "Sorties scolaires" },
-  { src: photoSortieParcoursNature.url, alt: "Enfants suivant un parcours avec des cerceaux dans un champ", category: "Sorties scolaires" },
-  { src: photoSortieJeuxNature.url, alt: "Parcours de motricité en plein air avec des cerceaux colorés", category: "Sorties scolaires" },
-  { src: photoSortieDecouverteNature.url, alt: "Découverte de la nature autour de branchages dans une prairie", category: "Sorties scolaires" },
-  { src: photoSortieRepas.url, alt: "La cantine : un repas partagé dans une salle décorée", category: "Activités" },
-  { src: photoSortieSecuriteRoutiere.url, alt: "Parcours de sécurité routière à vélo dans un gymnase", category: "Sorties scolaires" },
-  { src: photoSortieEglise.url, alt: "Enfants et adultes réunis dans une église lors d'une célébration", category: "Sorties scolaires" },
-  { src: photoSortieCommemoration.url, alt: "Participation des enfants à une commémoration au monument aux morts", category: "Sorties scolaires" },
-  { src: photoSortiePiscineToboggan.url, alt: "Descente du toboggan aquatique pendant une sortie à la piscine", category: "Sorties scolaires" },
-  { src: photoSortiePiscineGroupe.url, alt: "Enfants écoutant un maître-nageur au bord de la piscine", category: "Sorties scolaires" },
+  { src: photoTravailCollectif, alt: "Travail collectif avec l'enseignante en maternelle", category: "Activités" },
+  { src: photoInformatique, alt: "Les élèves utilisent les ordinateurs de la classe", category: "Classes" },
+  { src: photoTableauClasse, alt: "Les élèves travaillent face au tableau de la classe", category: "Classes" },
+  { src: photoClasseElementaireCours, alt: "Cours en salle d'élémentaire, l'enseignante écrit au tableau", category: "Classes" },
+  { src: photoTravailClasseEnfants, alt: "Des élèves travaillent à leur bureau dans une classe lumineuse", category: "Classes" },
+  { src: facadeAsset, alt: "La façade de l'école du Vieux Château", category: "Espaces de l'école" },
+  { src: courAsset, alt: "La cour de récréation et son préau", category: "Espaces de l'école" },
+  { src: hallAsset, alt: "Le hall d'entrée décoré par les élèves", category: "Espaces de l'école" },
+  { src: salleActivitesAsset, alt: "Le coin lecture et jeux calmes", category: "Espaces de l'école" },
+  { src: cantineEcoleAsset, alt: "La salle de cantine décorée", category: "Espaces de l'école" },
+  { src: salleRepasAsset, alt: "L'espace repas et coin cuisine", category: "Espaces de l'école" },
+  { src: salleInfoAsset, alt: "La salle informatique de l'école", category: "Espaces de l'école" },
+  { src: salleInfoEnfantsAsset, alt: "Les élèves à la salle informatique", category: "Classes" },
+  { src: salleReposMaterAsset, alt: "L'espace repos et vestiaires en maternelle", category: "Espaces de l'école" },
+  { src: classeMater1Asset, alt: "Classe maternelle avec coins jeux et apprentissages", category: "Espaces de l'école" },
+  { src: classeMater2Asset, alt: "Coin activités et affichages en maternelle", category: "Espaces de l'école" },
+  { src: classeMater3Asset, alt: "La salle de motricité et de regroupement en maternelle", category: "Espaces de l'école" },
+  { src: classeMater4Asset, alt: "La grande salle de classe de maternelle", category: "Espaces de l'école" },
+  { src: tableauClasseAsset, alt: "Le tableau des règles de vie de la classe", category: "Espaces de l'école" },
+  { src: classeElem1Asset, alt: "Salle de classe élémentaire avec bureaux et tableau", category: "Espaces de l'école" },
+  { src: classeElem2Asset, alt: "Classe élémentaire lumineuse et organisée", category: "Espaces de l'école" },
+  { src: classeElem3Asset, alt: "Espace de travail des cycles 2 et 3", category: "Espaces de l'école" },
+  { src: photoActiviteMaternelleTable, alt: "Activité de collage en maternelle avec l'enseignante", category: "Activités" },
+  { src: photoActiviteManuelle, alt: "Atelier manuel autour des tables de maternelle", category: "Classes" },
+  { src: photoCollageMaternelle, alt: "Les enfants collent des bandes de papier de couleur", category: "Activités" },
+  { src: photoActiviteFresqueCour, alt: "Enfants rassemblés autour de grands dessins à la craie dans la cour", category: "Activités" },
+  { src: photoActiviteCercle, alt: "Journée des chaussettes dépareillées : les enfants assis en cercle", category: "Activités" },
+  { src: sortieRandonneeRiviere, alt: "Groupe d'enfants en randonnée sur un sentier en pleine nature", category: "Sorties scolaires" },
+  { src: sortieRandonneeChemin, alt: "Enfants avec leurs sacs à dos sur un chemin forestier", category: "Sorties scolaires" },
+  { src: photoSortieDessinNature, alt: "Enfants dessinant dans l'herbe pendant une sortie en plein air", category: "Sorties scolaires" },
+  { src: photoSortieParcoursNature, alt: "Enfants suivant un parcours avec des cerceaux dans un champ", category: "Sorties scolaires" },
+  { src: photoSortieJeuxNature, alt: "Parcours de motricité en plein air avec des cerceaux colorés", category: "Sorties scolaires" },
+  { src: photoSortieDecouverteNature, alt: "Découverte de la nature autour de branchages dans une prairie", category: "Sorties scolaires" },
+  { src: photoSortieRepas, alt: "La cantine : un repas partagé dans une salle décorée", category: "Activités" },
+  { src: photoSortieSecuriteRoutiere, alt: "Parcours de sécurité routière à vélo dans un gymnase", category: "Sorties scolaires" },
+  { src: photoSortieEglise, alt: "Enfants et adultes réunis dans une église lors d'une célébration", category: "Sorties scolaires" },
+  { src: photoSortieCommemoration, alt: "Participation des enfants à une commémoration au monument aux morts", category: "Sorties scolaires" },
+  { src: photoSortiePiscineToboggan, alt: "Descente du toboggan aquatique pendant une sortie à la piscine", category: "Sorties scolaires" },
+  { src: photoSortiePiscineGroupe, alt: "Enfants écoutant un maître-nageur au bord de la piscine", category: "Sorties scolaires" },
 ];
 
 function GaleriePage() {

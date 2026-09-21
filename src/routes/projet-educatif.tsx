@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BookOpen, Church, Compass, Cross, Gift, HandHeart, HeartHandshake, Languages, ShieldCheck, Sparkles, Sprout, Users } from "lucide-react";
 import { ContactCta, PageHero } from "@/components/page-hero";
-import projetAsset from "@/assets/photo-activite-manuelle-flou.jpg.asset.json";
-import egliseAsset from "@/assets/photo-sortie-eglise-flou.jpg.asset.json";
+const projetAsset = "/images/photo-activite-manuelle-flou.jpg";
+const egliseAsset = "/images/photo-sortie-eglise-flou.jpg";
 
-const projetImg = projetAsset.url;
-const egliseImg = egliseAsset.url;
+const projetImg = projetAsset;
+const egliseImg = egliseAsset;
 
 export const Route = createFileRoute("/projet-educatif")({
   head: () => ({
