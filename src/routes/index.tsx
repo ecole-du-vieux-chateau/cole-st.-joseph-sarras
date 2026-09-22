@@ -74,9 +74,40 @@ const FIGURES = [
   { icon: Home, value: "Taille humaine", label: "Une structure familiale et chaleureuse" },
 ];
 
+function OpenDayPopup() {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const now = new Date();
+    const deadline = new Date("2026-11-09T00:00:00");
+    if (now < deadline) {
+      const timer = setTimeout(() => setOpen(true), 600);
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  if (!open) return null;
+
+  return (
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogContent className="max-w-2xl overflow-hidden border-none bg-transparent p-0 shadow-2xl sm:rounded-xl">
+        <DialogTitle className="sr-only">Portes ouvertes – samedi 7 novembre de 9h à 12h</DialogTitle>
+        <img
+          src={affichePortesOuvertesAsset.url}
+          alt="Affiche des portes ouvertes de l'École du Vieux Château : samedi 7 novembre 2026 de 9h à 12h"
+          width={960}
+          height={1350}
+          className="h-auto w-full"
+        />
+      </DialogContent>
+    </Dialog>
+  );
+}
+
 function Index() {
   return (
     <>
+      <OpenDayPopup />
       {/* Hero */}
       <section className="relative">
         <img
