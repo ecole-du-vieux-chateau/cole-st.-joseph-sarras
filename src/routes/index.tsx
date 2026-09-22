@@ -100,7 +100,7 @@ function OpenDayPopup() {
       <DialogContent className="max-w-2xl overflow-hidden border-none bg-transparent p-0 shadow-2xl sm:rounded-xl">
         <DialogTitle className="sr-only">Portes ouvertes – samedi 7 novembre de 9h à 12h</DialogTitle>
         <img
-          src={affichePortesOuvertesAsset.url}
+          src={affichePortesOuvertesImg}
           alt="Affiche des portes ouvertes de l'École du Vieux Château : samedi 7 novembre 2026 de 9h à 12h"
           width={960}
           height={1350}
