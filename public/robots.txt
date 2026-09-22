@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://veil-grandir.lovable.app/sitemap.xml
+Sitemap: https://www.ecoleduvieuxchateau.fr/sitemap.xml
