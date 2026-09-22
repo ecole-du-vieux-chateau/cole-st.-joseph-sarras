@@ -144,7 +144,7 @@ function ProjetEducatifPage() {
               parents et les familles.
             </p>
           </div>
-          <span className="order-first flex size-16 items-center justify-center rounded-3xl bg-primary text-primary-foreground lg:order-last">
+          <span className="order-first ml-auto flex size-16 items-center justify-center rounded-3xl bg-primary text-primary-foreground lg:order-last lg:ml-0">
             <BookOpen className="size-8" aria-hidden />
           </span>
         </div>
