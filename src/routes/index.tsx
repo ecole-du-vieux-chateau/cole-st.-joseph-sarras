@@ -80,10 +80,9 @@ function OpenDayPopup() {
   useEffect(() => {
     const now = new Date();
     const deadline = new Date("2026-11-09T00:00:00");
-    if (now < deadline) {
-      const timer = setTimeout(() => setOpen(true), 600);
-      return () => clearTimeout(timer);
-    }
+    if (now >= deadline) return;
+    const timer = setTimeout(() => setOpen(true), 600);
+    return () => clearTimeout(timer);
   }, []);
 
   if (!open) return null;
