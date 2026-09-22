@@ -76,11 +76,13 @@ const FIGURES = [
 
 function OpenDayPopup() {
   const [open, setOpen] = useState(false);
+  const CLOSED_KEY = "openDayPopupClosed";
 
   useEffect(() => {
     const now = new Date();
     const deadline = new Date("2026-11-09T00:00:00");
     if (now >= deadline) return;
+    if (sessionStorage.getItem(CLOSED_KEY) === "true") return;
     const timer = setTimeout(() => setOpen(true), 600);
     return () => clearTimeout(timer);
   }, []);
@@ -88,7 +90,13 @@ function OpenDayPopup() {
   if (!open) return null;
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog
+      open={open}
+      onOpenChange={(next) => {
+        setOpen(next);
+        if (!next) sessionStorage.setItem(CLOSED_KEY, "true");
+      }}
+    >
       <DialogContent className="max-w-2xl overflow-hidden border-none bg-transparent p-0 shadow-2xl sm:rounded-xl">
         <DialogTitle className="sr-only">Portes ouvertes – samedi 7 novembre de 9h à 12h</DialogTitle>
         <img
