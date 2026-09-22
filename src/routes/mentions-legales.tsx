@@ -47,7 +47,19 @@ function MentionsLegalesPage() {
         <div>
           <h2 className="text-xl font-semibold">Hébergement</h2>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Ce site est hébergé par Lovable.
+            Ce site est hébergé par Vercel Inc.
+            <br />
+            340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis.
+            <br />
+            Site :{" "}
+            <a
+              href="https://vercel.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              vercel.com
+            </a>
           </p>
         </div>
 
