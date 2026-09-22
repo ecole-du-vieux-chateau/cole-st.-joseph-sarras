@@ -1,5 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HandHeart, HeartHandshake, ShieldCheck, Trophy, ArrowRight, Users, Landmark, BookOpen, Home } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import affichePortesOuvertesAsset from "@/assets/affiche-portes-ouvertes-7-nov.jpg.asset.json";
 const heroAsset = "/images/facade-ecole-entree.png";
 const classeAsset = "/images/photo-travail-classe-enfants.jpg";
 const fresqueAsset = "/images/photo-activite-fresque-cour-flou.jpg";
