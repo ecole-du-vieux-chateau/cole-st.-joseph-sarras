@@ -224,8 +224,8 @@ function VieScolairePage() {
             </ul>
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               Envie de donner un coup de main, même une heure par mois ? Écrivez à{" "}
-              <a href="mailto:adm.ogecduvieuxchateau007@gmail.com" className="font-semibold text-primary underline-offset-4 hover:underline">
-                adm.ogecduvieuxchateau007@gmail.com
+              <a href="mailto:adm.ogecduvieuxchateau07@gmail.com" className="font-semibold text-primary underline-offset-4 hover:underline">
+                adm.ogecduvieuxchateau07@gmail.com
               </a>
             </p>
           </article>
@@ -282,8 +282,8 @@ function VieScolairePage() {
             <div>
               <p className="font-semibold text-foreground">Vie de l'école (OGEC)</p>
               <p className="mt-1">Idées à partager, coup de main aux bénévoles.</p>
-              <a href="mailto:adm.ogecduvieuxchateau007@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
-                adm.ogecduvieuxchateau007@gmail.com
+              <a href="mailto:adm.ogecduvieuxchateau07@gmail.com" className="mt-1 inline-block font-semibold text-primary underline-offset-4 hover:underline">
+                adm.ogecduvieuxchateau07@gmail.com
               </a>
             </div>
             <div>
