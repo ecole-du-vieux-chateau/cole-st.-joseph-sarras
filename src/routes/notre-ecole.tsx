@@ -96,7 +96,7 @@ const TEAM = [
     ),
   },
   {
-    name: "Mme Marine Gilloz",
+    name: "Mme Marine Donzet",
     role: "ASEM",
     text: (
       <div className="space-y-4 leading-relaxed text-muted-foreground">
